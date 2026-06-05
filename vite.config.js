@@ -14,5 +14,5 @@ export default defineConfig({
   // Change 'heldenarchiv' below to match YOUR repository name exactly.
   // If you deploy to the domain root instead (Netlify, Vercel, a custom domain,
   // or a USERNAME.github.io repo), set this back to '/'.
-  base: '/heldenarchiv/',
+  base: '/heldenarchive/',
 })
