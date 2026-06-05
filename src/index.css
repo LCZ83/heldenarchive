@@ -1,1 +1,10 @@
+@import "tailwindcss";
 
+/* The app component injects its own <style> block (fonts, palette CSS variables,
+   .card / .ink-input / .smallcaps utility classes, etc.) at runtime via its
+   GlobalStyles component, so this file only needs to pull in Tailwind. */
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
