@@ -226,7 +226,7 @@ const DEFAULT_TALENTS = [
   ['Natur', 'Seefischerei', 'IN/FF/KK'],
   ['Natur', 'Wettervorhersage', 'KL/IN/IN'],
   ['Natur', 'Wildnisleben', 'IN/GE/KO'],
-  ['Wissen', 'Alchimie', 'MU/KL/FF'],
+  ['Wissen', 'Alchemie', 'MU/KL/FF'],
   ['Wissen', 'Geographie', 'KL/KL/IN'],
   ['Wissen', 'Geschichtswissen', 'KL/KL/IN'],
   ['Wissen', 'Götter & Kulte', 'KL/KL/IN'],
