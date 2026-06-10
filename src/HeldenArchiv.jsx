@@ -4366,13 +4366,13 @@ function CharacterList({ chars, groups, adventures, session, view, setView, onOp
         <div className="banner-body">
           <h1 className="font-display text-3xl leading-none m-0" style={{ color: 'var(--red)' }}>
             <span className="banner-diamond" />
-            Heldenarchiv
+            DSApp
             <span className="banner-diamond" />
           </h1>
         </div>
         <div className="banner-thin" />
         <div className="banner-sub">
-          <span className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>Das Schwarze Auge · 4.1</span>
+          <span className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>Das Schwarze Auge 4</span>
         </div>
         <div className="banner-rule" />
       </div>
