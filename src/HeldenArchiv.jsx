@@ -249,7 +249,10 @@ const DEFAULT_TALENTS = [
   ['Wissen', 'Staatskunst', 'KL/IN/CH'],
   ['Wissen', 'Sternkunde', 'KL/KL/IN'],
   ['Wissen', 'Tierkunde', 'MU/KL/IN'],
-  ['Sprache', 'Garethi (Muttersprache)', 'KL/IN/IN'],
+  ['Sprache', 'Lesen/Schreiben [Schrift]', 'KL/KL/FF'],
+  ['Sprache', 'Sprachen [Muttersprache]', 'KL/IN/CH'],
+  ['Sprache', 'Sprachen [Fremdsprache]', 'KL/IN/CH'],
+  ['Handwerk', 'Abrichten', 'MU/IN/CH'],
 ];
 
 const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sprache', 'Handwerk', 'Eigene'];
