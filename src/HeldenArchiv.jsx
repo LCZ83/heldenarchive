@@ -281,13 +281,12 @@ const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sp
 // Common DSA 4.1 weapon types grouped by combat skill. TP values are typical
 // core-rulebook defaults; players can override per-weapon after picking from the list.
 const WEAPON_TYPES = [
-  // Nahkampf — Hiebwaffen
-  { category: 'Hiebwaffen', name: 'Säbel', type: 'NK', tp: '1W+4' },
-  { category: 'Hiebwaffen', name: 'Streitkolben', type: 'NK', tp: '1W+4' },
-  { category: 'Hiebwaffen', name: 'Streithammer', type: 'NK', tp: '1W+5' },
-  { category: 'Hiebwaffen', name: 'Streitaxt', type: 'NK', tp: '1W+5' },
-  { category: 'Hiebwaffen', name: 'Beil', type: 'NK', tp: '1W+3' },
-  { category: 'Hiebwaffen', name: 'Knüppel', type: 'NK', tp: '1W+2' },
+  // Nahkampf — Anderthalbhänder
+  { category: 'Anderthalbhänder', name: 'Anderthalbhänder', type: 'NK', tp: '1W+4' },
+  { category: 'Anderthalbhänder', name: 'Bastardschwert', type: 'NK', tp: '1W+4' },
+  { category: 'Anderthalbhänder', name: 'Nachtwind', type: 'NK', tp: '1W+4' },
+  { category: 'Anderthalbhänder', name: 'Rondrakamm', type: 'NK', tp: '1W+4' },
+  { category: 'Anderthalbhänder', name: 'Tuzakmesser', type: 'NK', tp: '1W+4' },
   // Nahkampf — Schwerter
   { category: 'Schwerter', name: 'Kurzschwert', type: 'NK', tp: '1W+3' },
   { category: 'Schwerter', name: 'Langschwert', type: 'NK', tp: '1W+4' },
