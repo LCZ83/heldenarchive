@@ -325,6 +325,24 @@ const WEAPON_TYPES = [
   { category: 'Hiebwaffen', name: 'Streitaxt', type: 'NK', tp: '1W+1' },
   { category: 'Hiebwaffen', name: 'Streitkolben', type: 'NK', tp: '1W+1' },
   { category: 'Hiebwaffen', name: 'Zwergenskraja', type: 'NK', tp: '1W+1' },
+  // Nahkampf - Infanteriewaffen
+  { category: 'Infanteriewaffen', name: 'Glefe', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Hakenspiess', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Hellebarde', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Langaxt', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Pailos', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Partisane', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Schnitter', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Sturmsense', type: 'NK', tp: '1W+1' },
+  { category: 'Infanteriewaffen', name: 'Wurmspiess', type: 'NK', tp: '1W+1' },
+  // Nahkampf - Kettenstäbe
+  { category: 'Kettenstäbe', name: 'Kettenstab', type: 'NK', tp: '1W+1' },
+  // Nahkampf - Kettenwaffen
+  { category: 'Kettenwaffen', name: 'Morgenstern', type: 'NK', tp: '1W+1' },
+  { category: 'Kettenwaffen', name: 'Ochsenherde', type: 'NK', tp: '1W+1' },
+  { category: 'Kettenwaffen', name: 'Ogerschelle', type: 'NK', tp: '1W+1' },
+  { category: 'Kettenwaffen', name: 'Neunschwänzige', type: 'NK', tp: '1W+1' },
+  { category: 'Kettenwaffen', name: 'Geissel', type: 'NK', tp: '1W+1' },
   // Nahkampf — Raufen / waffenlos
   { category: 'Raufen', name: 'Faustschlag', type: 'NK', tp: '1W-1' },
   { category: 'Raufen', name: 'Tritt', type: 'NK', tp: '1W' },
