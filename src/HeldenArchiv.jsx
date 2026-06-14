@@ -343,9 +343,27 @@ const WEAPON_TYPES = [
   { category: 'Kettenwaffen', name: 'Ogerschelle', type: 'NK', tp: '1W+1' },
   { category: 'Kettenwaffen', name: 'Neunschwänzige', type: 'NK', tp: '1W+1' },
   { category: 'Kettenwaffen', name: 'Geissel', type: 'NK', tp: '1W+1' },
+  // Nahkampf — Lanzenreiten
+  { category: 'Lanzenreiten', name: 'Dschadra', type: 'NK', tp: '1W-1' },
+  { category: 'Lanzenreiten', name: 'Kriegslanze', type: 'NK', tp: '1W-1' },
+  { category: 'Lanzenreiten', name: 'Turnierlanze', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Peitschen
+  { category: 'Peitschen', name: 'Peitsche', type: 'NK', tp: '1W-1' },
   // Nahkampf — Raufen / waffenlos
-  { category: 'Raufen', name: 'Faustschlag', type: 'NK', tp: '1W-1' },
-  { category: 'Raufen', name: 'Tritt', type: 'NK', tp: '1W' },
+  { category: 'Raufen', name: 'Raufen', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Ringen / waffenlos
+  { category: 'Ringen', name: 'Ringen', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Säbel
+  { category: 'Säbel', name: 'Amazonensäbel', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Arbach', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Entermesser', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Haumesser', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Khunchomer', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Kurzschwert', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Robbentöter', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Säbel', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Sklaventod', type: 'NK', tp: '1W-1' },
+  { category: 'Säbel', name: 'Waqqif', type: 'NK', tp: '1W-1' },
   // Fernkampf
   { category: 'Fernkampf', name: 'Kurzbogen', type: 'FK', tp: '1W+4' },
   { category: 'Fernkampf', name: 'Langbogen', type: 'FK', tp: '1W+5' },
