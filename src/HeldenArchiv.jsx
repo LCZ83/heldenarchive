@@ -389,6 +389,32 @@ const WEAPON_TYPES = [
   { category: 'Speere', name: 'Pike', type: 'NK', tp: '1W-1' },
   { category: 'Speere', name: 'Stossspeer', type: 'NK', tp: '1W-1' },
   { category: 'Speere', name: 'Wurmspiess', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Stäbe
+  { category: 'Stäbe', name: 'Kampfstab', type: 'NK', tp: '1W-1' },
+  { category: 'Stäbe', name: 'Magierstab', type: 'NK', tp: '1W-1' },
+  { category: 'Stäbe', name: 'Zweililien', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Zweihandflegel
+  { category: 'Zweihandflegel', name: 'Kriegsflegel', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Zweihand-Hiebwaffen
+  { category: 'Zweihand-Hiebwaffen', name: 'Barbarenstreitaxt', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Echsische Axt', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Felsspalter', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Gruufhai', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Kriegshammer', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Langaxt', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Orknase', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Pailos', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Warunker Hammer', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihand-Hiebwaffen', name: 'Zwergenschlägel', type: 'NK', tp: '1W-1' },
+  // Nahkampf — Zweihandschwerter
+  { category: 'Zweihandschwerter', name: 'Andergaster', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Anderthalbhänder', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Boronssichel', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Doppelkhunchomer', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Grosser Sklaventod', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Rondrakamm', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Tuzakmesser', type: 'NK', tp: '1W-1' },
+  { category: 'Zweihandschwerter', name: 'Zweihänder', type: 'NK', tp: '1W-1' },
   // Fernkampf
   { category: 'Fernkampf', name: 'Kurzbogen', type: 'FK', tp: '1W+4' },
   { category: 'Fernkampf', name: 'Langbogen', type: 'FK', tp: '1W+5' },
