@@ -287,6 +287,20 @@ const WEAPON_TYPES = [
   { category: 'Anderthalbhänder', name: 'Nachtwind', type: 'NK', tp: '1W+4' },
   { category: 'Anderthalbhänder', name: 'Rondrakamm', type: 'NK', tp: '1W+4' },
   { category: 'Anderthalbhänder', name: 'Tuzakmesser', type: 'NK', tp: '1W+4' },
+  // Fernkampf - Armbrust
+  { category: 'Armbrust', name: 'Leichte Armbrust', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Schwere Armbrust', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Balläster', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Eisenwalder', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Arbalone', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Balestra', type: 'FK', tp: '1W+4' },
+  { category: 'Armbrust', name: 'Balestrina', type: 'FK', tp: '1W+4' },
+  // Fernkampf - Belagerungswaffen
+  { category: 'Belagerungswaffen', name: 'Ballistische Schleudergeräte', type: 'FK', tp: '1W+4' },
+  { category: 'Belagerungswaffen', name: 'Hornisse', type: 'FK', tp: '1W+4' },
+  { category: 'Belagerungswaffen', name: 'Torsionschleudern', type: 'FK', tp: '1W+4' },
+  { category: 'Belagerungswaffen', name: 'Drachenmäuler', type: 'FK', tp: '1W+4' },
+  { category: 'Belagerungswaffen', name: 'Belagerungs-Armbrust', type: 'FK', tp: '1W+4' },
   // Nahkampf — Dolche & Klein
   { category: 'Dolche', name: 'Basiliskenzunge', type: 'NK', tp: '1W+1' },
   { category: 'Dolche', name: 'Borndorn', type: 'NK', tp: '1W+1' },
