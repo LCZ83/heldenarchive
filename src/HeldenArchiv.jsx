@@ -390,6 +390,13 @@ const WEAPON_TYPES = [
   { category: 'Säbel', name: 'Säbel', type: 'NK', tp: '1W-1' },
   { category: 'Säbel', name: 'Sklaventod', type: 'NK', tp: '1W-1' },
   { category: 'Säbel', name: 'Waqqif', type: 'NK', tp: '1W-1' },
+  // Fernkampf - Schleuder
+  { category: 'Schleuder', name: 'Schleuder', type: 'FK', tp: '1W+1' },
+  { category: 'Schleuder', name: 'Fledermaus', type: 'FK', tp: '1W+1' },
+  { category: 'Schleuder', name: 'Lasso', type: 'FK', tp: '1W+1' },
+  { category: 'Schleuder', name: 'Leichtes Wurfnetz', type: 'FK', tp: '1W+1' },
+  { category: 'Schleuder', name: 'Schweres Wurfnetz', type: 'FK', tp: '1W+1' },
+  { category: 'Schleuder', name: 'Wurfhaken', type: 'FK', tp: '1W+1' },
   // Nahkampf — Schwerter
   { category: 'Schwerter', name: 'Amazonensäbel', type: 'NK', tp: '1W-1' },
   { category: 'Schwerter', name: 'Barbarenschwert', type: 'NK', tp: '1W-1' },
@@ -419,6 +426,26 @@ const WEAPON_TYPES = [
   { category: 'Stäbe', name: 'Kampfstab', type: 'NK', tp: '1W-1' },
   { category: 'Stäbe', name: 'Magierstab', type: 'NK', tp: '1W-1' },
   { category: 'Stäbe', name: 'Zweililien', type: 'NK', tp: '1W-1' },
+  // Fernkampf - Wurfbeile
+  { category: 'Wurfbeile', name: 'Wurfbeil', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfbeile', name: 'Schneidzahn', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfbeile', name: 'Wurfkeule', type: 'FK', tp: '1W+1' },
+  // Fernkampf - Wurfmesser
+  { category: 'Wurfmesser', name: 'Borndorn', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfmesser', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfdolch', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfpfeil', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfstern', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfscheibe', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfmesser', name: 'Wurfring', type: 'FK', tp: '1W+1' },
+  // Fernkampf - Wurfspeere
+  { category: 'Wurfspeere', name: 'Efferdbart', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Granatapfel', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Holzspeer', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Speer', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Speerschleuder', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Stabschleuder', type: 'FK', tp: '1W+1' },
+  { category: 'Wurfspeere', name: 'Wurfspeer', type: 'FK', tp: '1W+1' },
   // Nahkampf — Zweihandflegel
   { category: 'Zweihandflegel', name: 'Kriegsflegel', type: 'NK', tp: '1W-1' },
   // Nahkampf — Zweihand-Hiebwaffen
@@ -441,16 +468,6 @@ const WEAPON_TYPES = [
   { category: 'Zweihandschwerter', name: 'Rondrakamm', type: 'NK', tp: '1W-1' },
   { category: 'Zweihandschwerter', name: 'Tuzakmesser', type: 'NK', tp: '1W-1' },
   { category: 'Zweihandschwerter', name: 'Zweihänder', type: 'NK', tp: '1W-1' },
-  // Fernkampf
-  { category: 'Fernkampf', name: 'Kurzbogen', type: 'FK', tp: '1W+4' },
-  { category: 'Fernkampf', name: 'Langbogen', type: 'FK', tp: '1W+5' },
-  { category: 'Fernkampf', name: 'Kompositbogen', type: 'FK', tp: '1W+5' },
-  { category: 'Fernkampf', name: 'Leichte Armbrust', type: 'FK', tp: '1W+5' },
-  { category: 'Fernkampf', name: 'Schwere Armbrust', type: 'FK', tp: '2W+4' },
-  { category: 'Fernkampf', name: 'Wurfaxt', type: 'FK', tp: '1W+3' },
-  { category: 'Fernkampf', name: 'Wurfspeer', type: 'FK', tp: '1W+3' },
-  { category: 'Fernkampf', name: 'Wurfdolch', type: 'FK', tp: '1W+1' },
-  { category: 'Fernkampf', name: 'Schleuder', type: 'FK', tp: '1W+1' },
 ];
 
 // Common DSA 4.1 spells grouped by Repräsentation. Probe, kosten, and
