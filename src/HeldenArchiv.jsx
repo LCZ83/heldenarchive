@@ -301,6 +301,18 @@ const WEAPON_TYPES = [
   { category: 'Belagerungswaffen', name: 'Torsionschleudern', type: 'FK', tp: '1W+4' },
   { category: 'Belagerungswaffen', name: 'Drachenmäuler', type: 'FK', tp: '1W+4' },
   { category: 'Belagerungswaffen', name: 'Belagerungs-Armbrust', type: 'FK', tp: '1W+4' },
+  // Fernkampf — Blasrohr
+  { category: 'Blasrohr', name: 'Blasrohr', type: 'FK', tp: '1W+1' },
+  // Fernkampf — Bogen
+  { category: 'Bogen', name: 'Kurzbogen', type: 'FK', tp: '1W+1' },
+  { category: 'Bogen', name: 'Kompositbogen', type: 'FK', tp: '1W+1' },
+  { category: 'Bogen', name: 'Kriegsbogen', type: 'FK', tp: '1W+1' },
+  { category: 'Bogen', name: 'Langbogen', type: 'FK', tp: '1W+1' },
+  { category: 'Bogen', name: 'Elfenbogen', type: 'FK', tp: '1W+1' },
+  { category: 'Bogen', name: 'Orkischer Reiterbogen', type: 'FK', tp: '1W+1' },
+  // Fernkampf — Diskus
+  { category: 'Diskus', name: 'Diskus', type: 'FK', tp: '1W+1' },
+  { category: 'Diskus', name: 'Kampfdiskus', type: 'FK', tp: '1W+1' },
   // Nahkampf — Dolche & Klein
   { category: 'Dolche', name: 'Basiliskenzunge', type: 'NK', tp: '1W+1' },
   { category: 'Dolche', name: 'Borndorn', type: 'NK', tp: '1W+1' },
