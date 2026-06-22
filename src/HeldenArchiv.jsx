@@ -767,24 +767,8 @@ const DEFAULT_TALENT_KATEGORIEN = {
 
 // Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
 const DEFAULT_WEAPON_KATEGORIEN = {
-  // Hiebwaffen
-  'Säbel': 'C', 'Streitkolben': 'C', 'Streithammer': 'D', 'Streitaxt': 'C',
-  'Beil': 'B', 'Knüppel': 'B',
-  // Schwerter
-  'Kurzschwert': 'C', 'Langschwert': 'D', 'Anderthalbhänder': 'D',
-  'Zweihänder': 'E', 'Rapier': 'C', 'Robustes Schwert': 'D',
-  // Stangenwaffen
-  'Speer': 'B', 'Lanze': 'C', 'Hellebarde': 'D', 'Pike': 'C', 'Kampfstab': 'B',
-  // Zweihandwaffen
-  'Zweihandschwert': 'E', 'Zweihandhiebwaffe': 'E', 'Zweihandflegel': 'E',
-  // Dolche
-  'Dolch': 'B', 'Stilett': 'B', 'Wurfmesser': 'B',
-  // Raufen
-  'Faustschlag': 'B', 'Tritt': 'B',
-  // Fernkampf
-  'Kurzbogen': 'C', 'Langbogen': 'C', 'Kompositbogen': 'D',
-  'Leichte Armbrust': 'C', 'Schwere Armbrust': 'D',
-  'Wurfaxt': 'C', 'Wurfspeer': 'C', 'Wurfdolch': 'B', 'Schleuder': 'D',
+  // 
+  'Anderthalbhänder': 'E',
 };
 
 // Pure cost calculators ----------------------------------------------------
