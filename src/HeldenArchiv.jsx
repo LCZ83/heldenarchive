@@ -767,8 +767,14 @@ const DEFAULT_TALENT_KATEGORIEN = {
 
 // Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
 const DEFAULT_WEAPON_KATEGORIEN = {
-  // 
-  'Anderthalbhänder': 'E',
+  // Nahkampf - Anderthalbhänder
+  'Anderthalbhänder': 'E', 'Bastardschwert': 'E', 'Nachtwind': 'E', 'Rondrakamm': 'E', 'Tuzakmesser': 'E',
+  // Fernkampf - Armbrust
+  'Leichte Armbrust': 'C', 'Schwere Armbrust': 'C', 'Balläster': 'C', 'Arbalone': 'C', 'Balestra': 'C', 'Balestrina': 'C', 
+  // Fernkampf - Belagerungswaffen
+  'Ballistische Schleudergeräte': 'D', 'Hornisse': 'D', 'Torsionschleudern': 'D', 'Drachenmäuler': 'D', 'Belagerungs-Armbrust': 'D',
+  // Fernkampf — Blasrohr
+  'Blasrohr': 'D',
 };
 
 // Pure cost calculators ----------------------------------------------------
