@@ -782,6 +782,17 @@ const DEFAULT_WEAPON_KATEGORIEN = {
   // Nahkampf — Dolche & Klein
   'Basiliskenzunge': 'D', 'Borndorn': 'D', 'Dolch': 'D', 'Drachenzahn': 'D', 'Elberfänger': 'D', 'Hakendolch': 'D', 'Jagdmesser': 'D', 
   'Kurzschwert': 'D', 'Langdolch': 'D', 'Linkhand': 'D', 'Mengbilar': 'D', 'Ogerfänger': 'D', 'Schwerer Dolch': 'D', 'Waqquif': 'D', 
+  // Nahkampf - Fechtwaffen
+  'Degen': 'E', 'Florett': 'E', 'Magierdegen': 'E', 'Rapier': 'E', 'Stockdegen': 'E', 'Wolfsmesser': 'E', 
+  // Nahkampf - Hiebwaffen
+  'Brabakbengel': 'D', 'Byakka': 'D', 'Gruufhai': 'D', 'Keule': 'D', 'Lindwurmschläger': 'D', 'Molokdeschnaja': 'D', 'Orknase': 'D',
+  'Rabenschnabel': 'D', 'Schmiedehammer': 'D', 'Schneidzahn': 'D', 'Skraja': 'D', 'Sonnenszepter': 'D', 'Streitaxt': 'D',
+  'Streitkolben': 'D', 'Zwergenskraja': 'D', 
+  // Nahkampf - Infanteriewaffen
+  'Glefe': 'D', 'Hakenspiess': 'D', 'Hellebarde': 'D', 'Langaxt': 'D', 'Pailos': 'D', 'Partisane': 'D', 'Schnitter': 'D', 
+  'Sturmsense': 'D', 'Wurmspiess': 'D', 
+  // Nahkampf - Kettenstäbe
+  'Kettenstab': 'E', 
 };
 
 // Pure cost calculators ----------------------------------------------------
