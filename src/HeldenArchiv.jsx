@@ -320,7 +320,7 @@ const WEAPON_TYPES = [
   { category: 'Dolche', name: 'Drachenzahn', type: 'NK', tp: '1W+2' },
   { category: 'Dolche', name: 'Elberfänger', type: 'NK', tp: '1W+2' },
   { category: 'Dolche', name: 'Hakendolch', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Jadgmesser', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche', name: 'Jagdmesser', type: 'NK', tp: '1W+2' },
   { category: 'Dolche', name: 'Kurzschwert', type: 'NK', tp: '1W+2' },
   { category: 'Dolche', name: 'Langdolch', type: 'NK', tp: '1W+1' },
   { category: 'Dolche', name: 'Linkhand', type: 'NK', tp: '1W+1' },
@@ -775,6 +775,13 @@ const DEFAULT_WEAPON_KATEGORIEN = {
   'Ballistische Schleudergeräte': 'D', 'Hornisse': 'D', 'Torsionschleudern': 'D', 'Drachenmäuler': 'D', 'Belagerungs-Armbrust': 'D',
   // Fernkampf — Blasrohr
   'Blasrohr': 'D',
+  // Fernkampf — Bogen
+  'Kurzbogen': 'E', 'Kompositbogen': 'E', 'Kriegsbogen': 'E', 'Langbogen': 'E', 'Elfenbogen': 'E', 'Orkischer Reiterbogen': 'E',
+  // Fernkampf — Diskus
+  'Diskus': 'D', 'Kampfdiskus': 'D', 
+  // Nahkampf — Dolche & Klein
+  'Basiliskenzunge': 'D', 'Borndorn': 'D', 'Dolch': 'D', 'Drachenzahn': 'D', 'Elberfänger': 'D', 'Hakendolch': 'D', 'Jagdmesser': 'D', 
+  'Kurzschwert': 'D', 'Langdolch': 'D', 'Linkhand': 'D', 'Mengbilar': 'D', 'Ogerfänger': 'D', 'Schwerer Dolch': 'D', 'Waqquif': 'D', 
 };
 
 // Pure cost calculators ----------------------------------------------------
