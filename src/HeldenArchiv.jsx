@@ -793,6 +793,24 @@ const DEFAULT_WEAPON_KATEGORIEN = {
   'Sturmsense': 'D', 'Wurmspiess': 'D', 
   // Nahkampf - Kettenstäbe
   'Kettenstab': 'E', 
+  // Nahkampf - Kettenwaffen
+  'Morgenstern': 'D', 'Ochsenherde': 'D', 'Ogerschelle': 'D', 'Neunschwänzige': 'D', 'Geissel': 'D', 
+  // Nahkampf — Lanzenreiten
+  'Dschadra': 'D', 'Kriegslanze': 'D', 'Turnierlanze': 'D', 
+  // Nahkampf — Peitschen
+  'Peitsche': 'E', 
+  // Nahkampf — Raufen / waffenlos
+  'Raufen': 'C', 
+  // Nahkampf — Ringen / waffenlos
+  'Ringen': 'D', 
+  // Nahkampf — Säbel
+  'Amazonensäbel': 'D', 'Arbach': 'D', 'Entermesser': 'D', 'Haumesser': 'D', 'Khunchomer': 'D', 'Kurzschwert': 'D', 'Robbentöter': 'D', 
+  'Säbel': 'D', 'Sklaventod': 'D', 'Waqqif': 'D', 
+   // Fernkampf - Schleuder
+  'Schleuder': 'E', 'Fledermaus': 'E', 'Lasso': 'E', 'Leichtes Wurfnetz': 'E', 'Schweres Wurfnetz': 'E', 'Wurfhaken': 'E', 
+  // Nahkampf — Schwerter
+  'Amazonensäbel': 'E', 'Barbarenschwert': 'E', 'Bastardschwert': 'E', 'Breitschwert': 'E', 'Kurzschwert': 'E', 'Kusliker Säbel': 'E', 
+  'Langschwert': 'E', 'Nachtwind': 'E', 'Rapier': 'E', 'Robbentöter': 'E', 'Säbel': 'E', 'Turnierschwert': 'E', 
 };
 
 // Pure cost calculators ----------------------------------------------------
