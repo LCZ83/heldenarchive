@@ -811,6 +811,11 @@ const DEFAULT_WEAPON_KATEGORIEN = {
   // Nahkampf — Schwerter
   'Amazonensäbel': 'E', 'Barbarenschwert': 'E', 'Bastardschwert': 'E', 'Breitschwert': 'E', 'Kurzschwert': 'E', 'Kusliker Säbel': 'E', 
   'Langschwert': 'E', 'Nachtwind': 'E', 'Rapier': 'E', 'Robbentöter': 'E', 'Säbel': 'E', 'Turnierschwert': 'E', 
+  // Nahkampf — Speere
+  'Dreizack': 'D', 'Dschadra': 'D', 'Efferdbart': 'D', 'Holzspeer': 'D', 'Speer': 'D', 'Drachentöter': 'D', 'Jagdspiess': 'D',  'Partisane': 'D', 
+  'Pike': 'D', 'Stossspeer': 'D', 'Wurmspiess': 'D', 
+  // Nahkampf — Stäbe
+  'Kampfstab': 'D', 'Magierstab': 'D', 'Zweililien': 'D', 
 };
 
 // Pure cost calculators ----------------------------------------------------
