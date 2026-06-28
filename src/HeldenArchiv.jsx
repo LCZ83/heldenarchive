@@ -215,7 +215,8 @@ const DEFAULT_TALENTS = [
   ['Gesellschaft', 'Lehren', 'KL/IN/CH'],
   ['Gesellschaft', 'Menschenkenntnis', 'KL/IN/CH'],
   ['Gesellschaft', 'Schauspielerei', 'MU/KL/CH'],
-  ['Gesellschaft', 'Schriftl. Ausdruck', 'KL/IN/IN'],
+  ['Gesellschaft', 'Schriftl. Ausdruck', 'MU/CH/GE'],
+  ['Gesellschaft', 'Sich Verkleiden', 'KL/IN/IN'],
   ['Gesellschaft', 'Überreden', 'MU/IN/CH'],
   ['Gesellschaft', 'Überzeugen', 'KL/IN/CH'],
   ['Natur', 'Fährtensuchen', 'KL/IN/KO'],
@@ -737,17 +738,15 @@ const SF_TYPES = [
 // Steigerungskategorien (cost categories) A–H. Each increase of a talent or
 // spell costs (factor × newValue) AP, with extra cost when raising past the
 // associated Eigenschaft (Leiteigenschaft).
-const STEIGERUNGS_FAKTOR = { A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8 };
+const STEIGERUNGS_FAKTOR = { A: 1, B: 2, C: 3, D: 4, E: 5, F: 8, G: 10, H: 20 };
 
 // Default Steigerungskategorie per talent name. Picked from typical DSA 4.1
 // values; users can adjust per character later via the UI we'll add.
 const DEFAULT_TALENT_KATEGORIEN = {
   // Körperliche Talente
-  'Athletik': 'B', 'Akrobatik': 'D', 'Klettern': 'C',
-  'Körperbeherrschung': 'D', 'Reiten': 'B', 'Schleichen': 'C',
-  'Schwimmen': 'B', 'Selbstbeherrschung': 'D', 'Singen': 'B',
-  'Sinnesschärfe': 'C', 'Tanzen': 'A', 'Taschendiebstahl': 'D',
-  'Verbergen': 'B', 'Zechen': 'A',
+  'Akrobatik': 'D', 'Athletic': 'D', 'Fliegen': 'D', 'Gaukeleien': 'D', 'Klettern': 'D', 'Körperbeherrschung': 'D', 'Reiten': 'D',
+  'Schleichen': 'D', 'Schwimmen': 'D', 'Selbstbeherrschung': 'D', 'Sich Verstecken': 'D', 'Singen': 'D', 'Sinnesschärfe': 'D', 
+  'Skifahren': 'D', 'Stimmen Imitieren': 'D', 'Tanzen': 'D', 'Taschendiebstahl': 'D', 'Zechen': 'D', 
   // Gesellschaftliche Talente
   'Bekehren & Überzeugen': 'C', 'Betören': 'C', 'Etikette': 'B',
   'Gassenwissen': 'B', 'Lehren': 'C', 'Menschenkenntnis': 'C',
