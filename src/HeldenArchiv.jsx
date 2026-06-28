@@ -275,7 +275,7 @@ const DEFAULT_TALENTS = [
   ['Handwerk', 'Stoffe Färben', 'KL/FF/KK'],
   ['Handwerk', 'Tätowieren', 'IN/FF/FF'],
   ['Handwerk', 'Töpfern', 'KL/FF/FF'],
-  ['Webkunst', 'FF/FF/KK', 'KL/FF/FF'],
+  ['Handwerk', 'Webkunst', 'FF/FF/KK'],
 ];
 
 const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sprache', 'Handwerk', 'Eigene'];
@@ -759,8 +759,13 @@ const DEFAULT_TALENT_KATEGORIEN = {
   'Heraldik': 'B', 'Hüttenkunde': 'B', 'Kriegskunst': 'B', 'Kryptographie': 'B', 'Magiekunde': 'B', 'Mechanik': 'B', 'Pflanzenkunde': 'B', 
   'Philosophie': 'B', 'Rechnen': 'B', 'Rechtskunde': 'B', 'Sagen & Legenden': 'B', 'Schätzen': 'B', 'Schiffbau': 'B', 'Sprachenkunde': 'B',
   'Staatskunst': 'B', 'Sternkunde': 'B', 'Tierkunde': 'B', 
-  // Sprachen — usually category A (factor 1) under SKT
-  'Garethi (Muttersprache)': 'A',
+  // Sprachen 
+  'Lesen/Schreiben': 'A', 'Sprachen [Muttersprache]': 'A', 'Sprachen [Fremdsprache]': 'A', 
+  // Handwerkstalente 
+  'Abrichten': 'B', 'Boote Fahren': 'B', 'Eissegler Fahren': 'B', 'Fahrzeug Lenken': 'B', 'Falschspiel': 'B', 'Feuersteinbearbeitung': 'B', 
+  'Grobschmied': 'B', 'Heilkunde Gift': 'B', 'Heilkunde Krankheiten': 'B', 'Heilkunde Wunden': 'B', 'Holzbearbeitung': 'B', 
+  'Hundeschlitten Fahren': 'B', 'Kartographie': 'B', 'Kochen': 'B', 'Lederarbeiten': 'B', 'Malen/Zeichnen': 'B', 'Musizieren': 'B', 
+  'Schlösser Knacken': 'B', 'Schneidern': 'B', 'Stoffe Färben': 'B', 'Tätowieren': 'B', 'Töpfern': 'B', 'Webkunst': 'B',
 };
 
 // Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
