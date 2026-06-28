@@ -232,6 +232,7 @@ const DEFAULT_TALENTS = [
   ['Wissen', 'Brettspiel', 'KL/KL/IN'],
   ['Wissen', 'Geographie', 'KL/KL/IN'],
   ['Wissen', 'Geschichtswissen', 'KL/KL/IN'],
+  ['Wissen', 'Gesteinskunde', 'KL/IN/FF'],
   ['Wissen', 'Götter & Kulte', 'KL/KL/IN'],
   ['Wissen', 'Heraldik', 'KL/KL/FF'],
   ['Wissen', 'Hüttenkunde', 'KL/IN/KO'],
@@ -748,18 +749,16 @@ const DEFAULT_TALENT_KATEGORIEN = {
   'Schleichen': 'D', 'Schwimmen': 'D', 'Selbstbeherrschung': 'D', 'Sich Verstecken': 'D', 'Singen': 'D', 'Sinnesschärfe': 'D', 
   'Skifahren': 'D', 'Stimmen Imitieren': 'D', 'Tanzen': 'D', 'Taschendiebstahl': 'D', 'Zechen': 'D', 
   // Gesellschaftliche Talente
-  'Bekehren & Überzeugen': 'C', 'Betören': 'C', 'Etikette': 'B',
-  'Gassenwissen': 'B', 'Lehren': 'C', 'Menschenkenntnis': 'C',
-  'Überreden': 'B',
+  'Betören': 'B', 'Etikette': 'B', 'Galanterie': 'B', 'Gassenwissen': 'B', 'Lehren': 'B', 'Menschenkenntnis': 'B', 'Schauspielerei': 'B',
+  'Schriftl. Ausdruck': 'B', 'Sich Verkleiden': 'B', 'Überreden': 'B', 'Überzeugen': 'B', 
   // Natur-Talente
-  'Fährtensuchen': 'C', 'Fesseln': 'A', 'Fischen & Angeln': 'A',
-  'Orientierung': 'C', 'Pflanzenkunde': 'C', 'Tierkunde': 'C',
-  'Wettervorhersage': 'C', 'Wildnisleben': 'B',
+  'Fährtensuchen': 'B', 'Fallenstellen': 'B', 'Fesseln': 'B', 'Fischen & Angeln': 'B', 'Orientierung': 'B', 'Seefischerei': 'B', 
+  'Wettervorhersage': 'B', 'Wildnisleben': 'B',
   // Wissenstalente
-  'Alchimie': 'C', 'Geographie': 'B', 'Geschichtswissen': 'B',
-  'Götter & Kulte': 'C', 'Kriegskunst': 'C', 'Magiekunde': 'C',
-  'Mechanik': 'C', 'Rechnen': 'B', 'Rechtskunde': 'B',
-  'Sagen & Legenden': 'B', 'Sternkunde': 'B',
+  'Anatomie': 'B', 'Baukunst': 'B', 'Brettspiel': 'B', 'Geographie': 'B', 'Geschichtswissen': 'B', 'Gesteinskunde': 'B', 'Götter & Kulte': 'B',
+  'Heraldik': 'B', 'Hüttenkunde': 'B', 'Kriegskunst': 'B', 'Kryptographie': 'B', 'Magiekunde': 'B', 'Mechanik': 'B', 'Pflanzenkunde': 'B', 
+  'Philosophie': 'B', 'Rechnen': 'B', 'Rechtskunde': 'B', 'Sagen & Legenden': 'B', 'Schätzen': 'B', 'Schiffbau': 'B', 'Sprachenkunde': 'B',
+  'Staatskunst': 'B', 'Sternkunde': 'B', 'Tierkunde': 'B', 
   // Sprachen — usually category A (factor 1) under SKT
   'Garethi (Muttersprache)': 'A',
 };
