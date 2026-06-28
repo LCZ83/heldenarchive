@@ -816,6 +816,20 @@ const DEFAULT_WEAPON_KATEGORIEN = {
   'Pike': 'D', 'Stossspeer': 'D', 'Wurmspiess': 'D', 
   // Nahkampf — Stäbe
   'Kampfstab': 'D', 'Magierstab': 'D', 'Zweililien': 'D', 
+  // Fernkampf - Wurfbeile
+  'Wurfbeil': 'D', 'Schneidzahn': 'D', 'Wurfkeule': 'D', 
+  // Fernkampf - Wurfmesser
+  'Borndorn': 'C', 'Wurfmesser': 'C', 'Wurfdolch': 'C', 'Wurfpfeil': 'C', 'Wurfstern': 'C', 'Wurfscheibe': 'C', 'Wurfring': 'C', 
+  // Fernkampf - Wurfspeere
+  'Efferdbart': 'C', 'Granatapfel': 'C', 'Holzspeer': 'C', 'Speer': 'C', 'Speerschleuder': 'C', 'Stabschleuder': 'C', 'Wurfspeer': 'C', 
+  // Nahkampf — Zweihandflegel
+  'Kriegsflegel': 'D', 
+  // Nahkampf — Zweihand-Hiebwaffen
+  'Barbarenstreitaxt': 'D', 'Echsische Axt': 'D', 'Felsspalter': 'D', 'Gruufhai': 'D', 'Kriegshammer': 'D', 'Langaxt': 'D', 'Orknase': 'D',
+  'Pailos': 'D', 'Warunker Hammer': 'D', 'Zwergenschlägel': 'D',
+  // Nahkampf — Zweihandschwerter
+  'Andergaster': 'E', 'Anderthalbhänder': 'E', 'Boronssichel': 'E', 'Doppelkhunchomer': 'E', 'Grosser Sklaventod': 'E', 'Rondrakamm': 'E',
+  'Tuzakmesser': 'E', 'Zweihänder': 'E', 
 };
 
 // Pure cost calculators ----------------------------------------------------
