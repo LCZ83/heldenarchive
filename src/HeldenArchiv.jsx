@@ -595,30 +595,20 @@ function liturgyKategorie(liturgy) {
 // (typical core values). `leveled: true` marks advantages bought in steps,
 // where the listed GP is the per-step cost. Users can override GP per entry.
 const VORTEIL_TYPES = [
-  // Allgemein
-  { kategorie: 'Allgemein', name: 'Ausdauernd', gp: '1', leveled: true},
-  { kategorie: 'Allgemein', name: 'Balance', gp: '10' },
-  { kategorie: 'Allgemein', name: 'Beidhändig', gp: '12' },
-  { kategorie: 'Allgemein', name: 'Eisern', gp: '10' },
-  { kategorie: 'Allgemein', name: 'Flink', gp: '9', leveled: true },
-  { kategorie: 'Allgemein', name: 'Gutaussehend', gp: '5', leveled: true },
-  { kategorie: 'Allgemein', name: 'Herausragende Eigenschaft', gp: '10', leveled: true },
-  { kategorie: 'Allgemein', name: 'Immunität gegen Gift', gp: '15' },
-  { kategorie: 'Allgemein', name: 'Innerer Kompass', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Nachtsicht', gp: '10' },
-  { kategorie: 'Allgemein', name: 'Resistenz gegen Gift', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Richtungssinn', gp: '3' },
-  { kategorie: 'Allgemein', name: 'Tierfreund', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Verwöhnter Magen', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Zäher Hund', gp: '10' },
-  { kategorie: 'Allgemein', name: 'Zeitgefühl', gp: '3' },
+  // Körperlich  
+  { kategorie: 'Körperlich', name: 'Ausdauernd', gp: '1', leveled: true},
+  { kategorie: 'Körperlich', name: 'Balance', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Beidhändig', gp: '12' },
+  { kategorie: 'Körperlich', name: 'Dämmerungssicht', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Eisern', gp: '7' },
+  { kategorie: 'Körperlich', name: 'Entfernungssinn', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Gefahreninstinkt', gp: '15' },
+  { kategorie: 'Körperlich', name: 'Glück', gp: '20' },
+  { kategorie: 'Körperlich', name: 'Gutaussehend', gp: '5' },
+  { kategorie: 'Körperlich', name: 'Herausragende Balance', gp: '20' },
   // Kampf
   { kategorie: 'Kampf', name: 'Akademische Ausbildung (Krieger)', gp: '20' },
   { kategorie: 'Kampf', name: 'Beidhändig', gp: '20' },
-  { kategorie: 'Kampf', name: 'Kampfreflexe', gp: '10', leveled: true },
-  { kategorie: 'Kampf', name: 'Kampfgespür', gp: '15' },
-  { kategorie: 'Kampf', name: 'Verbessertes Ausweichen', gp: '15' },
-  { kategorie: 'Kampf', name: 'Wuchtschlag (Begabung)', gp: '6' },
   // Magisch
   { kategorie: 'Magisch', name: 'Astrale Regeneration', gp: '10', leveled: true },
   { kategorie: 'Magisch', name: 'Eidetisches Gedächtnis', gp: '10' },
@@ -634,10 +624,14 @@ const VORTEIL_TYPES = [
   { kategorie: 'Sozial', name: 'Adliges Erbe', gp: '10' },
   { kategorie: 'Sozial', name: 'Ausrüstungsvorteil', gp: '1', leveled: true },
   { kategorie: 'Sozial', name: 'Besonderer Besitz', gp: '7' },
-  { kategorie: 'Sozial', name: 'Verbindungen', gp: '5' },
-  { kategorie: 'Sozial', name: 'Zugvögel', gp: '5' },
+  { kategorie: 'Sozial', name: 'Feenfreund', gp: '7' },
+  { kategorie: 'Sozial', name: 'Glück im Spiel', gp: '7' },
   // Wissen & Fähigkeiten
   { kategorie: 'Wissen & Fähigkeiten', name: 'Akademische Ausbildung (Gelehrter)', gp: '10' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Breigefächerte Bildung', gp: '15' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Eidetisches Gedächnis', gp: '35' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Gebildet', gp: '1', leveled: true },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Gutes Gedächnis', gp: '7' },
 ];
 
 // Common DSA 4.1 Nachteile grouped by category. gp = the GP the disadvantage
