@@ -596,9 +596,9 @@ function liturgyKategorie(liturgy) {
 // where the listed GP is the per-step cost. Users can override GP per entry.
 const VORTEIL_TYPES = [
   // Allgemein
-  { kategorie: 'Allgemein', name: 'Ausdauernd', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Balance', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Dunkelsicht', gp: '10' },
+  { kategorie: 'Allgemein', name: 'Ausdauernd', gp: '1', leveled: true},
+  { kategorie: 'Allgemein', name: 'Balance', gp: '10' },
+  { kategorie: 'Allgemein', name: 'Beidhändig', gp: '12' },
   { kategorie: 'Allgemein', name: 'Eisern', gp: '10' },
   { kategorie: 'Allgemein', name: 'Flink', gp: '9', leveled: true },
   { kategorie: 'Allgemein', name: 'Gutaussehend', gp: '5', leveled: true },
@@ -613,7 +613,7 @@ const VORTEIL_TYPES = [
   { kategorie: 'Allgemein', name: 'Zäher Hund', gp: '10' },
   { kategorie: 'Allgemein', name: 'Zeitgefühl', gp: '3' },
   // Kampf
-  { kategorie: 'Kampf', name: 'Aufmerksamkeit', gp: '5' },
+  { kategorie: 'Kampf', name: 'Akademische Ausbildung (Krieger)', gp: '20' },
   { kategorie: 'Kampf', name: 'Beidhändig', gp: '20' },
   { kategorie: 'Kampf', name: 'Kampfreflexe', gp: '10', leveled: true },
   { kategorie: 'Kampf', name: 'Kampfgespür', gp: '15' },
@@ -630,12 +630,14 @@ const VORTEIL_TYPES = [
   { kategorie: 'Karmal', name: 'Hohe Karmalqualität', gp: '12', leveled: true },
   { kategorie: 'Karmal', name: 'Karmalqualität', gp: '8' },
   // Sozial
-  { kategorie: 'Sozial', name: 'Adlig', gp: '8' },
-  { kategorie: 'Sozial', name: 'Eiserner Wille', gp: '10', leveled: true },
-  { kategorie: 'Sozial', name: 'Gönner', gp: '5' },
-  { kategorie: 'Sozial', name: 'Soziale Anpassungsfähigkeit', gp: '5' },
+  { kategorie: 'Sozial', name: 'Adlige Abstammung', gp: '7' },
+  { kategorie: 'Sozial', name: 'Adliges Erbe', gp: '10' },
+  { kategorie: 'Sozial', name: 'Ausrüstungsvorteil', gp: '1', leveled: true },
+  { kategorie: 'Sozial', name: 'Besonderer Besitz', gp: '7' },
   { kategorie: 'Sozial', name: 'Verbindungen', gp: '5' },
   { kategorie: 'Sozial', name: 'Zugvögel', gp: '5' },
+  // Wissen & Fähigkeiten
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Akademische Ausbildung (Gelehrter)', gp: '10' },
 ];
 
 // Common DSA 4.1 Nachteile grouped by category. gp = the GP the disadvantage
