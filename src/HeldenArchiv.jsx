@@ -276,7 +276,7 @@ const DEFAULT_TALENTS = [
   ['Handwerk', 'Tätowieren', 'IN/FF/FF'],
   ['Handwerk', 'Töpfern', 'KL/FF/FF'],
   ['Handwerk', 'Webkunst', 'FF/FF/KK'],
-  ['Kampf', 'Anderthalbhaender', 'NK'],
+  ['Kampf', 'Anderthalbhänder', 'NK'],
   ['Kampf', 'Armbrust', 'FK'],
   ['Kampf', 'Belagerungswaffen', 'FK'],
   ['Kampf', 'Blasrohr', 'FK'],
@@ -800,8 +800,11 @@ const DEFAULT_TALENT_KATEGORIEN = {
   'Hundeschlitten Fahren': 'B', 'Kartographie': 'B', 'Kochen': 'B', 'Lederarbeiten': 'B', 'Malen/Zeichnen': 'B', 'Musizieren': 'B', 
   'Schlösser Knacken': 'B', 'Schneidern': 'B', 'Stoffe Färben': 'B', 'Tätowieren': 'B', 'Töpfern': 'B', 'Webkunst': 'B',
   // Kampf
-  'Anderthalbhänder': 'E', 
-};
+  'Anderthalbhänder': 'E', 'Armbrust': 'C', 'Belagerungswaffen': 'D', 'Blasrohr': 'D', 'Bogen': 'E', 'Diskus': 'D', 'Dolche & Kleinwaffen': 'D',
+  'Fechtwaffen': 'E', 'Hiebwaffen': 'D', 'Infanteriewaffen': 'D', 'Kettenstäbe': 'E', 'Kettenwaffen': 'D', 'Lanzenreiten': 'D', 'Peitschen': 'E',
+  'Raufen': 'C', 'Ringen': 'D', 'Säbel': 'D', 'Schleuder': 'E', 'Schwerter': 'E', 'Speere': 'D', 'Stäbe': 'D', 'Wurfbeile': 'D', 
+  'Wurfmesser': 'C', 'Wurfspeere': 'C', 'Zweihandflegel': 'D', 'Zweihand-Hiebwaffen': 'D', 'Zweihandschwerter': 'E',
+  };
 
 // Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
 const DEFAULT_WEAPON_KATEGORIEN = {
