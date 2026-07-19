@@ -276,9 +276,11 @@ const DEFAULT_TALENTS = [
   ['Handwerk', 'Tätowieren', 'IN/FF/FF'],
   ['Handwerk', 'Töpfern', 'KL/FF/FF'],
   ['Handwerk', 'Webkunst', 'FF/FF/KK'],
+  ['Kampf', 'Anderthalbhaender', 'NK'],
+  ['Kampf', 'Armbrust', 'FK'],
 ];
 
-const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sprache', 'Handwerk', 'Eigene'];
+const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sprache', 'Handwerk', 'Eigene', 'Kampf'];
 
 // Common DSA 4.1 weapon types grouped by combat skill. TP values are typical
 // core-rulebook defaults; players can override per-weapon after picking from the list.
