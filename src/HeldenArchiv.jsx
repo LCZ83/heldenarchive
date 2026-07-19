@@ -278,6 +278,31 @@ const DEFAULT_TALENTS = [
   ['Handwerk', 'Webkunst', 'FF/FF/KK'],
   ['Kampf', 'Anderthalbhaender', 'NK'],
   ['Kampf', 'Armbrust', 'FK'],
+  ['Kampf', 'Belagerungswaffen', 'FK'],
+  ['Kampf', 'Blasrohr', 'FK'],
+  ['Kampf', 'Bogen', 'FK'],
+  ['Kampf', 'Diskus', 'FK'],
+  ['Kampf', 'Dolche & Kleinwaffen', 'NK'],
+  ['Kampf', 'Fechtwaffen', 'NK'],
+  ['Kampf', 'Hiebwaffen', 'NK'],
+  ['Kampf', 'Infanteriewaffen', 'NK'],
+  ['Kampf', 'Kettenstäbe', 'NK'],
+  ['Kampf', 'Kettenwaffen', 'NK'],
+  ['Kampf', 'Lanzenreiten', 'NK'],
+  ['Kampf', 'Peitschen', 'NK'],
+  ['Kampf', 'Raufen', 'NK'],
+  ['Kampf', 'Ringen', 'NK'],
+  ['Kampf', 'Säbel', 'NK'],
+  ['Kampf', 'Schleuder', 'FK'],
+  ['Kampf', 'Schwerter', 'NK'],
+  ['Kampf', 'Speere', 'FK'],
+  ['Kampf', 'Stäbe', 'NK'],
+  ['Kampf', 'Wurfbeile', 'FK'],
+  ['Kampf', 'Wurfmesser', 'FK'],
+  ['Kampf', 'Wurfspeere', 'FK'],
+  ['Kampf', 'Zweihandflegel', 'NK'],
+  ['Kampf', 'Zweihand-Hiebwaffen', 'NK'],
+  ['Kampf', 'Zweihandschwerter', 'NK'],
 ];
 
 const TALENT_CATEGORIES = ['Körperlich', 'Gesellschaft', 'Natur', 'Wissen', 'Sprache', 'Handwerk', 'Eigene', 'Kampf'];
@@ -774,6 +799,8 @@ const DEFAULT_TALENT_KATEGORIEN = {
   'Grobschmied': 'B', 'Heilkunde Gift': 'B', 'Heilkunde Krankheiten': 'B', 'Heilkunde Wunden': 'B', 'Holzbearbeitung': 'B', 
   'Hundeschlitten Fahren': 'B', 'Kartographie': 'B', 'Kochen': 'B', 'Lederarbeiten': 'B', 'Malen/Zeichnen': 'B', 'Musizieren': 'B', 
   'Schlösser Knacken': 'B', 'Schneidern': 'B', 'Stoffe Färben': 'B', 'Tätowieren': 'B', 'Töpfern': 'B', 'Webkunst': 'B',
+  // Kampf
+  'Anderthalbhänder': 'E', 
 };
 
 // Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
