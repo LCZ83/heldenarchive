@@ -687,46 +687,31 @@ const VORTEIL_TYPES = [
 // Common DSA 4.1 Nachteile grouped by category. gp = the GP the disadvantage
 // is worth (returned at creation; in Steigern mode taking one refunds AP at 1:1).
 const NACHTEIL_TYPES = [
-  // Allgemein
-  { kategorie: 'Allgemein', name: 'Behäbig', gp: '6', leveled: true },
-  { kategorie: 'Allgemein', name: 'Blutrausch', gp: '7' },
-  { kategorie: 'Allgemein', name: 'Eingeschränkter Sinn', gp: '3' },
-  { kategorie: 'Allgemein', name: 'Farbenblind', gp: '2' },
-  { kategorie: 'Allgemein', name: 'Glasknochen', gp: '20' },
-  { kategorie: 'Allgemein', name: 'Kleinwüchsig', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Krankheitsanfällig', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Kurzatmig', gp: '8' },
-  { kategorie: 'Allgemein', name: 'Lahm', gp: '9', leveled: true },
-  { kategorie: 'Allgemein', name: 'Schlechte Eigenschaft', gp: '5', leveled: true },
-  { kategorie: 'Allgemein', name: 'Schwache Ausstrahlung', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Unfähig für Talent', gp: '5' },
-  { kategorie: 'Allgemein', name: 'Unstet', gp: '5' },
+  // Körperlich 
+  { kategorie: 'Körperlich ', name: 'Albino', gp: '7' },
+  { kategorie: 'Körperlich ', name: 'Einarmig', gp: '15' },
+  { kategorie: 'Körperlich ', name: 'Einäugig', gp: '5' },
+  { kategorie: 'Körperlich ', name: 'Einbeinig', gp: '20' },
+  { kategorie: 'Körperlich ', name: 'Eingeschränkter Sinn', gp: '5' },
+  { kategorie: 'Körperlich ', name: 'Einhändig', gp: '10' },
+  { kategorie: 'Körperlich ', name: 'Farbenblind', gp: '5' },
+  { kategorie: 'Körperlich ', name: 'Fettleibig', gp: '15' },
+  { kategorie: 'Körperlich ', name: 'Glasknochen', gp: '7' },
   // Kampf
-  { kategorie: 'Kampf', name: 'Blutige Anfänger', gp: '10' },
-  { kategorie: 'Kampf', name: 'Friedfertig', gp: '7' },
-  { kategorie: 'Kampf', name: 'Kampfunfähigkeit', gp: '8' },
+  { kategorie: 'Kampf', name: 'Blutrausch', gp: '15' },
   // Schlechte Angewohnheiten / Schwächen
-  { kategorie: 'Schwächen', name: 'Arroganz', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Aberglaube', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Goldgier', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Jähzorn', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Neugier', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Vorurteile', gp: '5', leveled: true },
-  { kategorie: 'Schwächen', name: 'Weltfremd', gp: '5' },
+  { kategorie: 'Schwächen', name: 'Aberglaube', gp: '1', leveled: true },
+  { kategorie: 'Schwächen', name: 'Arroganz', gp: '1', leveled: true },
+  { kategorie: 'Schwächen', name: 'Einbildungen', gp: '5' },
+  { kategorie: 'Schwächen', name: 'Eitelkeit', gp: '1', leveled: true },
+  { kategorie: 'Schwächen', name: 'Goldgier', gp: '1', leveled: true },
   // Ängste (Phobien)
-  { kategorie: 'Ängste', name: 'Höhenangst', gp: '5', leveled: true },
-  { kategorie: 'Ängste', name: 'Platzangst', gp: '5', leveled: true },
-  { kategorie: 'Ängste', name: 'Angst vor Tieren', gp: '5', leveled: true },
-  { kategorie: 'Ängste', name: 'Angst vor der Dunkelheit', gp: '5', leveled: true },
+  { kategorie: 'Ängste', name: 'Dunkelangst', gp: '2', leveled: true },
+  { kategorie: 'Ängste', name: 'Höhenangst', gp: '3', leveled: true },
   // Magisch
   { kategorie: 'Magisch', name: 'Astraler Block', gp: '12' },
-  { kategorie: 'Magisch', name: 'Niedrige Magieresistenz', gp: '12', leveled: true },
-  { kategorie: 'Magisch', name: 'Maraskanische Veranlagung', gp: '4' },
   // Sozial
-  { kategorie: 'Sozial', name: 'Übler Ruf', gp: '5', leveled: true },
-  { kategorie: 'Sozial', name: 'Verpflichtungen', gp: '5', leveled: true },
-  { kategorie: 'Sozial', name: 'Wenig Geld', gp: '5', leveled: true },
-  { kategorie: 'Sozial', name: 'Prinzipientreue', gp: '4' },
+  { kategorie: 'Sozial', name: 'Gesucht', gp: '5', leveled: true },
 ];
 
 // Common DSA 4.1 Sonderfertigkeiten grouped by category. ap = the fixed AP
