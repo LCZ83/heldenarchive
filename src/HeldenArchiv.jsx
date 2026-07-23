@@ -638,21 +638,27 @@ const VORTEIL_TYPES = [
   { kategorie: 'Körperlich', name: 'Herausragendes Aussehen', gp: '12' },  
   { kategorie: 'Körperlich', name: 'Hitzeresistenz', gp: '5' },  
   { kategorie: 'Körperlich', name: 'Hohe Lebenskraft', gp: '3', leveled: true }, 
-  { kategorie: 'Körperlich', name: 'Immunität gegen Gift', gp: '10'},
-  { kategorie: 'Körperlich', name: 'Innerer Kompass', gp: '7'},
-  { kategorie: 'Körperlich', name: 'Kälteresistenz', gp: '5'},
-  { kategorie: 'Körperlich', name: 'Linkshänder', gp: '5'},
-  { kategorie: 'Körperlich', name: 'Nachtsicht', gp: '5'},
-  { kategorie: 'Körperlich', name: 'Natürlicher Rüstungschutz', gp: '10', levled: true},
+  { kategorie: 'Körperlich', name: 'Immunität gegen Gift', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Innerer Kompass', gp: '7' },
+  { kategorie: 'Körperlich', name: 'Kälteresistenz', gp: '5' },
+  { kategorie: 'Körperlich', name: 'Linkshänder', gp: '5' },
+  { kategorie: 'Körperlich', name: 'Nachtsicht', gp: '5' },
+  { kategorie: 'Körperlich', name: 'Natürlicher Rüstungschutz', gp: '10', levled: true },
+  { kategorie: 'Körperlich', name: 'Resistenz gegen Gift', gp: '7' },
+  { kategorie: 'Körperlich', name: 'Resistenz gegen Krankheiten', gp: '7' },
+  { kategorie: 'Körperlich', name: 'Richtungssinn', gp: '3' },
+  { kategorie: 'Körperlich', name: 'Schlangenmensch', gp: '25' },
+  { kategorie: 'Körperlich', name: 'Schnelle Heilung', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Wohlklang', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Zäher Hund', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Zwergnase', gp: '12' },
   // Kampf
   { kategorie: 'Kampf', name: 'Akademische Ausbildung (Krieger)', gp: '20' },
   { kategorie: 'Kampf', name: 'Beidhändig', gp: '20' },
   { kategorie: 'Kampf', name: 'Kampfrausch', gp: '15' },
   // Magisch
   { kategorie: 'Magisch', name: 'Hohe Magieresistenz', gp: '3', leveled: true },
-  // Karmal
-  { kategorie: 'Karmal', name: 'Hohe Karmalqualität', gp: '12', leveled: true },
-  { kategorie: 'Karmal', name: 'Karmalqualität', gp: '8' },
+  { kategorie: 'Magisch', name: 'Schwer zu verzaubern', gp: '7' },
   // Sozial
   { kategorie: 'Sozial', name: 'Adlige Abstammung', gp: '7' },
   { kategorie: 'Sozial', name: 'Adliges Erbe', gp: '10' },
@@ -661,6 +667,9 @@ const VORTEIL_TYPES = [
   { kategorie: 'Sozial', name: 'Feenfreund', gp: '7' },
   { kategorie: 'Sozial', name: 'Glück im Spiel', gp: '7' },
   { kategorie: 'Sozial', name: 'Koboldfreund', gp: '15' },
+  { kategorie: 'Sozial', name: 'Soziale Anpassungsfähigkeit', gp: '7' },
+  { kategorie: 'Sozial', name: 'Titularadel', gp: '7' },
+  { kategorie: 'Sozial', name: 'Vom Schicksal begünstigt', gp: '12' },
   // Wissen & Fähigkeiten
   { kategorie: 'Wissen & Fähigkeiten', name: 'Akademische Ausbildung (Gelehrter)', gp: '10' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Breigefächerte Bildung', gp: '15' },
@@ -669,6 +678,10 @@ const VORTEIL_TYPES = [
   { kategorie: 'Wissen & Fähigkeiten', name: 'Gutes Gedächnis', gp: '7' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Ortskenntnis', gp: '3' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Prophezeien', gp: '12' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Sprachgefühl', gp: '10' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Tierfreund', gp: '7' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Veteran', gp: '5' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Zeitgefühl', gp: '3' },
 ];
 
 // Common DSA 4.1 Nachteile grouped by category. gp = the GP the disadvantage
