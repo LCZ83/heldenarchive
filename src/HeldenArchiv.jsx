@@ -516,9 +516,14 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Auge des Limbus', probe: 'MU/KO/KK', kosten: '3W6', kategorie: 'E' },
   { repr: 'Magier', name: 'Aureolus Güldenglanz', probe: 'IN/CH/FF', kosten: '3', kategorie: 'A' },
   { repr: 'Magier', name: 'Auris Nasus Oculus', probe: 'KL/CH/FF', kosten: '4', kategorie: 'D' },
+  { repr: 'Magier', name: 'Beschwörung vereiteln', probe: 'MU/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Magier', name: 'Bewegung stören', probe: 'KL/IN/FF', kosten: '7', kategorie: 'C' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Beherrschung brechen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Blick durch fremde Augen', probe: 'MU/IN/CH', kosten: '7', kategorie: 'E' },
+  { repr: 'Druiden', name: 'Böser Blick', probe: 'MU/CH/CH', kosten: '7', kategorie: 'C' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   // Elfen
@@ -528,14 +533,22 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Aeolitus Windgebraus', probe: 'KL/CH/KO', kosten: '4', kategorie: 'B' },
   { repr: 'Elfen', name: 'Armatrutz', probe: 'IN/GE/KO', kosten: '4', kategorie: 'B' },
   { repr: 'Elfen', name: 'Axxeleratus Blitzgeschwind', probe: 'KL/GE/KO', kosten: '7', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Balsam Salabunde', probe: 'KL/IN/CH', kosten: '1', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Band und Fessel', probe: 'KL/CH/KK', kosten: '9', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Banbaladin', probe: 'KL/CH/KK', kosten: '7', kategorie: 'B' },
+  { repr: 'Elfen', name: 'Bärenruhe Winterschlaf', probe: 'MU/KK/KO', kosten: '2', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Blick aufs Wesen', probe: 'KL/IN/CH', kosten: '6', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Blick in die Gedanken', probe: 'KL/KL/CH', kosten: '6', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Blitz dich find', probe: 'KL/IN/GE', kosten: '4', kategorie: 'B' },
   // Geoden
-  { repr: 'Geoden', name: 'Erdsegen', probe: 'KL/IN/CH', kosten: '5', kategorie: 'B' },
-  // Scharlatane
-  { repr: 'Scharlatane', name: 'Beschleunigte Bewegungen', probe: 'KL/IN/GE', kosten: '4', kategorie: 'B' },
+  { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
+  // Borbaradianer
+  { repr: 'Borbaradianer', name: 'Brenne, toter Stoff!', probe: 'MU/KL/KO', kosten: '11', kategorie: 'C' },
   // Kristallomaten
   { repr: 'Kristallomaten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
