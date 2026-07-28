@@ -518,14 +518,35 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Auris Nasus Oculus', probe: 'KL/CH/FF', kosten: '4', kategorie: 'D' },
   { repr: 'Magier', name: 'Beschwörung vereiteln', probe: 'MU/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Magier', name: 'Bewegung stören', probe: 'KL/IN/FF', kosten: '7', kategorie: 'C' },
+  { repr: 'Magier', name: 'Caldofrigo heiss und kalt', probe: 'IN/CH/KO', kosten: '?', kategorie: 'E' },
+  { repr: 'Magier', name: 'Chimaeroform Hybridgestalt', probe: 'KL/IN/KO', kosten: '30', kategorie: 'F' },
+  { repr: 'Magier', name: 'Claudibus Clavistibor', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
+  { repr: 'Magier', name: 'Corpofesso Gliederschmerz', probe: 'KL/KO/KK', kosten: '8', kategorie: 'C' },
+  { repr: 'Magier', name: 'Cryptographo Zauberschrift', probe: 'KL/KL/IN', kosten: '3', kategorie: 'C' },
+  { repr: 'Magier', name: 'Custodosigil Diebesbann', probe: 'KL/FF/FF', kosten: '5', kategorie: 'C' },
+  { repr: 'Magier', name: 'Dämonenbann', probe: 'MU/CH/KO', kosten: '9', kategorie: 'C' },
+  { repr: 'Magier', name: 'Delicioso Gaumenschmaus', probe: 'KL/CH/FF', kosten: '3', kategorie: 'D' },
+  { repr: 'Magier', name: 'Desintegratus Pulverstaub', probe: 'KL/KO/KK', kosten: '30', kategorie: 'D' },
+  { repr: 'Magier', name: 'Destructibo Arcanitas', probe: 'KL/KL/FF', kosten: '20', kategorie: 'E' },
+  { repr: 'Magier', name: 'Dschinnenruf', probe: 'MU/KL/CH', kosten: '30', kategorie: 'E' },
+  { repr: 'Magier', name: 'Duplicatus Doppelbild', probe: 'KL/CH/GE', kosten: '6', kategorie: 'C' },
+  { repr: 'Magier', name: 'Ecliptifactus Schattenkraft', probe: 'MU/KL/KO', kosten: '5', kategorie: 'D' },
+  { repr: 'Magier', name: 'Eigne Angste quälen dich!', probe: 'MU/IN/CH', kosten: '11', kategorie: 'C' },
+  { repr: 'Magier', name: 'Eisenrost und Patina', probe: 'KL/CH/GE', kosten: '2', kategorie: 'C' },
+  { repr: 'Magier', name: 'Elementarbann', probe: 'IN/CH/KO', kosten: '9', kategorie: 'C' },
+  { repr: 'Magier', name: 'Erinnerung verlasse dich!', probe: 'MU/IN/CH', kosten: '11', kategorie: 'D' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
   { repr: 'Druiden', name: 'Beherrschung brechen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Druiden', name: 'Blick durch fremde Augen', probe: 'MU/IN/CH', kosten: '7', kategorie: 'E' },
   { repr: 'Druiden', name: 'Böser Blick', probe: 'MU/CH/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Dunkelheit', probe: 'KL/KL/FF', kosten: '3', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Elementarer Diener', probe: 'MU/KL/CH', kosten: '12', kategorie: 'D' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Einfluss bannen', probe: 'IN/CH/CH', kosten: '5', kategorie: 'B' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -540,15 +561,24 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Blick aufs Wesen', probe: 'KL/IN/CH', kosten: '6', kategorie: 'C' },
   { repr: 'Elfen', name: 'Blick in die Gedanken', probe: 'KL/KL/CH', kosten: '6', kategorie: 'D' },
   { repr: 'Elfen', name: 'Blitz dich find', probe: 'KL/IN/GE', kosten: '4', kategorie: 'B' },
+  { repr: 'Elfen', name: 'Chamaelioni Mimikry', probe: 'IN/CH/GE', kosten: '4', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Eiseskälte Kämpferherz', probe: 'MU/IN/KO', kosten: '5', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Elfenstimme Flötenton', probe: 'IN/CH/KO', kosten: '6', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Exposami Lebenskraft', probe: 'KL/IN/IN', kosten: '4', kategorie: 'B' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
+  { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
   // Borbaradianer
   { repr: 'Borbaradianer', name: 'Brenne, toter Stoff!', probe: 'MU/KL/KO', kosten: '11', kategorie: 'C' },
+  { repr: 'Borbaradianer', name: 'Chronoautos Zeitenfahrt', probe: 'MU/CH/KO', kosten: '28', kategorie: 'F' },
   // Kristallomaten
   { repr: 'Kristallomaten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
+  { repr: 'Kristallomaten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
+  { repr: 'Kristallomaten', name: 'Corpofrigo Kälteschock', probe: 'CH/GE/KO', kosten: '9', kategorie: 'C' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Dichter und Denker', probe: 'KL/IN/CH', kosten: '4', kategorie: 'C' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
