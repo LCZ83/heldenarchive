@@ -535,6 +535,12 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Eisenrost und Patina', probe: 'KL/CH/GE', kosten: '2', kategorie: 'C' },
   { repr: 'Magier', name: 'Elementarbann', probe: 'IN/CH/KO', kosten: '9', kategorie: 'C' },
   { repr: 'Magier', name: 'Erinnerung verlasse dich!', probe: 'MU/IN/CH', kosten: '11', kategorie: 'D' },
+  { repr: 'Magier', name: 'Favilludo Funkentanz', probe: 'IN/CH/FF', kosten: '3', kategorie: 'A' },
+  { repr: 'Magier', name: 'Foramen Foraminor', probe: 'KL/KL/FF', kosten: '2', kategorie: 'C' },
+  { repr: 'Magier', name: 'Fortifex arkane Wand', probe: 'IN/KO/KK', kosten: '11', kategorie: 'D' },
+  { repr: 'Magier', name: 'Gardianum Zauberschild', probe: 'KL/IN/KO', kosten: '3', kategorie: 'D' },
+  { repr: 'Magier', name: 'Gefäss der Jahre', probe: 'MU/KL/KO', kosten: '49', kategorie: 'E' },
+  { repr: 'Magier', name: 'Granit und Marmor', probe: 'MU/CH/KO', kosten: '30', kategorie: 'D' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -543,10 +549,15 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Böser Blick', probe: 'MU/CH/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Druiden', name: 'Dunkelheit', probe: 'KL/KL/FF', kosten: '3', kategorie: 'C' },
   { repr: 'Druiden', name: 'Elementarer Diener', probe: 'MU/KL/CH', kosten: '12', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Geisterbann', probe: 'MU/MU/CH', kosten: '11', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Geisterruf', probe: 'MU/MU/CH', kosten: '9', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Grosse Verwirrung', probe: 'KL/KL/CH', kosten: '6', kategorie: 'C' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Hexen', name: 'Einfluss bannen', probe: 'IN/CH/CH', kosten: '5', kategorie: 'B' },
+  { repr: 'Hexen', name: 'Fluch der Pestilenz', probe: 'MU/KL/CH', kosten: '2', kategorie: 'D' },
+  { repr: 'Hexen', name: 'Grosse Gier', probe: 'KL/KL/CH', kosten: '6', kategorie: 'C' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -565,6 +576,11 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Eiseskälte Kämpferherz', probe: 'MU/IN/KO', kosten: '5', kategorie: 'C' },
   { repr: 'Elfen', name: 'Elfenstimme Flötenton', probe: 'IN/CH/KO', kosten: '6', kategorie: 'D' },
   { repr: 'Elfen', name: 'Exposami Lebenskraft', probe: 'KL/IN/IN', kosten: '4', kategorie: 'B' },
+  { repr: 'Elfen', name: 'Falkenauge Meisterschuss', probe: 'IN/FF/GE', kosten: '5', kategorie: 'B' },
+  { repr: 'Elfen', name: 'Firnlauf', probe: 'MU/KL/GE', kosten: '5', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Flim Flam Funkel', probe: 'KL/KL/FF', kosten: '1', kategorie: 'A' },
+  { repr: 'Elfen', name: 'Fulminictus Donnerkeil', probe: 'IN/GE/KO', kosten: '1', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Gedankenbilder Elfenruf', probe: 'KL/IN/CH', kosten: '4', kategorie: 'B' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -579,6 +595,7 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Dichter und Denker', probe: 'KL/IN/CH', kosten: '4', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Gefunden!', probe: 'KL/IN/GE', kosten: '12', kategorie: 'C' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
