@@ -544,6 +544,17 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Heilkraft bannen', probe: 'KL/CH/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Magier', name: 'Herzschlag ruhe!', probe: 'MU/CH/KK', kosten: 'W20', kategorie: 'D' },
   { repr: 'Magier', name: 'Horriphobus Schreckgestalt', probe: 'MU/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Magier', name: 'Ignifaxius Flammenstrahl', probe: 'KL/FF/KO', kosten: '?', kategorie: 'C' },
+  { repr: 'Magier', name: 'Ignisphaero Feuerball', probe: 'MU/IN/KO', kosten: '21', kategorie: 'D' },
+  { repr: 'Magier', name: 'Ignorantia Ungesehn', probe: 'IN/CH/GE', kosten: '5', kategorie: 'D' },
+  { repr: 'Magier', name: 'Illusion auflösen', probe: 'KL/IN/CH', kosten: '6', kategorie: 'B' },
+  { repr: 'Magier', name: 'Immortalis Lebenszeit', probe: 'MU/CH/KO', kosten: '49', kategorie: 'F' },
+  { repr: 'Magier', name: 'Imperavi Handlungszwang', probe: 'KL/CH/CH', kosten: '13', kategorie: 'E' },
+  { repr: 'Magier', name: 'Impersona Maskenbild', probe: 'KL/IN/FF', kosten: '9', kategorie: 'D' },
+  { repr: 'Magier', name: 'Infinitum Immerdar', probe: 'KL/CH/KO', kosten: '49', kategorie: 'F' },
+  { repr: 'Magier', name: 'Invercano Spiegeltrick', probe: 'MU/IN/FF', kosten: '13', kategorie: 'F' },
+  { repr: 'Magier', name: 'Invocatio maior', probe: 'MU/MU/CH', kosten: '19', kategorie: 'E' },
+  { repr: 'Magier', name: 'Invocatio minor', probe: 'MU/MU/CH', kosten: '11', kategorie: 'D' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -605,6 +616,7 @@ const SPELL_TYPES = [
   { repr: 'Borbaradianer', name: 'Chronoautos Zeitenfahrt', probe: 'MU/CH/KO', kosten: '28', kategorie: 'F' },
   { repr: 'Borbaradianer', name: 'Hartes schmelze!', probe: 'MU/KL/KK', kosten: '2', kategorie: 'F' },
   { repr: 'Borbaradianer', name: 'Höllenpein, zerreisse dich!', probe: 'KL/CH/KO', kosten: '11', kategorie: 'C' },
+  { repr: 'Borbaradianer', name: 'Iribaars Hand', probe: 'MU/MU/IN', kosten: 'W20', kategorie: 'D' },
   // Kristallomaten
   { repr: 'Kristallomaten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
   { repr: 'Kristallomaten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
@@ -615,6 +627,7 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Dichter und Denker', probe: 'KL/IN/CH', kosten: '4', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Gefunden!', probe: 'KL/IN/GE', kosten: '12', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Holterdipolter!', probe: 'IN/IN/FF', kosten: '12', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Juckreiz, dämlicher!', probe: 'MU/IN/CH', kosten: '4', kategorie: 'B' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
