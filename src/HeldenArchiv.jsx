@@ -564,6 +564,9 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Menetekel Flammenschrift', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
   { repr: 'Magier', name: 'Metamagie neutralisieren', probe: 'KL/KL/KO', kosten: '8', kategorie: 'F' },
   { repr: 'Magier', name: 'Motoricus', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
+  { repr: 'Magier', name: 'Nekropathia Seelenreise', probe: 'MU/KL/CH', kosten: '9', kategorie: 'E' },
+  { repr: 'Magier', name: 'Nihilogravo Schwerelos', probe: 'KL/KO/KK', kosten: '5', kategorie: 'E' },
+  { repr: 'Magier', name: 'Nuntiovolo Botenvogel', probe: 'MU/KL/CH', kosten: '5', kategorie: 'C' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -582,6 +585,7 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Magischer Raub', probe: 'MU/KL/KO', kosten: '4', kategorie: 'D' },
   { repr: 'Druiden', name: 'Mahlstrom', probe: 'MU/IN/KK', kosten: '2', kategorie: 'D' },
   { repr: 'Druiden', name: 'Meister der Elemente', probe: 'MU/KL/CH', kosten: '48', kategorie: 'F' },
+  { repr: 'Druiden', name: 'Nebelleib', probe: 'MU/IN/KO', kosten: '7', kategorie: 'D' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
@@ -634,6 +638,7 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Leib des Windes', probe: 'MU/GE/KK', kosten: '12', kategorie: 'E' },
   { repr: 'Elfen', name: 'Metamorpho Gletscherform', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
   { repr: 'Elfen', name: 'Movimento Dauerlauf', probe: 'IN/GE/KO', kosten: '5', kategorie: 'A' },
+  { repr: 'Elfen', name: 'Nebelwand und Morgendunst', probe: 'KL/FF/KO', kosten: '1', kategorie: 'C' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -671,6 +676,7 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Lockruf und Feenfüsse', probe: 'IN/CH/FF', kosten: '4', kategorie: 'B' },
   { repr: 'Schelmen', name: 'Meister minderer Geister', probe: 'MU/CH/CH', kosten: '2', kategorie: 'B' },
   { repr: 'Schelmen', name: 'Murks und Patz', probe: 'IN/IN/FF', kosten: '1', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Nackedei', probe: 'KL/IN/FF', kosten: '6', kategorie: 'D' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
