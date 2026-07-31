@@ -555,6 +555,9 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Invercano Spiegeltrick', probe: 'MU/IN/FF', kosten: '13', kategorie: 'F' },
   { repr: 'Magier', name: 'Invocatio maior', probe: 'MU/MU/CH', kosten: '19', kategorie: 'E' },
   { repr: 'Magier', name: 'Invocatio minor', probe: 'MU/MU/CH', kosten: '11', kategorie: 'D' },
+  { repr: 'Magier', name: 'Karnifilo Raserei', probe: 'MU/IN/CH', kosten: '11', kategorie: 'C' },
+  { repr: 'Magier', name: 'Klarum Purum', probe: 'KL/KL/CH', kosten: '1', kategorie: 'D' },
+  { repr: 'Magier', name: 'Kulminatio Kugelblitz', probe: 'MU/IN/FF', kosten: 'W20', kategorie: 'D' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -569,6 +572,7 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Hellsicht drüben', probe: 'KL/IN/CH', kosten: '6', kategorie: 'C' },
   { repr: 'Druiden', name: 'Herbeirufung vereiteln', probe: 'MU/IN/CH', kosten: '8', kategorie: 'C' },
   { repr: 'Druiden', name: 'Herr über das Tierreich', probe: 'MU/MU/CH', kosten: '4', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Körperlose Reise', probe: 'MU/KL/IN', kosten: '5', kategorie: 'E' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
@@ -582,6 +586,10 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Hexenknoten', probe: 'KL/IN/CH', kosten: '4', kategorie: 'C' },
   { repr: 'Hexen', name: 'Hexenkralle', probe: 'MU/IN/KO', kosten: '3', kategorie: 'C' },
   { repr: 'Hexen', name: 'Hexenspeichel', probe: 'IN/CH/FF', kosten: '?', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Katzenaugen', probe: 'KL/FF/KO', kosten: '1', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Krabbelnder Schrecken', probe: 'MU/MU/CH', kosten: '15', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Krähenruf', probe: 'MU/CH/CH', kosten: '11', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Krötensprung', probe: 'IN/GE/KK', kosten: '3', kategorie: 'B' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -611,6 +619,7 @@ const SPELL_TYPES = [
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
   { repr: 'Geoden', name: 'Halluzination', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Geoden', name: 'Kraft des Erzes', probe: 'KL/KO/KK', kosten: '9', kategorie: 'D' },
   // Borbaradianer
   { repr: 'Borbaradianer', name: 'Brenne, toter Stoff!', probe: 'MU/KL/KO', kosten: '11', kategorie: 'C' },
   { repr: 'Borbaradianer', name: 'Chronoautos Zeitenfahrt', probe: 'MU/CH/KO', kosten: '28', kategorie: 'F' },
@@ -628,6 +637,11 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Gefunden!', probe: 'KL/IN/GE', kosten: '12', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Holterdipolter!', probe: 'IN/IN/FF', kosten: '12', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Juckreiz, dämlicher!', probe: 'MU/IN/CH', kosten: '4', kategorie: 'B' },
+  { repr: 'Schelmen', name: 'Klickeradomms', probe: 'KL/FF/KK', kosten: '2', kategorie: 'A' },
+  { repr: 'Schelmen', name: 'Koboldgeschenk', probe: 'IN/CH/FF', kosten: '4', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Koboldovision', probe: 'MU/CH/CH', kosten: '7', kategorie: 'D' },
+  { repr: 'Schelmen', name: 'Komm Kobold Komm', probe: 'IN/IN/CH', kosten: '7', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Kusch!', probe: 'MU/IN/CH', kosten: '3', kategorie: 'B' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
