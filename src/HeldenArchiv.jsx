@@ -558,6 +558,7 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Karnifilo Raserei', probe: 'MU/IN/CH', kosten: '11', kategorie: 'C' },
   { repr: 'Magier', name: 'Klarum Purum', probe: 'KL/KL/CH', kosten: '1', kategorie: 'D' },
   { repr: 'Magier', name: 'Kulminatio Kugelblitz', probe: 'MU/IN/FF', kosten: 'W20', kategorie: 'D' },
+  { repr: 'Magier', name: 'Limbus versiegeln', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -590,6 +591,7 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Krabbelnder Schrecken', probe: 'MU/MU/CH', kosten: '15', kategorie: 'C' },
   { repr: 'Hexen', name: 'Krähenruf', probe: 'MU/CH/CH', kosten: '11', kategorie: 'C' },
   { repr: 'Hexen', name: 'Krötensprung', probe: 'IN/GE/KK', kosten: '3', kategorie: 'B' },
+  { repr: 'Hexen', name: 'Levthans Feuer', probe: 'IN/CH/CH', kosten: '7', kategorie: 'D' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -614,7 +616,13 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Fulminictus Donnerkeil', probe: 'IN/GE/KO', kosten: '1', kategorie: 'C' },
   { repr: 'Elfen', name: 'Gedankenbilder Elfenruf', probe: 'KL/IN/CH', kosten: '4', kategorie: 'B' },
   { repr: 'Elfen', name: 'Haselbusch und Ginsterkraut', probe: 'CC/FF/KO', kosten: '3', kategorie: 'D' },
-  { repr: 'Elfen', name: 'Hilfreiche Tatze, rettende Schwinge', probe: 'MU/IN/Ch', kosten: '3', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Hilfreiche Tatze, rettende Schwinge', probe: 'MU/IN/CH', kosten: '3', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Leib der Erde', probe: 'MU/IN/GE', kosten: '10', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Leib der Wogen', probe: 'MU/KL/GE', kosten: '12', kategorie: 'E' },
+  { repr: 'Elfen', name: 'Leib des Eises', probe: 'MU/KL/GE', kosten: '13', kategorie: 'E' },
+  { repr: 'Elfen', name: 'Leib des Erzes', probe: 'MU/GE/KK', kosten: '12', kategorie: 'E' },
+  { repr: 'Elfen', name: 'Leib des Feuers', probe: 'MU/MU/GE', kosten: '12', kategorie: 'E' },
+  { repr: 'Elfen', name: 'Leib des Windes', probe: 'MU/GE/KK', kosten: '12', kategorie: 'E' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -626,10 +634,13 @@ const SPELL_TYPES = [
   { repr: 'Borbaradianer', name: 'Hartes schmelze!', probe: 'MU/KL/KK', kosten: '2', kategorie: 'F' },
   { repr: 'Borbaradianer', name: 'Höllenpein, zerreisse dich!', probe: 'KL/CH/KO', kosten: '11', kategorie: 'C' },
   { repr: 'Borbaradianer', name: 'Iribaars Hand', probe: 'MU/MU/IN', kosten: 'W20', kategorie: 'D' },
+  { repr: 'Borbaradianer', name: 'Last des Alters', probe: 'IN/CH/KO', kosten: '12', kategorie: 'E' },
   // Kristallomaten
   { repr: 'Kristallomaten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
   { repr: 'Kristallomaten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
   { repr: 'Kristallomaten', name: 'Corpofrigo Kälteschock', probe: 'CH/GE/KO', kosten: '9', kategorie: 'C' },
+  { repr: 'Kristallomaten', name: 'Leidensbund', probe: 'MU/IN/KO', kosten: '5', kategorie: 'C' },
+  { repr: 'Kristallomaten', name: 'Lunge des Leviatan', probe: 'IN/CH/KO', kosten: '6', kategorie: 'C' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
@@ -642,6 +653,10 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Koboldovision', probe: 'MU/CH/CH', kosten: '7', kategorie: 'D' },
   { repr: 'Schelmen', name: 'Komm Kobold Komm', probe: 'IN/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Kusch!', probe: 'MU/IN/CH', kosten: '3', kategorie: 'B' },
+  { repr: 'Schelmen', name: 'Lach dich gesund!', probe: 'IN/CH/CH', kosten: '?', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Lachkrampf', probe: 'CH/CH/FF', kosten: '5', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Langer Lulatsch', probe: 'CH/GE/KK', kosten: '7', kategorie: 'D' },
+  { repr: 'Schelmen', name: 'Lockruf und Feenfüsse', probe: 'IN/CH/FF', kosten: '4', kategorie: 'B' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
