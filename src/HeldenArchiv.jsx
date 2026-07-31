@@ -559,6 +559,11 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Klarum Purum', probe: 'KL/KL/CH', kosten: '1', kategorie: 'D' },
   { repr: 'Magier', name: 'Kulminatio Kugelblitz', probe: 'MU/IN/FF', kosten: 'W20', kategorie: 'D' },
   { repr: 'Magier', name: 'Limbus versiegeln', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
+  { repr: 'Magier', name: 'Memorabia Falsifir', probe: 'KL/IN/CH', kosten: '8', kategorie: 'E' },
+  { repr: 'Magier', name: 'Memorans Gedächniskraft', probe: 'KL/KL/IN', kosten: '7', kategorie: 'C' },
+  { repr: 'Magier', name: 'Menetekel Flammenschrift', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
+  { repr: 'Magier', name: 'Metamagie neutralisieren', probe: 'KL/KL/KO', kosten: '8', kategorie: 'F' },
+  { repr: 'Magier', name: 'Motoricus', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -574,6 +579,9 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Herbeirufung vereiteln', probe: 'MU/IN/CH', kosten: '8', kategorie: 'C' },
   { repr: 'Druiden', name: 'Herr über das Tierreich', probe: 'MU/MU/CH', kosten: '4', kategorie: 'D' },
   { repr: 'Druiden', name: 'Körperlose Reise', probe: 'MU/KL/IN', kosten: '5', kategorie: 'E' },
+  { repr: 'Druiden', name: 'Magischer Raub', probe: 'MU/KL/KO', kosten: '4', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Mahlstrom', probe: 'MU/IN/KK', kosten: '2', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Meister der Elemente', probe: 'MU/KL/CH', kosten: '48', kategorie: 'F' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
@@ -592,6 +600,7 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Krähenruf', probe: 'MU/CH/CH', kosten: '11', kategorie: 'C' },
   { repr: 'Hexen', name: 'Krötensprung', probe: 'IN/GE/KK', kosten: '3', kategorie: 'B' },
   { repr: 'Hexen', name: 'Levthans Feuer', probe: 'IN/CH/CH', kosten: '7', kategorie: 'D' },
+  { repr: 'Hexen', name: 'Madas Spiegel', probe: 'MU/KL/IN', kosten: '13', kategorie: 'D' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -623,6 +632,8 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Leib des Erzes', probe: 'MU/GE/KK', kosten: '12', kategorie: 'E' },
   { repr: 'Elfen', name: 'Leib des Feuers', probe: 'MU/MU/GE', kosten: '12', kategorie: 'E' },
   { repr: 'Elfen', name: 'Leib des Windes', probe: 'MU/GE/KK', kosten: '12', kategorie: 'E' },
+  { repr: 'Elfen', name: 'Metamorpho Gletscherform', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Movimento Dauerlauf', probe: 'IN/GE/KO', kosten: '5', kategorie: 'A' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -635,12 +646,13 @@ const SPELL_TYPES = [
   { repr: 'Borbaradianer', name: 'Höllenpein, zerreisse dich!', probe: 'KL/CH/KO', kosten: '11', kategorie: 'C' },
   { repr: 'Borbaradianer', name: 'Iribaars Hand', probe: 'MU/MU/IN', kosten: 'W20', kategorie: 'D' },
   { repr: 'Borbaradianer', name: 'Last des Alters', probe: 'IN/CH/KO', kosten: '12', kategorie: 'E' },
-  // Kristallomaten
-  { repr: 'Kristallomaten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
-  { repr: 'Kristallomaten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
-  { repr: 'Kristallomaten', name: 'Corpofrigo Kälteschock', probe: 'CH/GE/KO', kosten: '9', kategorie: 'C' },
-  { repr: 'Kristallomaten', name: 'Leidensbund', probe: 'MU/IN/KO', kosten: '5', kategorie: 'C' },
-  { repr: 'Kristallomaten', name: 'Lunge des Leviatan', probe: 'IN/CH/KO', kosten: '6', kategorie: 'C' },
+  // Kristallomanten
+  { repr: 'Kristallomanten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
+  { repr: 'Kristallomanten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
+  { repr: 'Kristallomanten', name: 'Corpofrigo Kälteschock', probe: 'CH/GE/KO', kosten: '9', kategorie: 'C' },
+  { repr: 'Kristallomanten', name: 'Leidensbund', probe: 'MU/IN/KO', kosten: '5', kategorie: 'C' },
+  { repr: 'Kristallomanten', name: 'Lunge des Leviatan', probe: 'IN/CH/KO', kosten: '6', kategorie: 'C' },
+  { repr: 'Kristallomanten', name: 'Manifesto Element', probe: 'KL/IN/CH', kosten: '3', kategorie: 'A' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
@@ -657,6 +669,8 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Lachkrampf', probe: 'CH/CH/FF', kosten: '5', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Langer Lulatsch', probe: 'CH/GE/KK', kosten: '7', kategorie: 'D' },
   { repr: 'Schelmen', name: 'Lockruf und Feenfüsse', probe: 'IN/CH/FF', kosten: '4', kategorie: 'B' },
+  { repr: 'Schelmen', name: 'Meister minderer Geister', probe: 'MU/CH/CH', kosten: '2', kategorie: 'B' },
+  { repr: 'Schelmen', name: 'Murks und Patz', probe: 'IN/IN/FF', kosten: '1', kategorie: 'C' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
