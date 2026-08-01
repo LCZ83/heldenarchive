@@ -567,6 +567,20 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Nekropathia Seelenreise', probe: 'MU/KL/CH', kosten: '9', kategorie: 'E' },
   { repr: 'Magier', name: 'Nihilogravo Schwerelos', probe: 'KL/KO/KK', kosten: '5', kategorie: 'E' },
   { repr: 'Magier', name: 'Nuntiovolo Botenvogel', probe: 'MU/KL/CH', kosten: '5', kategorie: 'C' },
+  { repr: 'Magier', name: 'Objecto Obscuro', probe: 'KL/FF/KO', kosten: '7', kategorie: 'D' },
+  { repr: 'Magier', name: 'Objectofixo', probe: 'KL/KL/KK', kosten: '1', kategorie: 'D' },
+  { repr: 'Magier', name: 'Objectovoco', probe: 'KL/IN/CH', kosten: '5', kategorie: 'C' },
+  { repr: 'Magier', name: 'Objekt entzaubern', probe: 'KL/IN/FF', kosten: '8', kategorie: 'C' },
+  { repr: 'Magier', name: 'Oculus Astralis', probe: 'KL/IN/CH', kosten: '11', kategorie: 'E' },
+  { repr: 'Magier', name: 'Paralysis starr wie Stein', probe: 'IN/CH/KK', kosten: '11', kategorie: 'C' },
+  { repr: 'Magier', name: 'Pectetondo Zauberhaar', probe: 'KL/CH/FF', kosten: '4', kategorie: 'B' },
+  { repr: 'Magier', name: 'Penetrizzel Tiefenblick', probe: 'KL/KL/KO', kosten: '3', kategorie: 'C' },
+  { repr: 'Magier', name: 'Pentagramma Sphärenbann', probe: 'MU/MU/CH', kosten: '7', kategorie: 'D' },
+  { repr: 'Magier', name: 'Planastrale Anderswelt', probe: 'MU/MU/KO', kosten: '13', kategorie: 'F' },
+  { repr: 'Magier', name: 'Plumbumbarum schwerer Arm', probe: 'CH/GE/KK', kosten: '4', kategorie: 'B' },
+  { repr: 'Magier', name: 'Projektimagio Ebenbild', probe: 'MU/IN/CH', kosten: '2', kategorie: 'D' },
+  { repr: 'Magier', name: 'Protectionis Kontrabann', probe: 'KL/CH/KO', kosten: '8', kategorie: 'F' },
+  { repr: 'Magier', name: 'Psychostabilis', probe: 'MU/KL/KO', kosten: '8', kategorie: 'C' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -586,6 +600,7 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Mahlstrom', probe: 'MU/IN/KK', kosten: '2', kategorie: 'D' },
   { repr: 'Druiden', name: 'Meister der Elemente', probe: 'MU/KL/CH', kosten: '48', kategorie: 'F' },
   { repr: 'Druiden', name: 'Nebelleib', probe: 'MU/IN/KO', kosten: '7', kategorie: 'D' },
+  { repr: 'Druiden', name: 'Pestilenz erspüren', probe: 'KL/IN/CH', kosten: '6', kategorie: 'C' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
@@ -605,6 +620,7 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Krötensprung', probe: 'IN/GE/KK', kosten: '3', kategorie: 'B' },
   { repr: 'Hexen', name: 'Levthans Feuer', probe: 'IN/CH/CH', kosten: '7', kategorie: 'D' },
   { repr: 'Hexen', name: 'Madas Spiegel', probe: 'MU/KL/IN', kosten: '13', kategorie: 'D' },
+  { repr: 'Hexen', name: 'Pandaemonium', probe: 'MU/MU/CH', kosten: '9', kategorie: 'D' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -639,6 +655,8 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Metamorpho Gletscherform', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
   { repr: 'Elfen', name: 'Movimento Dauerlauf', probe: 'IN/GE/KO', kosten: '5', kategorie: 'A' },
   { repr: 'Elfen', name: 'Nebelwand und Morgendunst', probe: 'KL/FF/KO', kosten: '1', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Odem Arcanum', probe: 'KL/IN/IN', kosten: '4', kategorie: 'A' },
+  { repr: 'Elfen', name: 'Pfeil des (Elements)', probe: 'KL/IN/CH', kosten: '8', kategorie: 'C' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -651,6 +669,7 @@ const SPELL_TYPES = [
   { repr: 'Borbaradianer', name: 'Höllenpein, zerreisse dich!', probe: 'KL/CH/KO', kosten: '11', kategorie: 'C' },
   { repr: 'Borbaradianer', name: 'Iribaars Hand', probe: 'MU/MU/IN', kosten: 'W20', kategorie: 'D' },
   { repr: 'Borbaradianer', name: 'Last des Alters', probe: 'IN/CH/KO', kosten: '12', kategorie: 'E' },
+  { repr: 'Borbaradianer', name: 'Panik überkomme Euch', probe: 'MU/CH/CH', kosten: '2W20', kategorie: 'E' },
   // Kristallomanten
   { repr: 'Kristallomanten', name: 'Adamantium Erzstruktur', probe: 'KL/FF/KO', kosten: '5', kategorie: 'C' },
   { repr: 'Kristallomanten', name: 'Chronoklassis Urfossil', probe: 'KL/IN/KO', kosten: '20', kategorie: 'F' },
@@ -677,6 +696,7 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Meister minderer Geister', probe: 'MU/CH/CH', kosten: '2', kategorie: 'B' },
   { repr: 'Schelmen', name: 'Murks und Patz', probe: 'IN/IN/FF', kosten: '1', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Nackedei', probe: 'KL/IN/FF', kosten: '6', kategorie: 'D' },
+  { repr: 'Schelmen', name: 'Papperlapapp', probe: 'IN/IN/FF', kosten: '18', kategorie: 'D' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
