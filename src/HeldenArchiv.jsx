@@ -581,6 +581,10 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Projektimagio Ebenbild', probe: 'MU/IN/CH', kosten: '2', kategorie: 'D' },
   { repr: 'Magier', name: 'Protectionis Kontrabann', probe: 'KL/CH/KO', kosten: '8', kategorie: 'F' },
   { repr: 'Magier', name: 'Psychostabilis', probe: 'MU/KL/KO', kosten: '8', kategorie: 'C' },
+  { repr: 'Magier', name: 'Reflectimago Spiegelschein', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
+  { repr: 'Magier', name: 'Reptilea Natternnest', probe: 'MU/IN/CH', kosten: '17', kategorie: 'D' },
+  { repr: 'Magier', name: 'Respondami Wahrheitszwang', probe: 'MU/IN/CH', kosten: '3', kategorie: 'B' },
+  { repr: 'Magier', name: 'Reversalis Revidum', probe: 'KL/IN/CH', kosten: '7', kategorie: 'E' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -621,6 +625,7 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Levthans Feuer', probe: 'IN/CH/CH', kosten: '7', kategorie: 'D' },
   { repr: 'Hexen', name: 'Madas Spiegel', probe: 'MU/KL/IN', kosten: '13', kategorie: 'D' },
   { repr: 'Hexen', name: 'Pandaemonium', probe: 'MU/MU/CH', kosten: '9', kategorie: 'D' },
+  { repr: 'Hexen', name: 'Radau', probe: 'MU/CH/KO', kosten: '5', kategorie: 'C' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -657,6 +662,7 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Nebelwand und Morgendunst', probe: 'KL/FF/KO', kosten: '1', kategorie: 'C' },
   { repr: 'Elfen', name: 'Odem Arcanum', probe: 'KL/IN/IN', kosten: '4', kategorie: 'A' },
   { repr: 'Elfen', name: 'Pfeil des (Elements)', probe: 'KL/IN/CH', kosten: '8', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Ruhe Körper, ruhe Geist', probe: 'KL/CH/KO', kosten: '3', kategorie: 'B' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
