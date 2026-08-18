@@ -594,6 +594,11 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Skelettarius', probe: 'MU/MU/CH', kosten: '11', kategorie: 'C' },
   { repr: 'Magier', name: 'Staub wandle!', probe: 'MU/KL/CH', kosten: '36', kategorie: 'E' },
   { repr: 'Magier', name: 'Stein wandle!', probe: 'MU/CH/KK', kosten: '8W6', kategorie: 'E' },
+  { repr: 'Magier', name: 'Tempus Stasis', probe: 'MU/KL/KK', kosten: '17', kategorie: 'E' },
+  { repr: 'Magier', name: 'Tlalucs Odem Pestgestank', probe: 'MU/IN/GE', kosten: '11', kategorie: 'C' },
+  { repr: 'Magier', name: 'Totes handle!', probe: 'MU/CH/KO', kosten: '8W6', kategorie: 'D' },
+  { repr: 'Magier', name: 'Transmutare Körperform', probe: 'CH/GE/KO', kosten: '42', kategorie: 'D' },
+  { repr: 'Magier', name: 'Transversalis Teleport', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -640,6 +645,8 @@ const SPELL_TYPES = [
   { repr: 'Hexen', name: 'Schleier der Unwissenheit', probe: 'KL/KL/FF', kosten: '2', kategorie: 'D' },
   { repr: 'Hexen', name: 'Seelentier erkennen', probe: 'IN/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Hexen', name: 'Spinnenlauf', probe: 'IN/GE/KK', kosten: '7', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Tiere besprechen', probe: 'MU/IN/CH', kosten: '?', kategorie: 'C' },
+  { repr: 'Hexen', name: 'Traumgestalt', probe: 'IN/CH/CH', kosten: '?', kategorie: 'D' },
   // Elfen
   { repr: 'Elfen', name: 'Abvenenum Reine Speisse', probe: 'KL/KL/FF', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Adlerauge Luchsenohr', probe: 'KL/IN/FF', kosten: '4', kategorie: 'B' },
@@ -684,6 +691,7 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Somnigravis tiefer Schlaf', probe: 'KL/CH/CH', kosten: '7', kategorie: 'B' },
   { repr: 'Elfen', name: 'Spurlos Trittlos', probe: 'KL/CH/CH', kosten: '4', kategorie: 'C' },
   { repr: 'Elfen', name: 'Standfest Katzengleich', probe: 'IN/GE/FF', kosten: '6', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Tiergedanken', probe: 'MU/IN/CH', kosten: '7', kategorie: 'C' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
@@ -709,6 +717,7 @@ const SPELL_TYPES = [
   { repr: 'Kristallomanten', name: 'Seelenwanderung', probe: 'MU/CH/KO', kosten: '1', kategorie: 'F' },
   { repr: 'Kristallomanten', name: 'Serpentialis Schlangenleib', probe: 'MU/CH/GE', kosten: '7', kategorie: 'D' },
   { repr: 'Kristallomanten', name: 'Stillstand', probe: 'MU/IN/GE', kosten: '11', kategorie: 'E' },
+  { repr: 'Kristallomanten', name: 'Transformatio Formgestalt', probe: 'KL/FF/KK', kosten: '5', kategorie: 'E' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
@@ -735,6 +744,7 @@ const SPELL_TYPES = [
   { repr: 'Schelmen', name: 'Schelmenmaske', probe: 'IN/CH/GE', kosten: '6', kategorie: 'D' },
   { repr: 'Schelmen', name: 'Schelmenrausch', probe: 'IN/CH/CH', kosten: '5', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Seidenweich Schuppengleich', probe: 'IN/FF/FF', kosten: '5', kategorie: 'C' },
+  { repr: 'Schelmen', name: 'Tauschrausch', probe: 'IN/FF/KO', kosten: '7', kategorie: 'D' },
 ];
 
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
