@@ -603,6 +603,9 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Unitatio Geistesbund', probe: 'IN/CH/KO', kosten: '1', kategorie: 'B' },
   { repr: 'Magier', name: 'Vocolimbo hohler Klang', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
   { repr: 'Magier', name: 'Vogelzwitschern Glockenspiel', probe: 'MU/IN/GE', kosten: '8', kategorie: 'B' },
+  { repr: 'Magier', name: 'Weiches erstarre!', probe: 'MU/KL/KK', kosten: '17', kategorie: 'C' },
+  { repr: 'Magier', name: 'Weihrauchwolke Wohlgeruch', probe: 'IN/CH/FF', kosten: '6', kategorie: 'B' },
+  { repr: 'Magier', name: 'Widerwille Ungemach', probe: 'MU/IN/GE', kosten: '10', kategorie: 'D' },
   // Druiden
   { repr: 'Druiden', name: 'Alpgestalt', probe: 'MU/CH/GE', kosten: '4', kategorie: 'C' },
   { repr: 'Druiden', name: 'Atemnot', probe: 'MU/KO/KK', kosten: '7', kategorie: 'C' },
@@ -623,6 +626,8 @@ const SPELL_TYPES = [
   { repr: 'Druiden', name: 'Meister der Elemente', probe: 'MU/KL/CH', kosten: '48', kategorie: 'F' },
   { repr: 'Druiden', name: 'Nebelleib', probe: 'MU/IN/KO', kosten: '7', kategorie: 'D' },
   { repr: 'Druiden', name: 'Pestilenz erspüren', probe: 'KL/IN/CH', kosten: '6', kategorie: 'C' },
+  { repr: 'Druiden', name: 'Wettermeisterschaft', probe: 'KL/CH/GE', kosten: '5', kategorie: 'E' },
+  { repr: 'Druiden', name: 'Windhose', probe: 'MU/IN/KK', kosten: '1', kategorie: 'D' },
   // Hexen
   { repr: 'Hexen', name: 'Angste lindern', probe: 'MU/IN/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Hexen', name: 'Eigenschaft wiederherstellen', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
@@ -701,12 +706,19 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Unsichtbare Jäger', probe: 'IN/FF/GE', kosten: '4', kategorie: 'E' },
   { repr: 'Elfen', name: 'Verständigung stören', probe: 'KL/KL/IN', kosten: '5', kategorie: 'C' },
   { repr: 'Elfen', name: 'Visibili Vanitar', probe: 'KL/IN/GE', kosten: '4', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Wasseratem', probe: 'MU/KL/KO', kosten: '6', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Weisse Mähn und goldener Huf', probe: 'KL/IN/CH', kosten: '12', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Wellenlauf', probe: 'MU/GE/GE', kosten: '7', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Windstille', probe: 'KL/CH/KK', kosten: '5', kategorie: 'C' },
+  { repr: 'Elfen', name: 'Wipfellauf', probe: 'MU/IN/GE', kosten: '6', kategorie: 'D' },
   // Geoden
   { repr: 'Geoden', name: 'Blick in die Vergangenheit', probe: 'KL/KL/IN', kosten: '21', kategorie: 'D' },
   { repr: 'Geoden', name: 'Eins mit der Natur', probe: 'IN/GE/KO', kosten: '6', kategorie: 'C' },
   { repr: 'Geoden', name: 'Halluzination', probe: 'KL/IN/CH', kosten: '7', kategorie: 'C' },
   { repr: 'Geoden', name: 'Kraft des Erzes', probe: 'IN/GE/GE', kosten: '9', kategorie: 'D' },
   { repr: 'Geoden', name: 'Sumus Elixiere', probe: 'IN/CH/FF', kosten: '5', kategorie: 'C' },
+  { repr: 'Geoden', name: 'Wand aus Dornen', probe: 'MU/KL/CH', kosten: '5', kategorie: 'D' },
+  { repr: 'Geoden', name: 'Weisheit der Bäume', probe: 'MU/IN/KO', kosten: '11', kategorie: 'D' },
   // Borbaradianer
   { repr: 'Borbaradianer', name: 'Brenne, toter Stoff!', probe: 'MU/KL/KO', kosten: '11', kategorie: 'C' },
   { repr: 'Borbaradianer', name: 'Chronoautos Zeitenfahrt', probe: 'MU/CH/KO', kosten: '28', kategorie: 'F' },
@@ -729,6 +741,7 @@ const SPELL_TYPES = [
   { repr: 'Kristallomanten', name: 'Transformatio Formgestalt', probe: 'KL/FF/KK', kosten: '5', kategorie: 'E' },
   { repr: 'Kristallomanten', name: 'Unberührt von Satinav', probe: 'KL/FF/KO', kosten: '1', kategorie: 'C' },
   { repr: 'Kristallomanten', name: 'Veränderung aufheben', probe: 'KL/IN/KO', kosten: '12', kategorie: 'D' },
+  { repr: 'Kristallomanten', name: 'Warmes Blut', probe: 'MU/IN/IN', kosten: '3', kategorie: 'B' },
   // Schelmen
   { repr: 'Schelmen', name: 'Aufgeblasen Abgehoben', probe: 'CH/KO/KK', kosten: '10', kategorie: 'C' },
   { repr: 'Schelmen', name: 'Blendwerk', probe: 'IN/CH/GE', kosten: '6', kategorie: 'C' },
