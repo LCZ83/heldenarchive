@@ -191,7 +191,7 @@ const ATTRIBUTES = [
 
 const DEFAULT_TALENTS = [
   ['Körperlich', 'Akrobatik', 'MU/GE/KK'],
-  ['Körperlich', 'Athletic', 'GE/KO/KK'],
+  ['Körperlich', 'Athletik', 'GE/KO/KK'],
   ['Körperlich', 'Fliegen', 'MU/IN/GE'],
   ['Körperlich', 'Gaukeleien', 'MU/CH/FF'],
   ['Körperlich', 'Klettern', 'MU/GE/KK'],
@@ -342,21 +342,21 @@ const WEAPON_TYPES = [
   // Fernkampf — Diskus
   { category: 'Diskus', name: 'Diskus', type: 'FK', tp: '1W+3' },
   { category: 'Diskus', name: 'Kampfdiskus', type: 'FK', tp: '1W+5' },
-  // Nahkampf — Dolche & Klein
-  { category: 'Dolche', name: 'Basiliskenzunge', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Borndorn', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Dolch', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Drachenzahn', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Elberfänger', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Hakendolch', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Jagdmesser', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Kurzschwert', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Langdolch', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Linkhand', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Mengbilar', type: 'NK', tp: '1W+1' },
-  { category: 'Dolche', name: 'Ogerfänger', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Schwerer Dolch', type: 'NK', tp: '1W+2' },
-  { category: 'Dolche', name: 'Waqquif', type: 'NK', tp: '1W+2' },
+  // Nahkampf — Dolche & Kleinwaffen
+  { category: 'Dolche & Kleinwaffen', name: 'Basiliskenzunge', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Borndorn', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Dolch', type: 'NK', tp: '1W+1' },
+  { category: 'Dolche & Kleinwaffen', name: 'Drachenzahn', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Elberfänger', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Hakendolch', type: 'NK', tp: '1W+1' },
+  { category: 'Dolche & Kleinwaffen', name: 'Jagdmesser', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Kurzschwert', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Langdolch', type: 'NK', tp: '1W+1' },
+  { category: 'Dolche & Kleinwaffen', name: 'Linkhand', type: 'NK', tp: '1W+1' },
+  { category: 'Dolche & Kleinwaffen', name: 'Mengbilar', type: 'NK', tp: '1W+1' },
+  { category: 'Dolche & Kleinwaffen', name: 'Ogerfänger', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Schwerer Dolch', type: 'NK', tp: '1W+2' },
+  { category: 'Dolche & Kleinwaffen', name: 'Waqquif', type: 'NK', tp: '1W+2' },
   // Nahkampf - Fechtwaffen
   { category: 'Fechtwaffen', name: 'Degen', type: 'NK', tp: '1W+3' },
   { category: 'Fechtwaffen', name: 'Florett', type: 'NK', tp: '1W+3' },
@@ -560,7 +560,7 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Kulminatio Kugelblitz', probe: 'MU/IN/FF', kosten: 'W20', kategorie: 'D' },
   { repr: 'Magier', name: 'Limbus versiegeln', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
   { repr: 'Magier', name: 'Memorabia Falsifir', probe: 'KL/IN/CH', kosten: '8', kategorie: 'E' },
-  { repr: 'Magier', name: 'Memorans Gedächniskraft', probe: 'KL/KL/IN', kosten: '7', kategorie: 'C' },
+  { repr: 'Magier', name: 'Memorans Gedächtniskraft', probe: 'KL/KL/IN', kosten: '7', kategorie: 'C' },
   { repr: 'Magier', name: 'Menetekel Flammenschrift', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
   { repr: 'Magier', name: 'Metamagie neutralisieren', probe: 'KL/KL/KO', kosten: '8', kategorie: 'F' },
   { repr: 'Magier', name: 'Motoricus', probe: 'KL/FF/KK', kosten: '3', kategorie: 'C' },
@@ -598,7 +598,6 @@ const SPELL_TYPES = [
   { repr: 'Magier', name: 'Tlalucs Odem Pestgestank', probe: 'MU/IN/GE', kosten: '11', kategorie: 'C' },
   { repr: 'Magier', name: 'Totes handle!', probe: 'MU/CH/KO', kosten: '8W6', kategorie: 'D' },
   { repr: 'Magier', name: 'Transmutare Körperform', probe: 'CH/GE/KO', kosten: '42', kategorie: 'D' },
-  { repr: 'Magier', name: 'Transversalis Teleport', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
   { repr: 'Magier', name: 'Transversalis Teleport', probe: 'KL/IN/KO', kosten: '10', kategorie: 'E' },
   { repr: 'Magier', name: 'Unitatio Geistesbund', probe: 'IN/CH/KO', kosten: '1', kategorie: 'B' },
   { repr: 'Magier', name: 'Vocolimbo hohler Klang', probe: 'KL/CH/FF', kosten: '3', kategorie: 'B' },
@@ -686,7 +685,7 @@ const SPELL_TYPES = [
   { repr: 'Elfen', name: 'Flim Flam Funkel', probe: 'KL/KL/FF', kosten: '1', kategorie: 'A' },
   { repr: 'Elfen', name: 'Fulminictus Donnerkeil', probe: 'IN/GE/KO', kosten: '1', kategorie: 'C' },
   { repr: 'Elfen', name: 'Gedankenbilder Elfenruf', probe: 'KL/IN/CH', kosten: '4', kategorie: 'B' },
-  { repr: 'Elfen', name: 'Haselbusch und Ginsterkraut', probe: 'CC/FF/KO', kosten: '3', kategorie: 'D' },
+  { repr: 'Elfen', name: 'Haselbusch und Ginsterkraut', probe: 'CH/FF/KO', kosten: '3', kategorie: 'D' },
   { repr: 'Elfen', name: 'Hilfreiche Tatze, rettende Schwinge', probe: 'MU/IN/CH', kosten: '3', kategorie: 'D' },
   { repr: 'Elfen', name: 'Leib der Erde', probe: 'MU/IN/GE', kosten: '10', kategorie: 'D' },
   { repr: 'Elfen', name: 'Leib der Wogen', probe: 'MU/KL/GE', kosten: '12', kategorie: 'E' },
@@ -868,7 +867,7 @@ const VORTEIL_TYPES = [
   { kategorie: 'Körperlich', name: 'Kälteresistenz', gp: '5' },
   { kategorie: 'Körperlich', name: 'Linkshänder', gp: '5' },
   { kategorie: 'Körperlich', name: 'Nachtsicht', gp: '5' },
-  { kategorie: 'Körperlich', name: 'Natürlicher Rüstungschutz', gp: '10', levled: true },
+  { kategorie: 'Körperlich', name: 'Natürlicher Rüstungsschutz', gp: '10', leveled: true },
   { kategorie: 'Körperlich', name: 'Resistenz gegen Gift', gp: '7' },
   { kategorie: 'Körperlich', name: 'Resistenz gegen Krankheiten', gp: '7' },
   { kategorie: 'Körperlich', name: 'Richtungssinn', gp: '3' },
@@ -876,6 +875,7 @@ const VORTEIL_TYPES = [
   { kategorie: 'Körperlich', name: 'Schnelle Heilung', gp: '10' },
   { kategorie: 'Körperlich', name: 'Wohlklang', gp: '10' },
   { kategorie: 'Körperlich', name: 'Zäher Hund', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Zweistimmiger Gesang', gp: '5' },
   { kategorie: 'Körperlich', name: 'Zwergnase', gp: '12' },
   // Kampf
   { kategorie: 'Kampf', name: 'Akademische Ausbildung (Krieger)', gp: '20' },
@@ -884,6 +884,7 @@ const VORTEIL_TYPES = [
   // Magisch
   { kategorie: 'Magisch', name: 'Hohe Magieresistenz', gp: '3', leveled: true },
   { kategorie: 'Magisch', name: 'Schwer zu verzaubern', gp: '7' },
+  { kategorie: 'Magisch', name: 'Vollzauberer', gp: '17' },
   // Sozial
   { kategorie: 'Sozial', name: 'Adlige Abstammung', gp: '7' },
   { kategorie: 'Sozial', name: 'Adliges Erbe', gp: '10' },
@@ -897,10 +898,10 @@ const VORTEIL_TYPES = [
   { kategorie: 'Sozial', name: 'Vom Schicksal begünstigt', gp: '12' },
   // Wissen & Fähigkeiten
   { kategorie: 'Wissen & Fähigkeiten', name: 'Akademische Ausbildung (Gelehrter)', gp: '10' },
-  { kategorie: 'Wissen & Fähigkeiten', name: 'Breigefächerte Bildung', gp: '15' },
-  { kategorie: 'Wissen & Fähigkeiten', name: 'Eidetisches Gedächnis', gp: '35' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Breitgefächerte Bildung', gp: '15' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Eidetisches Gedächtnis', gp: '35' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Gebildet', gp: '1', leveled: true },
-  { kategorie: 'Wissen & Fähigkeiten', name: 'Gutes Gedächnis', gp: '7' },
+  { kategorie: 'Wissen & Fähigkeiten', name: 'Gutes Gedächtnis', gp: '7' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Ortskenntnis', gp: '3' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Prophezeien', gp: '12' },
   { kategorie: 'Wissen & Fähigkeiten', name: 'Sprachgefühl', gp: '10' },
@@ -935,12 +936,13 @@ const NACHTEIL_TYPES = [
   { kategorie: 'Körperlich', name: 'Sprachfehler', gp: '10' },
   { kategorie: 'Körperlich', name: 'Sucht', gp: '4', leveled: true },
   { kategorie: 'Körperlich', name: 'Tolpatsch', gp: '12' },
-  { kategorie: 'Körperlich', name: 'Ubler Geruch', gp: '5' },
+  { kategorie: 'Körperlich', name: 'Übler Geruch', gp: '5' },
   { kategorie: 'Körperlich', name: 'Unangenehme Stimme', gp: '5' },
   { kategorie: 'Körperlich', name: 'Unansehnlich', gp: '5' },
   { kategorie: 'Körperlich', name: 'Vergesslichkeit', gp: '5' },
-  { kategorie: 'Körperlich', name: 'Wahnvorstellungent', gp: '10' },
+  { kategorie: 'Körperlich', name: 'Wahnvorstellungen', gp: '10' },
   { kategorie: 'Körperlich', name: 'Widerwärtiges Aussehen', gp: '15' },
+  { kategorie: 'Körperlich', name: 'Zwergenwuchs', gp: '8' },
   // Kampf
   { kategorie: 'Kampf', name: 'Blutrausch', gp: '15' },
   // Schlechte Angewohnheiten / Schwächen
@@ -972,6 +974,7 @@ const NACHTEIL_TYPES = [
   // Magisch
   { kategorie: 'Magisch', name: 'Niedrige Magieresistenz', gp: '3', leveled: true },
   // Sozial
+  { kategorie: 'Sozial', name: 'Elfische Weltsicht', gp: '0' },
   { kategorie: 'Sozial', name: 'Gesucht', gp: '5', leveled: true },
   { kategorie: 'Sozial', name: 'Randgruppe', gp: '5' },
   { kategorie: 'Sozial', name: 'Schulden', gp: '10' },
@@ -1058,18 +1061,259 @@ const SF_TYPES = [
 ];
 
 // ───────────────────────────────────────────────────────────────
+// Rassen (DSA 4.1, Wege der Helden)
+// ───────────────────────────────────────────────────────────────
+// The Rasse dropdown lists RASSEN in this order. In Generieren mode the
+// selected race is applied to the hero (see genApplyRasse):
+//   gp             Generierungskosten, paid from the GP budget
+//   le / au / ae / mr  modifiers of the Grundwerte LeP / AuP / AsP / MR
+//                  (→ derivedMods); ae is 0 for non-magical races
+//   eigenschaften  { MU, KL, IN, CH, FF, GE, KO, KK } modifiers (missing = 0)
+//   talente        { [Talentname]: TaW modifier } — names as in DEFAULT_TALENTS;
+//                  a talent the hero does not have yet is created
+//   vorteile /     automatic Vor-/Nachteile: names from VORTEIL_TYPES /
+//   nachteile      NACHTEIL_TYPES, or { name, wert } for leveled ones. Their
+//                  GP are part of the race cost and are not charged again.
+//   sonderfertigkeiten  automatic SFs: names from SF_TYPES; the AP value
+//                  counts as GP and is likewise part of the layer cost
+//   kulturen       { moeglich, unmoeglich } — datalist for the Kultur field
+//                  and a warning when an impossible one is entered
+//   magisch        optional: true marks the hero as „magisch“ (AsP)
+// The numbers approximate the published values — refine as needed.
+// To add a race, append an object here; nothing else needs to change.
+const KULTUREN = {
+  mensch: ['Mittelreich', 'Andergast', 'Nostria', 'Bornland', 'Horasreich', 'Almada', 'Weiden', 'Nordmarken',
+    'Svellttal', 'Thorwal', 'Tulamidenlande', 'Aranien', 'Novadis', 'Amazonen', 'Zyklopeninseln', 'Maraskan',
+    'Südaventurien', 'Bukanier', 'Fjarninger', 'Gjalskerland', 'Nivesen', 'Norbarden', 'Waldmenschen', 'Utulu',
+    'Trollzacker', 'Ferkinas'],
+  elf: ['Auelfen', 'Firnelfen', 'Waldelfen', 'Steppenelfen'],
+  zwerg: ['Ambosszwerge', 'Brillantzwerge', 'Erzzwerge', 'Hügelzwerge', 'Wilde Zwerge'],
+};
+const RASSEN = [
+  {
+    name: 'Mensch', gp: 0, le: 5, au: 6, ae: 0, mr: 2,
+    eigenschaften: {},
+    talente: {},
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
+    name: 'Elf', gp: 18, le: 2, au: 8, ae: 2, mr: 2,
+    eigenschaften: { IN: 1, GE: 1, KK: -2 },
+    talente: {
+      'Singen': 2, 'Sinnesschärfe': 2, 'Bogen': 1, 'Klettern': 1, 'Körperbeherrschung': 1, 'Schleichen': 1,
+      'Schwimmen': 1, 'Sich Verstecken': 1, 'Tanzen': 1, 'Fährtensuchen': 1, 'Wildnisleben': 1,
+    },
+    vorteile: ['Dämmerungssicht', 'Zweistimmiger Gesang', 'Vollzauberer'],
+    nachteile: ['Elfische Weltsicht'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.elf, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.zwerg] },
+    magisch: true,
+  },
+  {
+    name: 'Zwerg', gp: 7, le: 8, au: 5, ae: 0, mr: 3,
+    eigenschaften: { MU: 1, CH: -1, GE: -2, KO: 3, KK: 2 },
+    talente: { 'Selbstbeherrschung': 1, 'Zechen': 1, 'Orientierung': 1, 'Gesteinskunde': 1 },
+    vorteile: ['Dämmerungssicht', 'Richtungssinn', 'Zäher Hund', 'Zwergnase'],
+    nachteile: [{ name: 'Goldgier', wert: 5 }, 'Zwergenwuchs'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.zwerg, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf] },
+  },
+];
+const RASSE_NAMEN = RASSEN.map((r) => r.name);
+function findRasse(name) {
+  return RASSEN.find((r) => r.name === name) || null;
+}
+// Display name of an automatic Vor-/Nachteil spec ('Goldgier' or { name, wert }).
+function rasseEntryName(spec) {
+  if (typeof spec === 'string') return spec;
+  return spec.wert ? `${spec.name} ${spec.wert}` : spec.name;
+}
+// Short summary of a profile's modifiers, e.g. „LE +5 · AU +6 · MR +2 · IN +1, KK −2“.
+// Accepts a RASSEN / KULTUR_PROFILE / PROFESSION_PROFILE entry, or a
+// rasseGen / kulturGen / professionGen snapshot.
+function rasseModText(r) {
+  const fmt = (n) => (n < 0 ? '−' + Math.abs(n) : '+' + n);
+  const parts = [];
+  [['LE', r.le], ['AU', r.au], ['AE', r.ae], ['MR', r.mr]].forEach(([label, v]) => {
+    const n = Number(v) || 0;
+    if (n) parts.push(`${label} ${fmt(n)}`);
+  });
+  const eig = ATTRIBUTES.map(([k]) => [k, Number((r.eigenschaften || {})[k]) || 0]).filter(([, n]) => n);
+  if (eig.length) parts.push(eig.map(([k, n]) => `${k} ${fmt(n)}`).join(', '));
+  return parts.length ? parts.join(' · ') : 'keine Modifikatoren';
+}
+// Talent modifiers of a profile or snapshot, e.g. „Singen +2, Sinnesschärfe +2“ ('' if none).
+function rasseTalentText(r) {
+  const fmt = (n) => (n < 0 ? '−' + Math.abs(n) : '+' + n);
+  const parts = Object.entries(r.talente || {}).map(([name, v]) => [name, Number(v) || 0]).filter(([, n]) => n);
+  return parts.map(([name, n]) => `${name} ${fmt(n)}`).join(', ');
+}
+
+// ───────────────────────────────────────────────────────────────
+// Kulturen (DSA 4.1, Wege der Helden)
+// ───────────────────────────────────────────────────────────────
+// Same profile structure as RASSEN (gp, le/au/ae/mr, eigenschaften, talente,
+// vorteile/nachteile, optional magisch) — see the comment there. Culture
+// modifiers stack on top of the race modifiers: both are applied and
+// reverted independently. Whether a culture fits the chosen race is read
+// from the race's kulturen lists — an impossible one only shows a warning
+// and stays selectable. Placeholder set of three; edit and extend freely.
+const KULTUR_PROFILE = [
+  {
+    name: 'Mittelreich', gp: 3, le: 0, au: 0, ae: 0, mr: 0,
+    eigenschaften: {},
+    talente: { 'Götter & Kulte': 1, 'Rechnen': 1, 'Sagen & Legenden': 1, 'Fahrzeug Lenken': 1 },
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: [],
+  },
+  {
+    name: 'Waldelfen', gp: 5, le: 0, au: 0, ae: 0, mr: 0,
+    eigenschaften: {},
+    talente: { 'Fährtensuchen': 2, 'Wildnisleben': 2, 'Schleichen': 1, 'Sich Verstecken': 1, 'Pflanzenkunde': 1, 'Tierkunde': 1 },
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: [],
+  },
+  {
+    name: 'Ambosszwerge', gp: 4, le: 0, au: 0, ae: 0, mr: 0,
+    eigenschaften: {},
+    talente: { 'Grobschmied': 2, 'Gesteinskunde': 2, 'Hüttenkunde': 1, 'Orientierung': 1 },
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: ['Rüstungsgewöhnung I'],
+  },
+];
+const KULTUR_NAMEN = KULTUR_PROFILE.map((k) => k.name);
+function findKultur(name) {
+  return KULTUR_PROFILE.find((k) => k.name === name) || null;
+}
+
+// ───────────────────────────────────────────────────────────────
+// Professionen (DSA 4.1, Wege der Helden)
+// ───────────────────────────────────────────────────────────────
+// Third origin layer, same profile structure as RASSEN / KULTUR_PROFILE —
+// see the comment at RASSEN — with one difference: Professionen have no
+// eigenschaften modifications. Instead:
+//   voraussetzungen  { MU … KK: Mindestwert } — shown next to the
+//                    Eigenschaften in Generieren mode once the profession is
+//                    applied; informational only, never enforced.
+// Profession modifiers stack on top of race and culture; all three layers
+// are applied and reverted independently.
+// Placeholder set of three; edit and extend freely.
+const PROFESSION_PROFILE = [
+  {
+    name: 'Krieger', gp: 25, le: 0, au: 0, ae: 0, mr: 0,
+    voraussetzungen: { MU: 12, GE: 12, KK: 13 },
+    talente: {
+      'Schwerter': 5, 'Hiebwaffen': 3, 'Raufen': 2, 'Ringen': 2, 'Reiten': 3, 'Athletik': 2,
+      'Körperbeherrschung': 2, 'Kriegskunst': 4, 'Etikette': 1, 'Heilkunde Wunden': 2,
+    },
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: ['Rüstungsgewöhnung I', 'Wuchtschlag', 'Finte'],
+  },
+  {
+    name: 'Streuner', gp: 4, le: 0, au: 0, ae: 0, mr: 0,
+    voraussetzungen: { IN: 12, GE: 12 },
+    talente: {
+      'Gassenwissen': 4, 'Taschendiebstahl': 3, 'Schleichen': 3, 'Sich Verstecken': 3,
+      'Dolche & Kleinwaffen': 3, 'Raufen': 2, 'Überreden': 3, 'Menschenkenntnis': 2,
+      'Schätzen': 2, 'Schlösser Knacken': 2, 'Falschspiel': 2, 'Klettern': 2,
+    },
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: [],
+  },
+  {
+    name: 'Magier', gp: 30, le: 0, au: 0, ae: 0, mr: 0,
+    voraussetzungen: { KL: 13, IN: 12 },
+    talente: {
+      'Magiekunde': 6, 'Sagen & Legenden': 3, 'Geschichtswissen': 2, 'Philosophie': 2,
+      'Sternkunde': 2, 'Rechnen': 2, 'Lehren': 2, 'Selbstbeherrschung': 3, 'Stäbe': 2,
+      'Lesen/Schreiben [Schrift]': 4,
+    },
+    vorteile: ['Vollzauberer'],
+    nachteile: [],
+    sonderfertigkeiten: ['Merkmalskenntnis'],
+    magisch: true,
+  },
+];
+const PROFESSION_NAMEN = PROFESSION_PROFILE.map((p) => p.name);
+function findProfession(name) {
+  return PROFESSION_PROFILE.find((p) => p.name === name) || null;
+}
+// Voraussetzungen of a profession as text, e.g. „KL 13, IN 12“ ('' if none).
+function professionVoraussetzungenText(p) {
+  const v = (p && p.voraussetzungen) || {};
+  return ATTRIBUTES.filter(([k]) => Number(v[k])).map(([k]) => `${k} ${Number(v[k])}`).join(', ');
+}
+
+// ───────────────────────────────────────────────────────────────
 // DSA 4.1 Leveling-up cost rules
 // ───────────────────────────────────────────────────────────────
-// Steigerungskategorien (cost categories) A–H. Each increase of a talent or
-// spell costs (factor × newValue) AP, with extra cost when raising past the
+// Steigerungskategorien (cost categories) A–H. The cost of each +1 step is
+// read from the Steigerungskostentabelle (SKT) below: row = the NEW value
+// (0–26), column = category. Extra cost applies when raising past the
 // associated Eigenschaft (Leiteigenschaft).
-const STEIGERUNGS_FAKTOR = { A: 1, B: 2, C: 3, D: 4, E: 5, F: 8, G: 10, H: 20 };
+const STEIGERUNGS_KATEGORIEN = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+
+// Steigerungskostentabelle (SKT) for Steigern. STEIGERUNGS_KOSTEN_TABELLE[wert]
+// is the AP cost for raising from (wert − 1) to wert; row 0 is the activation
+// cost. Placeholder values approximating the published DSA 4.1 SKT — A rises
+// slowest, H fastest (H reaches 800 at 26). To be made precise later.
+const STEIGERUNGS_KOSTEN_TABELLE = [
+  //  A    B    C    D    E    F    G    H      Wert
+  [   1,   2,   2,   3,   4,   6,   8,  16 ], //  0
+  [   1,   2,   2,   3,   4,   6,   8,  16 ], //  1
+  [   2,   4,   6,   7,   9,  14,  18,  35 ], //  2
+  [   3,   6,   9,  12,  15,  22,  30,  60 ], //  3
+  [   4,   8,  13,  17,  21,  32,  42,  85 ], //  4
+  [   6,  11,  17,  22,  28,  41,  55, 110 ], //  5
+  [   7,  14,  21,  28,  34,  50,  70, 140 ], //  6
+  [   8,  17,  25,  33,  41,  60,  85, 165 ], //  7
+  [  10,  19,  29,  39,  48,  75,  95, 195 ], //  8
+  [  11,  22,  34,  45,  55,  85, 110, 220 ], //  9
+  [  13,  25,  38,  50,  65,  95, 125, 250 ], // 10
+  [  14,  28,  43,  55,  70, 105, 140, 280 ], // 11
+  [  16,  32,  47,  65,  80, 120, 160, 320 ], // 12
+  [  17,  35,  51,  70,  85, 130, 175, 350 ], // 13
+  [  19,  38,  55,  75,  95, 140, 190, 380 ], // 14
+  [  21,  41,  60,  85, 105, 155, 210, 410 ], // 15
+  [  22,  45,  65,  90, 110, 165, 220, 450 ], // 16
+  [  24,  48,  70,  95, 120, 180, 240, 480 ], // 17
+  [  26,  51,  75, 105, 130, 195, 260, 510 ], // 18
+  [  27,  55,  80, 110, 135, 210, 270, 550 ], // 19
+  [  29,  58,  85, 115, 145, 220, 290, 580 ], // 20
+  [  31,  62,  90, 125, 155, 230, 310, 620 ], // 21
+  [  33,  65,  95, 130, 165, 250, 330, 650 ], // 22
+  [  34,  69, 105, 140, 170, 260, 340, 690 ], // 23
+  [  36,  73, 110, 145, 180, 275, 360, 730 ], // 24
+  [  38,  76, 115, 150, 190, 290, 380, 760 ], // 25
+  [  40,  80, 120, 160, 200, 300, 400, 800 ], // 26
+];
+
+// Look up the SKT cost for reaching `wert` in `kategorie`. Returns null for an
+// unknown category. Values above the last row continue linearly with the last
+// row-to-row increment of that column.
+function steigerungsKosten(kategorie, wert) {
+  const col = STEIGERUNGS_KATEGORIEN.indexOf(String(kategorie || '').toUpperCase());
+  if (col < 0) return null;
+  const w = Math.max(0, Math.floor(Number(wert) || 0));
+  const last = STEIGERUNGS_KOSTEN_TABELLE.length - 1;
+  if (w <= last) return STEIGERUNGS_KOSTEN_TABELLE[w][col];
+  const step = STEIGERUNGS_KOSTEN_TABELLE[last][col] - STEIGERUNGS_KOSTEN_TABELLE[last - 1][col];
+  return STEIGERUNGS_KOSTEN_TABELLE[last][col] + step * (w - last);
+}
 
 // Default Steigerungskategorie per talent name. Picked from typical DSA 4.1
 // values; users can adjust per character later via the UI we'll add.
 const DEFAULT_TALENT_KATEGORIEN = {
   // Körperliche Talente
-  'Akrobatik': 'D', 'Athletic': 'D', 'Fliegen': 'D', 'Gaukeleien': 'D', 'Klettern': 'D', 'Körperbeherrschung': 'D', 'Reiten': 'D',
+  'Akrobatik': 'D', 'Athletik': 'D', 'Fliegen': 'D', 'Gaukeleien': 'D', 'Klettern': 'D', 'Körperbeherrschung': 'D', 'Reiten': 'D',
   'Schleichen': 'D', 'Schwimmen': 'D', 'Selbstbeherrschung': 'D', 'Sich Verstecken': 'D', 'Singen': 'D', 'Sinnesschärfe': 'D', 
   'Skifahren': 'D', 'Stimmen Imitieren': 'D', 'Tanzen': 'D', 'Taschendiebstahl': 'D', 'Zechen': 'D', 
   // Gesellschaftliche Talente
@@ -1097,73 +1341,6 @@ const DEFAULT_TALENT_KATEGORIEN = {
   'Wurfmesser': 'C', 'Wurfspeere': 'C', 'Zweihandflegel': 'D', 'Zweihand-Hiebwaffen': 'D', 'Zweihandschwerter': 'E',
   };
 
-// Default Steigerungskategorie per weapon type. Common values from DSA 4.1.
-const DEFAULT_WEAPON_KATEGORIEN = {
-  // Nahkampf - Anderthalbhänder
-  'Anderthalbhänder': 'E', 'Bastardschwert': 'E', 'Nachtwind': 'E', 'Rondrakamm': 'E', 'Tuzakmesser': 'E',
-  // Fernkampf - Armbrust
-  'Leichte Armbrust': 'C', 'Schwere Armbrust': 'C', 'Balläster': 'C', 'Arbalone': 'C', 'Balestra': 'C', 'Balestrina': 'C', 
-  // Fernkampf - Belagerungswaffen
-  'Ballistische Schleudergeräte': 'D', 'Hornisse': 'D', 'Torsionschleudern': 'D', 'Drachenmäuler': 'D', 'Belagerungs-Armbrust': 'D',
-  // Fernkampf — Blasrohr
-  'Blasrohr': 'D',
-  // Fernkampf — Bogen
-  'Kurzbogen': 'E', 'Kompositbogen': 'E', 'Kriegsbogen': 'E', 'Langbogen': 'E', 'Elfenbogen': 'E', 'Orkischer Reiterbogen': 'E',
-  // Fernkampf — Diskus
-  'Diskus': 'D', 'Kampfdiskus': 'D', 
-  // Nahkampf — Dolche & Klein
-  'Basiliskenzunge': 'D', 'Borndorn': 'D', 'Dolch': 'D', 'Drachenzahn': 'D', 'Elberfänger': 'D', 'Hakendolch': 'D', 'Jagdmesser': 'D', 
-  'Kurzschwert': 'D', 'Langdolch': 'D', 'Linkhand': 'D', 'Mengbilar': 'D', 'Ogerfänger': 'D', 'Schwerer Dolch': 'D', 'Waqquif': 'D', 
-  // Nahkampf - Fechtwaffen
-  'Degen': 'E', 'Florett': 'E', 'Magierdegen': 'E', 'Rapier': 'E', 'Stockdegen': 'E', 'Wolfsmesser': 'E', 
-  // Nahkampf - Hiebwaffen
-  'Brabakbengel': 'D', 'Byakka': 'D', 'Gruufhai': 'D', 'Keule': 'D', 'Lindwurmschläger': 'D', 'Molokdeschnaja': 'D', 'Orknase': 'D',
-  'Rabenschnabel': 'D', 'Schmiedehammer': 'D', 'Schneidzahn': 'D', 'Skraja': 'D', 'Sonnenszepter': 'D', 'Streitaxt': 'D',
-  'Streitkolben': 'D', 'Zwergenskraja': 'D', 
-  // Nahkampf - Infanteriewaffen
-  'Glefe': 'D', 'Hakenspiess': 'D', 'Hellebarde': 'D', 'Langaxt': 'D', 'Pailos': 'D', 'Partisane': 'D', 'Schnitter': 'D', 
-  'Sturmsense': 'D', 'Wurmspiess': 'D', 
-  // Nahkampf - Kettenstäbe
-  'Kettenstab': 'E', 
-  // Nahkampf - Kettenwaffen
-  'Morgenstern': 'D', 'Ochsenherde': 'D', 'Ogerschelle': 'D', 'Neunschwänzige': 'D', 'Geissel': 'D', 
-  // Nahkampf — Lanzenreiten
-  'Dschadra': 'D', 'Kriegslanze': 'D', 'Turnierlanze': 'D', 
-  // Nahkampf — Peitschen
-  'Peitsche': 'E', 
-  // Nahkampf — Raufen / waffenlos
-  'Raufen': 'C', 
-  // Nahkampf — Ringen / waffenlos
-  'Ringen': 'D', 
-  // Nahkampf — Säbel
-  'Amazonensäbel': 'D', 'Arbach': 'D', 'Entermesser': 'D', 'Haumesser': 'D', 'Khunchomer': 'D', 'Kurzschwert': 'D', 'Robbentöter': 'D', 
-  'Säbel': 'D', 'Sklaventod': 'D', 'Waqqif': 'D', 
-   // Fernkampf - Schleuder
-  'Schleuder': 'E', 'Fledermaus': 'E', 'Lasso': 'E', 'Leichtes Wurfnetz': 'E', 'Schweres Wurfnetz': 'E', 'Wurfhaken': 'E', 
-  // Nahkampf — Schwerter
-  'Amazonensäbel': 'E', 'Barbarenschwert': 'E', 'Bastardschwert': 'E', 'Breitschwert': 'E', 'Kurzschwert': 'E', 'Kusliker Säbel': 'E', 
-  'Langschwert': 'E', 'Nachtwind': 'E', 'Rapier': 'E', 'Robbentöter': 'E', 'Säbel': 'E', 'Turnierschwert': 'E', 
-  // Nahkampf — Speere
-  'Dreizack': 'D', 'Dschadra': 'D', 'Efferdbart': 'D', 'Holzspeer': 'D', 'Speer': 'D', 'Drachentöter': 'D', 'Jagdspiess': 'D',  'Partisane': 'D', 
-  'Pike': 'D', 'Stossspeer': 'D', 'Wurmspiess': 'D', 
-  // Nahkampf — Stäbe
-  'Kampfstab': 'D', 'Magierstab': 'D', 'Zweililien': 'D', 
-  // Fernkampf - Wurfbeile
-  'Wurfbeil': 'D', 'Schneidzahn': 'D', 'Wurfkeule': 'D', 
-  // Fernkampf - Wurfmesser
-  'Borndorn': 'C', 'Wurfmesser': 'C', 'Wurfdolch': 'C', 'Wurfpfeil': 'C', 'Wurfstern': 'C', 'Wurfscheibe': 'C', 'Wurfring': 'C', 
-  // Fernkampf - Wurfspeere
-  'Efferdbart': 'C', 'Granatapfel': 'C', 'Holzspeer': 'C', 'Speer': 'C', 'Speerschleuder': 'C', 'Stabschleuder': 'C', 'Wurfspeer': 'C', 
-  // Nahkampf — Zweihandflegel
-  'Kriegsflegel': 'D', 
-  // Nahkampf — Zweihand-Hiebwaffen
-  'Barbarenstreitaxt': 'D', 'Echsische Axt': 'D', 'Felsspalter': 'D', 'Gruufhai': 'D', 'Kriegshammer': 'D', 'Langaxt': 'D', 'Orknase': 'D',
-  'Pailos': 'D', 'Warunker Hammer': 'D', 'Zwergenschlägel': 'D',
-  // Nahkampf — Zweihandschwerter
-  'Andergaster': 'E', 'Anderthalbhänder': 'E', 'Boronssichel': 'E', 'Doppelkhunchomer': 'E', 'Grosser Sklaventod': 'E', 'Rondrakamm': 'E',
-  'Tuzakmesser': 'E', 'Zweihänder': 'E', 
-};
-
 // Pure cost calculators ----------------------------------------------------
 
 // Resolve the Steigerungskategorie for a given talent on a hero. If the hero
@@ -1174,22 +1351,15 @@ function talentKategorie(char, talentName) {
   return DEFAULT_TALENT_KATEGORIEN[talentName] || 'B';
 }
 
-function weaponKategorie(char, weaponName) {
-  const overrides = (char && char.weaponKategorien) || {};
-  if (overrides[weaponName]) return overrides[weaponName];
-  return DEFAULT_WEAPON_KATEGORIEN[weaponName] || 'C';
-}
-
 // Cost to raise a talent from currentTaW to currentTaW+1. DSA 4.1:
-//   - cost = factor × newValue
+//   - cost = SKT row for newValue in the talent's Steigerungskategorie
 //   - if newValue ≤ Leiteigenschaft (max of probe attributes), no extra cost
 //   - if newValue > Leiteigenschaft, doubled cost per published rules.
 // For simplicity we use the highest of the three probe attribute values as the
 // Leiteigenschaft threshold. Callers can also pass an explicit threshold.
 function talentRaiseCost(currentTaW, kategorie, leitwert) {
   const newValue = (Number(currentTaW) || 0) + 1;
-  const factor = STEIGERUNGS_FAKTOR[kategorie] || STEIGERUNGS_FAKTOR.B;
-  const base = factor * newValue;
+  const base = steigerungsKosten(kategorie, newValue) ?? steigerungsKosten('B', newValue);
   if (typeof leitwert === 'number' && newValue > leitwert) {
     return base * 2;
   }
@@ -1213,22 +1383,18 @@ function spellRaiseCost(currentZfW, kategorie, leitwert) {
   return talentRaiseCost(currentZfW, kategorie, leitwert);
 }
 
-// Cost to raise a weapon talent (AT or PA). Same formula as talents using the
-// weapon's Steigerungskategorie.
-function weaponTalentRaiseCost(currentTaW, kategorie) {
-  const newValue = (Number(currentTaW) || 0) + 1;
-  const factor = STEIGERUNGS_FAKTOR[kategorie] || STEIGERUNGS_FAKTOR.C;
-  return factor * newValue;
-}
+// Eigenschaften (attributes) are raised via SKT column H, up to the
+// Steigerungslimit (DSA 4.1: 21). The limit applies to raising only; manual
+// entry outside Steigern/Generieren stays unrestricted.
+const EIGENSCHAFT_KATEGORIE = 'H';
+const EIGENSCHAFT_STEIGERUNGSLIMIT = 21;
 
-// Cost to raise an attribute by 1. DSA 4.1 uses a per-attribute cost table; the
-// typical published costs follow a roughly linear progression `15 × newValue`
-// for values in the 8–18 range. Above 18 the cost doubles.
+// Cost to raise an attribute to newValue (SKT row newValue, column H).
+// Returns null when newValue exceeds the Steigerungslimit (raise not allowed).
 function attributeRaiseCost(newValue) {
   const nv = Number(newValue) || 0;
-  if (nv <= 18) return 15 * nv;
-  // Beyond 18: doubled progression
-  return 30 * nv;
+  if (nv > EIGENSCHAFT_STEIGERUNGSLIMIT) return null;
+  return steigerungsKosten(EIGENSCHAFT_KATEGORIE, nv);
 }
 
 // Cost to raise Magieresistenz (Faktor 75 per the published rules).
@@ -1276,6 +1442,9 @@ function raiseAttribute(char, attrKey) {
   }
   const newValue = current + 1;
   const cost = attributeRaiseCost(newValue);
+  if (cost == null) {
+    throw new Error('Steigerungslimit ' + EIGENSCHAFT_STEIGERUNGSLIMIT + ' erreicht: ' + attrKey);
+  }
   const next = spendAp(char, cost);
   return {
     ...next,
@@ -1313,12 +1482,12 @@ function raiseSpell(char, spellId) {
 }
 
 // Liturgien: each has a Liturgiekenntnis (LkW) value raised point-by-point.
-// Cost uses the Steigerungskategorie (default C), with no Leitwert doubling
-// since liturgies are not tied to a single Eigenschaft the same way.
+// Cost is the SKT row for the new value in the Steigerungskategorie (default C),
+// with no Leitwert doubling since liturgies are not tied to a single
+// Eigenschaft the same way.
 function liturgyRaiseCost(currentLkW, kategorie) {
   const newValue = (Number(currentLkW) || 0) + 1;
-  const factor = STEIGERUNGS_FAKTOR[kategorie] || STEIGERUNGS_FAKTOR.C;
-  return factor * newValue;
+  return steigerungsKosten(kategorie, newValue) ?? steigerungsKosten('C', newValue);
 }
 
 function raiseLiturgy(char, liturgyId) {
@@ -1331,46 +1500,6 @@ function raiseLiturgy(char, liturgyId) {
   return {
     ...next,
     liturgies: liturgies.map((x) => x.id === liturgyId ? { ...x, lkw: (Number(x.lkw) || 0) + 1 } : x),
-  };
-}
-
-// Buy an advantage during play. DSA 4.1 standard: GP→AP at 1:1, so the AP cost
-// equals the advantage's GP value. Returns a new char with AP spent and the
-// advantage appended (flagged paidAp so it isn't freely removable in Steigern).
-function buyAdvantage(char, advantageData) {
-  const cost = Number(advantageData.gp) || 0;
-  const next = spendAp(char, cost);
-  const entry = {
-    id: 'v_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
-    ...advantageData,
-    paidAp: true,
-  };
-  return {
-    ...next,
-    advantages: [...(next.advantages || []), entry],
-  };
-}
-
-// Take a disadvantage during play. DSA 4.1: this returns GP, which converts to
-// AP at 1:1 — i.e. the hero gains that many AP. We model the gain by reducing
-// `spent` (floored at 0); any remainder raises `total` so available AP rises by
-// the full GP value. Returns a new char with the disadvantage appended.
-function takeDisadvantage(char, disadvantageData) {
-  const refund = Number(disadvantageData.gp) || 0;
-  const ap = char.ap || { total: 0, spent: 0 };
-  const spent = Number(ap.spent) || 0;
-  const total = Number(ap.total) || 0;
-  const reduceSpent = Math.min(spent, refund);
-  const remainder = refund - reduceSpent;
-  const entry = {
-    id: 'n_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
-    ...disadvantageData,
-    paidAp: true,
-  };
-  return {
-    ...char,
-    ap: { ...ap, spent: spent - reduceSpent, total: total + remainder },
-    disadvantages: [...(char.disadvantages || []), entry],
   };
 }
 
@@ -1388,26 +1517,6 @@ function learnSpecialAbility(char, sfData) {
   return {
     ...next,
     specialAbilities: [...(next.specialAbilities || []), entry],
-  };
-}
-
-// field: 'at' or 'pa'
-function raiseWeaponTalent(char, weaponName, field) {
-  if (field !== 'at' && field !== 'pa') {
-    throw new Error('Ungültiges Kampftalent-Feld: ' + field);
-  }
-  const wt = char.weaponTalents || {};
-  const entry = wt[weaponName] || {};
-  const current = Number(entry[field]) || 0;
-  const kat = weaponKategorie(char, weaponName);
-  const cost = weaponTalentRaiseCost(current, kat);
-  const next = spendAp(char, cost);
-  return {
-    ...next,
-    weaponTalents: {
-      ...wt,
-      [weaponName]: { ...entry, [field]: current + 1 },
-    },
   };
 }
 
@@ -1455,12 +1564,283 @@ function previewRaiseCost(char, kind, key) {
       if (!l) return null;
       return liturgyRaiseCost(l.lkw, liturgyKategorie(l));
     }
-    if (kind === 'weaponAt' || kind === 'weaponPa') {
-      const field = kind === 'weaponAt' ? 'at' : 'pa';
-      const entry = (char.weaponTalents || {})[key] || {};
-      const current = Number(entry[field]) || 0;
-      const kat = weaponKategorie(char, key);
-      return weaponTalentRaiseCost(current, kat);
+    if (kind === 'mr') {
+      const mod = (char.derivedMods && Number(char.derivedMods.MR)) || 0;
+      const baseMR = char.attributes
+        ? Math.round(((char.attributes.MU || 0) + (char.attributes.KL || 0) + (char.attributes.KO || 0)) / 5)
+        : 0;
+      return magicResistanceRaiseCost(baseMR + mod + 1);
+    }
+  } catch (e) {
+    return null;
+  }
+  return null;
+}
+
+// ───────────────────────────────────────────────────────────────
+// Generierung (Charaktererschaffung) — separate GP budget.
+// Mirrors the Steigern rules 1:1 for now; generation-specific rules
+// can be changed here later without touching the Steigern path.
+// ───────────────────────────────────────────────────────────────
+
+function availableGp(char) {
+  const gp = char && char.gp;
+  if (!gp) return 0;
+  return (Number(gp.total) || 0) - (Number(gp.spent) || 0);
+}
+
+function canAffordGp(char, cost) {
+  return availableGp(char) >= cost;
+}
+
+// Spend GP and return the new character object. Does NOT mutate; safe for use
+// with React setState. Throws if the character cannot afford the cost.
+function spendGp(char, cost) {
+  const have = availableGp(char);
+  if (have < cost) {
+    throw new Error('Nicht genug Generierungspunkte: brauche ' + cost + ', habe ' + have);
+  }
+  return {
+    ...char,
+    gp: {
+      ...(char.gp || { total: 0, spent: 0 }),
+      spent: (Number((char.gp || {}).spent) || 0) + cost,
+    },
+  };
+}
+
+// Steigerungskostentabelle (SKT) for Generieren. Deliberately a separate copy
+// of the Steigern table so generation costs can diverge without touching the
+// Steigern path. Same layout: GEN_STEIGERUNGS_KOSTEN_TABELLE[wert] is the GP
+// cost for raising from (wert − 1) to wert (row 0 = activation), columns follow
+// STEIGERUNGS_KATEGORIEN (A–H). Values currently identical to the Steigern
+// table; to be made precise later.
+const GEN_STEIGERUNGS_KOSTEN_TABELLE = [
+  //  A    B    C    D    E    F    G    H      Wert
+  [   1,   2,   2,   3,   4,   6,   8,  16 ], //  0
+  [   1,   2,   2,   3,   4,   6,   8,  16 ], //  1
+  [   2,   4,   6,   7,   9,  14,  18,  35 ], //  2
+  [   3,   6,   9,  12,  15,  22,  30,  60 ], //  3
+  [   4,   8,  13,  17,  21,  32,  42,  85 ], //  4
+  [   6,  11,  17,  22,  28,  41,  55, 110 ], //  5
+  [   7,  14,  21,  28,  34,  50,  70, 140 ], //  6
+  [   8,  17,  25,  33,  41,  60,  85, 165 ], //  7
+  [  10,  19,  29,  39,  48,  75,  95, 195 ], //  8
+  [  11,  22,  34,  45,  55,  85, 110, 220 ], //  9
+  [  13,  25,  38,  50,  65,  95, 125, 250 ], // 10
+  [  14,  28,  43,  55,  70, 105, 140, 280 ], // 11
+  [  16,  32,  47,  65,  80, 120, 160, 320 ], // 12
+  [  17,  35,  51,  70,  85, 130, 175, 350 ], // 13
+  [  19,  38,  55,  75,  95, 140, 190, 380 ], // 14
+  [  21,  41,  60,  85, 105, 155, 210, 410 ], // 15
+  [  22,  45,  65,  90, 110, 165, 220, 450 ], // 16
+  [  24,  48,  70,  95, 120, 180, 240, 480 ], // 17
+  [  26,  51,  75, 105, 130, 195, 260, 510 ], // 18
+  [  27,  55,  80, 110, 135, 210, 270, 550 ], // 19
+  [  29,  58,  85, 115, 145, 220, 290, 580 ], // 20
+  [  31,  62,  90, 125, 155, 230, 310, 620 ], // 21
+  [  33,  65,  95, 130, 165, 250, 330, 650 ], // 22
+  [  34,  69, 105, 140, 170, 260, 340, 690 ], // 23
+  [  36,  73, 110, 145, 180, 275, 360, 730 ], // 24
+  [  38,  76, 115, 150, 190, 290, 380, 760 ], // 25
+  [  40,  80, 120, 160, 200, 300, 400, 800 ], // 26
+];
+
+// Gen counterpart of steigerungsKosten: same lookup and above-table
+// extrapolation rules, reading the Generieren table.
+function genSteigerungsKosten(kategorie, wert) {
+  const col = STEIGERUNGS_KATEGORIEN.indexOf(String(kategorie || '').toUpperCase());
+  if (col < 0) return null;
+  const w = Math.max(0, Math.floor(Number(wert) || 0));
+  const last = GEN_STEIGERUNGS_KOSTEN_TABELLE.length - 1;
+  if (w <= last) return GEN_STEIGERUNGS_KOSTEN_TABELLE[w][col];
+  const step = GEN_STEIGERUNGS_KOSTEN_TABELLE[last][col] - GEN_STEIGERUNGS_KOSTEN_TABELLE[last - 1][col];
+  return GEN_STEIGERUNGS_KOSTEN_TABELLE[last][col] + step * (w - last);
+}
+
+// Gen counterparts of the category-based Steigern cost calculators. Same
+// rules as talentRaiseCost / spellRaiseCost / liturgyRaiseCost for now
+// (Leitwert doubling for talents and spells, none for liturgies).
+function genTalentRaiseCost(currentTaW, kategorie, leitwert) {
+  const newValue = (Number(currentTaW) || 0) + 1;
+  const base = genSteigerungsKosten(kategorie, newValue) ?? genSteigerungsKosten('B', newValue);
+  if (typeof leitwert === 'number' && newValue > leitwert) {
+    return base * 2;
+  }
+  return base;
+}
+
+function genSpellRaiseCost(currentZfW, kategorie, leitwert) {
+  return genTalentRaiseCost(currentZfW, kategorie, leitwert);
+}
+
+function genLiturgyRaiseCost(currentLkW, kategorie) {
+  const newValue = (Number(currentLkW) || 0) + 1;
+  return genSteigerungsKosten(kategorie, newValue) ?? genSteigerungsKosten('C', newValue);
+}
+
+// Generieren: each +1 on an Eigenschaft costs a flat 1 GP (unlike Steigern,
+// where Eigenschaften use SKT column H per new value).
+const GEN_EIGENSCHAFT_KOSTEN_PRO_PUNKT = 1;
+const GEN_EIGENSCHAFT_STEIGERUNGSLIMIT = 21;
+
+// Gen counterpart of attributeRaiseCost; null above the limit.
+function genAttributeRaiseCost(newValue) {
+  const nv = Number(newValue) || 0;
+  if (nv > GEN_EIGENSCHAFT_STEIGERUNGSLIMIT) return null;
+  return GEN_EIGENSCHAFT_KOSTEN_PRO_PUNKT;
+}
+
+function genRaiseAttribute(char, attrKey) {
+  const current = (char.attributes || {})[attrKey];
+  if (typeof current !== 'number') {
+    throw new Error('Unbekannte Eigenschaft: ' + attrKey);
+  }
+  const newValue = current + 1;
+  const cost = genAttributeRaiseCost(newValue);
+  if (cost == null) {
+    throw new Error('Steigerungslimit ' + GEN_EIGENSCHAFT_STEIGERUNGSLIMIT + ' erreicht: ' + attrKey);
+  }
+  const next = spendGp(char, cost);
+  return {
+    ...next,
+    attributes: { ...next.attributes, [attrKey]: newValue },
+  };
+}
+
+function genRaiseTalent(char, talentId) {
+  const talents = char.talents || [];
+  const t = talents.find((x) => x.id === talentId);
+  if (!t) throw new Error('Talent nicht gefunden: ' + talentId);
+  const kat = talentKategorie(char, t.name);
+  const leitwert = talentLeitwert(t.probe, char.attributes);
+  const cost = genTalentRaiseCost(t.taw, kat, leitwert);
+  const next = spendGp(char, cost);
+  return {
+    ...next,
+    talents: talents.map((x) => x.id === talentId ? { ...x, taw: (Number(x.taw) || 0) + 1 } : x),
+  };
+}
+
+function genRaiseSpell(char, spellId) {
+  const spells = char.spells || [];
+  const sp = spells.find((x) => x.id === spellId);
+  if (!sp) throw new Error('Zauber nicht gefunden: ' + spellId);
+  const kat = (sp.kategorie || 'C');
+  const leitwert = talentLeitwert(sp.probe, char.attributes);
+  const cost = genSpellRaiseCost(sp.zfw, kat, leitwert);
+  const next = spendGp(char, cost);
+  return {
+    ...next,
+    spells: spells.map((x) => x.id === spellId ? { ...x, zfw: (Number(x.zfw) || 0) + 1 } : x),
+  };
+}
+
+function genRaiseLiturgy(char, liturgyId) {
+  const liturgies = char.liturgies || [];
+  const l = liturgies.find((x) => x.id === liturgyId);
+  if (!l) throw new Error('Liturgie nicht gefunden: ' + liturgyId);
+  const kat = liturgyKategorie(l);
+  const cost = genLiturgyRaiseCost(l.lkw, kat);
+  const next = spendGp(char, cost);
+  return {
+    ...next,
+    liturgies: liturgies.map((x) => x.id === liturgyId ? { ...x, lkw: (Number(x.lkw) || 0) + 1 } : x),
+  };
+}
+
+// Buy an advantage during generation: costs its GP value from the GP budget.
+function genBuyAdvantage(char, advantageData) {
+  const cost = Number(advantageData.gp) || 0;
+  const next = spendGp(char, cost);
+  const entry = {
+    id: 'v_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
+    ...advantageData,
+    paidGp: true,
+  };
+  return {
+    ...next,
+    advantages: [...(next.advantages || []), entry],
+  };
+}
+
+// Take a disadvantage during generation: its GP value is credited to the GP budget.
+function genTakeDisadvantage(char, disadvantageData) {
+  const refund = Number(disadvantageData.gp) || 0;
+  const gp = char.gp || { total: 0, spent: 0 };
+  const spent = Number(gp.spent) || 0;
+  const total = Number(gp.total) || 0;
+  const reduceSpent = Math.min(spent, refund);
+  const remainder = refund - reduceSpent;
+  const entry = {
+    id: 'n_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
+    ...disadvantageData,
+    paidGp: true,
+  };
+  return {
+    ...char,
+    gp: { ...gp, spent: spent - reduceSpent, total: total + remainder },
+    disadvantages: [...(char.disadvantages || []), entry],
+  };
+}
+
+// Learn a Sonderfertigkeit during generation: its cost is paid from the GP budget.
+function genLearnSpecialAbility(char, sfData) {
+  const cost = Number(sfData.ap) || 0;
+  const next = spendGp(char, cost);
+  const entry = {
+    id: 'sf_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
+    ...sfData,
+    paidGp: true,
+  };
+  return {
+    ...next,
+    specialAbilities: [...(next.specialAbilities || []), entry],
+  };
+}
+
+function genRaiseMagicResistance(char) {
+  const current = (char.derivedMods && Number(char.derivedMods.MR)) || 0;
+  const baseMR = char.attributes
+    ? Math.round(((char.attributes.MU || 0) + (char.attributes.KL || 0) + (char.attributes.KO || 0)) / 5)
+    : 0;
+  const newMR = baseMR + current + 1;
+  const cost = magicResistanceRaiseCost(newMR);
+  const next = spendGp(char, cost);
+  return {
+    ...next,
+    derivedMods: { ...(next.derivedMods || {}), MR: current + 1 },
+  };
+}
+
+// Preview the GP cost for a raise in Generieren mode without applying it.
+// Deliberately a separate copy of the Steigern preview so generation costs
+// can diverge later.
+function genPreviewRaiseCost(char, kind, key) {
+  try {
+    if (kind === 'attribute') {
+      const current = (char.attributes || {})[key];
+      if (typeof current !== 'number') return null;
+      return genAttributeRaiseCost(current + 1);
+    }
+    if (kind === 'talent') {
+      const t = (char.talents || []).find((x) => x.id === key);
+      if (!t) return null;
+      const kat = talentKategorie(char, t.name);
+      const leitwert = talentLeitwert(t.probe, char.attributes);
+      return genTalentRaiseCost(t.taw, kat, leitwert);
+    }
+    if (kind === 'spell') {
+      const sp = (char.spells || []).find((x) => x.id === key);
+      if (!sp) return null;
+      const kat = (sp.kategorie || 'C');
+      const leitwert = talentLeitwert(sp.probe, char.attributes);
+      return genSpellRaiseCost(sp.zfw, kat, leitwert);
+    }
+    if (kind === 'liturgy') {
+      const l = (char.liturgies || []).find((x) => x.id === key);
+      if (!l) return null;
+      return genLiturgyRaiseCost(l.lkw, liturgyKategorie(l));
     }
     if (kind === 'mr') {
       const mod = (char.derivedMods && Number(char.derivedMods.MR)) || 0;
@@ -1474,6 +1854,262 @@ function previewRaiseCost(char, kind, key) {
   }
   return null;
 }
+
+// ── Rasse, Kultur & Profession (Generierung) ────────────────────
+// Choosing a Rasse, Kultur or Profession in Generieren mode applies its profile to the
+// hero: the GP cost is paid, Eigenschaften modifiers go into the attributes,
+// LE/AU/AE/MR into derivedMods, Talent modifiers into the TaW (missing
+// talents are created) and the automatic Vor-/Nachteile are added (tagged,
+// their GP not charged again). The three layers are applied independently
+// and stack: each records its own snapshot (char.rasseGen / char.kulturGen /
+// char.professionGen), so choosing another one reverts exactly its own numbers, even if the
+// profile tables are edited later. Outside Generieren mode the dropdowns
+// only change the name.
+const RASSE_HERKUNFT = { snapKey: 'rasseGen', nameKey: 'rasse', tagKey: 'vonRasse', find: findRasse };
+const KULTUR_HERKUNFT = { snapKey: 'kulturGen', nameKey: 'kultur', tagKey: 'vonKultur', find: findKultur };
+const PROFESSION_HERKUNFT = { snapKey: 'professionGen', nameKey: 'profession', tagKey: 'vonProfession', find: findProfession };
+const HERKUNFT_ARTEN = [RASSE_HERKUNFT, KULTUR_HERKUNFT, PROFESSION_HERKUNFT];
+// A snapshot that recorded magischVorher had set magisch (explicit flag since v16).
+const snapSetztMagisch = (snap) => !!snap && (snap.magisch === true || snap.magischVorher !== undefined);
+// The other applied layer (if any) whose profile set magisch.
+const andereMagischLayer = (char, cfg) => HERKUNFT_ARTEN.find((c) => c !== cfg && snapSetztMagisch(char[c.snapKey]));
+
+// Hero Vorteil/Nachteil entry for an automatic profile entry ('Name' or { name, wert }).
+function genHerkunftEntry(spec, types, prefix, idx, tagKey, herkunftName) {
+  const name = typeof spec === 'string' ? spec : spec.name;
+  const wert = typeof spec === 'string' ? '' : (spec.wert ?? '');
+  const t = types.find((x) => x.name === name) || {};
+  const base = Number(t.gp) || 0;
+  const gp = t.leveled && Number(wert) ? base * Number(wert) : base;
+  return {
+    id: prefix + Date.now() + '_' + tagKey + idx,
+    name, gp, kategorie: t.kategorie || 'Allgemein', wert: String(wert), notes: '',
+    [tagKey]: herkunftName,
+  };
+}
+
+// Level existing entries up (+1) or back down (−1) by recorded Stufen deltas:
+// stufen = { [name]: { wert, kosten } }; the first entry matching each name is
+// adjusted (wert and the cost field). Entries that vanished are skipped.
+function genStufenAnwenden(list, stufen, costKey, richtung) {
+  if (!stufen || Object.keys(stufen).length === 0) return list || [];
+  const offen = new Set(Object.keys(stufen));
+  return (list || []).map((e) => {
+    if (!offen.has(e.name)) return e;
+    offen.delete(e.name);
+    const st = stufen[e.name];
+    return {
+      ...e,
+      wert: String((Number(e.wert) || 0) + richtung * st.wert),
+      [costKey]: (Number(e[costKey]) || 0) + richtung * st.kosten,
+    };
+  });
+}
+
+// Undo the profile recorded in char[cfg.snapKey] (no-op if none). Does not mutate.
+function genRevertHerkunft(char, cfg) {
+  const snap = char[cfg.snapKey];
+  if (!snap) return char;
+  const herkunftName = snap[cfg.nameKey];
+  const attributes = { ...(char.attributes || {}) };
+  Object.entries(snap.eigenschaften || {}).forEach(([k, v]) => {
+    attributes[k] = (Number(attributes[k]) || 0) - (Number(v) || 0);
+  });
+  const mods = { ...(char.derivedMods || {}) };
+  mods.LeP = (Number(mods.LeP) || 0) - (Number(snap.le) || 0);
+  mods.AuP = (Number(mods.AuP) || 0) - (Number(snap.au) || 0);
+  mods.AsP = (Number(mods.AsP) || 0) - (Number(snap.ae) || 0);
+  mods.MR = (Number(mods.MR) || 0) - (Number(snap.mr) || 0);
+  const talente = snap.talente || {};
+  const talents = (char.talents || []).map((t) => (
+    talente[t.name] ? { ...t, taw: (Number(t.taw) || 0) - (Number(talente[t.name]) || 0) } : t
+  ));
+  const gp = char.gp || { total: 0, spent: 0 };
+  const next = {
+    ...char,
+    attributes,
+    derivedMods: mods,
+    talents,
+    gp: {
+      ...gp,
+      total: (Number(gp.total) || 0) - (Number(snap.budgetGutschrift) || 0),
+      spent: (Number(gp.spent) || 0) - (Number(snap.gp) || 0),
+    },
+    advantages: genStufenAnwenden(char.advantages || [], snap.vorteilStufen, 'gp', -1).filter((v) => v[cfg.tagKey] !== herkunftName),
+    disadvantages: genStufenAnwenden(char.disadvantages || [], snap.nachteilStufen, 'gp', -1).filter((n) => n[cfg.tagKey] !== herkunftName),
+    specialAbilities: genStufenAnwenden(char.specialAbilities || [], snap.sfStufen, 'ap', -1).filter((s) => s[cfg.tagKey] !== herkunftName),
+    [cfg.snapKey]: null,
+  };
+  // This layer had set magisch (magischVorher recorded): another still-applied
+  // magisch layer keeps the hero magisch, otherwise the base value returns.
+  if (snap.magischVorher !== undefined) {
+    next.isMagical = andereMagischLayer(next, cfg) ? true : !!snap.magischVorher;
+  }
+  return next;
+}
+
+// Apply the profile named `herkunftName` (after reverting a previously applied
+// one of the same kind) and store the name in basics. An unknown or empty name
+// only sets the name. Throws if the GP budget cannot cover the cost.
+function genApplyHerkunft(char, herkunftName, cfg) {
+  const base = genRevertHerkunft(char, cfg);
+  const named = { ...base, basics: { ...(base.basics || {}), [cfg.nameKey]: herkunftName } };
+  const profil = cfg.find(herkunftName);
+  if (!profil) return named;
+  const cost = Number(profil.gp) || 0;
+  // DSA: a Vorteil the hero already has, duplicated by this selection, is still
+  // listed (with its own tag), but half of its nominal GP — rounded down — is
+  // put back into the overall GP budget (gp.total); recorded on the entry as
+  // gutschrift. A *leveled* Vorteil instead levels the existing entry up (first
+  // match; wert + granted Stufen, gp accordingly) — no second entry, no credit;
+  // the deltas are recorded in snap.vorteilStufen and taken back on revert.
+  // The layer itself is charged at its full cost either way.
+  const vorhandeneVorteile = new Set((named.advantages || []).map((v) => v.name));
+  let vorteilGutschrift = 0;
+  const vorteilStufen = {};
+  const vorteile = [];
+  (profil.vorteile || []).forEach((s, i) => {
+    const e = genHerkunftEntry(s, VORTEIL_TYPES, 'v_', i, cfg.tagKey, profil.name);
+    if (vorhandeneVorteile.has(e.name)) {
+      const t = VORTEIL_TYPES.find((x) => x.name === e.name) || {};
+      if (t.leveled) {
+        const st = vorteilStufen[e.name] || { wert: 0, kosten: 0 };
+        vorteilStufen[e.name] = { wert: st.wert + (Number(e.wert) || 1), kosten: st.kosten + (Number(e.gp) || 0) };
+        return;
+      }
+      e.gutschrift = Math.floor((Number(e.gp) || 0) / 2);
+      vorteilGutschrift += e.gutschrift;
+    }
+    vorhandeneVorteile.add(e.name);
+    vorteile.push(e);
+  });
+  // Sonderfertigkeiten: same duplicate rule — a copy the hero already has
+  // credits half of its AP value (counted as GP, rounded down) to the budget;
+  // a *leveled* SF (leveled: true in SF_TYPES) instead levels the existing
+  // entry up, recorded in snap.sfStufen. Specs may be 'Name' or { name, wert }.
+  const vorhandeneSf = new Set((named.specialAbilities || []).map((s) => s.name));
+  let sfGutschrift = 0;
+  const sfStufen = {};
+  const sonderfertigkeiten = [];
+  (profil.sonderfertigkeiten || []).forEach((spec, i) => {
+    const name = typeof spec === 'string' ? spec : spec.name;
+    const wert = typeof spec === 'string' ? '' : (spec.wert ?? '');
+    const t = SF_TYPES.find((x) => x.name === name) || {};
+    const basisAp = Number(t.ap) || 0;
+    const apKosten = t.leveled && Number(wert) ? basisAp * Number(wert) : basisAp;
+    if (vorhandeneSf.has(name)) {
+      if (t.leveled) {
+        const st = sfStufen[name] || { wert: 0, kosten: 0 };
+        sfStufen[name] = { wert: st.wert + (Number(wert) || 1), kosten: st.kosten + apKosten };
+        return;
+      }
+      const e = {
+        id: 'sf_' + Date.now() + '_' + cfg.tagKey + i,
+        name, kategorie: t.kategorie || 'Allgemein', ap: t.ap || '',
+        [cfg.tagKey]: profil.name,
+        gutschrift: Math.floor(basisAp / 2),
+      };
+      sfGutschrift += e.gutschrift;
+      sonderfertigkeiten.push(e);
+      return;
+    }
+    vorhandeneSf.add(name);
+    sonderfertigkeiten.push({
+      id: 'sf_' + Date.now() + '_' + cfg.tagKey + i,
+      name, kategorie: t.kategorie || 'Allgemein', ap: t.leveled ? apKosten : (t.ap || ''),
+      ...(t.leveled ? { wert: String(Number(wert) || 1) } : {}),
+      [cfg.tagKey]: profil.name,
+    });
+  });
+  const budgetGutschrift = vorteilGutschrift + sfGutschrift;
+  const mitGutschrift = budgetGutschrift
+    ? { ...named, gp: { ...(named.gp || { total: 0, spent: 0 }), total: (Number((named.gp || {}).total) || 0) + budgetGutschrift } }
+    : named;
+  const next = cost > 0 ? spendGp(mitGutschrift, cost) : mitGutschrift;
+  const attributes = { ...(next.attributes || {}) };
+  const eigenschaften = {};
+  Object.entries(profil.eigenschaften || {}).forEach(([k, v]) => {
+    const d = Number(v) || 0;
+    if (!d) return;
+    eigenschaften[k] = d;
+    attributes[k] = (Number(attributes[k]) || 0) + d;
+  });
+  const le = Number(profil.le) || 0, au = Number(profil.au) || 0, ae = Number(profil.ae) || 0, mr = Number(profil.mr) || 0;
+  const mods = { ...(next.derivedMods || {}) };
+  mods.LeP = (Number(mods.LeP) || 0) + le;
+  mods.AuP = (Number(mods.AuP) || 0) + au;
+  mods.AsP = (Number(mods.AsP) || 0) + ae;
+  mods.MR = (Number(mods.MR) || 0) + mr;
+  // Talentwerte: the hero's matching talents are raised; a talent the hero does
+  // not have yet is created (category/probe from DEFAULT_TALENTS, else „Eigene“).
+  const talente = {};
+  const talents = (next.talents || []).map((t) => {
+    const d = Number((profil.talente || {})[t.name]) || 0;
+    if (!d) return t;
+    talente[t.name] = d;
+    return { ...t, taw: (Number(t.taw) || 0) + d };
+  });
+  Object.entries(profil.talente || {}).forEach(([name, v], i) => {
+    const d = Number(v) || 0;
+    if (!d || talente[name]) return;
+    const def = DEFAULT_TALENTS.find(([, n]) => n === name);
+    talente[name] = d;
+    talents.push({
+      id: 't_' + Date.now() + '_' + cfg.tagKey + i,
+      category: def ? def[0] : 'Eigene', name, probe: def ? def[2] : '', taw: d,
+    });
+  });
+  // Nachteile: a duplicate levels the existing entry up if the Nachteil is
+  // leveled (first match; recorded in snap.nachteilStufen); a non-leveled
+  // duplicate is simply ignored. There is never a GP credit for Nachteile.
+  const vorhandeneNachteile = new Set((named.disadvantages || []).map((n) => n.name));
+  const nachteilStufen = {};
+  const nachteile = [];
+  (profil.nachteile || []).forEach((s, i) => {
+    const e = genHerkunftEntry(s, NACHTEIL_TYPES, 'n_', i, cfg.tagKey, profil.name);
+    if (vorhandeneNachteile.has(e.name)) {
+      const t = NACHTEIL_TYPES.find((x) => x.name === e.name) || {};
+      if (t.leveled) {
+        const st = nachteilStufen[e.name] || { wert: 0, kosten: 0 };
+        nachteilStufen[e.name] = { wert: st.wert + (Number(e.wert) || 1), kosten: st.kosten + (Number(e.gp) || 0) };
+      }
+      return;
+    }
+    vorhandeneNachteile.add(e.name);
+    nachteile.push(e);
+  });
+  const snap = { [cfg.nameKey]: profil.name, gp: cost, eigenschaften, le, au, ae, mr, talente };
+  // budgetGutschrift is added to gp.total on apply and taken back on revert.
+  // (v19 snapshots kept the credit inside gp/spent instead and lack this field,
+  // so reverting them must not touch gp.total — hence the separate name.)
+  if (budgetGutschrift) snap.budgetGutschrift = budgetGutschrift;
+  if (Object.keys(vorteilStufen).length) snap.vorteilStufen = vorteilStufen;
+  if (Object.keys(nachteilStufen).length) snap.nachteilStufen = nachteilStufen;
+  if (Object.keys(sfStufen).length) snap.sfStufen = sfStufen;
+  const out = {
+    ...next,
+    attributes,
+    derivedMods: mods,
+    talents,
+    advantages: genStufenAnwenden([...(next.advantages || []), ...vorteile], vorteilStufen, 'gp', 1),
+    disadvantages: genStufenAnwenden([...(next.disadvantages || []), ...nachteile], nachteilStufen, 'gp', 1),
+    specialAbilities: genStufenAnwenden([...(next.specialAbilities || []), ...sonderfertigkeiten], sfStufen, 'ap', 1),
+    [cfg.snapKey]: snap,
+  };
+  if (profil.magisch) {
+    const andere = andereMagischLayer(next, cfg);
+    snap.magisch = true;
+    // Record the base value: from the other magisch layer's record if one is
+    // applied (isMagical is then not the base), else from the current flag.
+    snap.magischVorher = andere ? !!next[andere.snapKey].magischVorher : !!next.isMagical;
+    out.isMagical = true;
+  }
+  return out;
+}
+
+function genApplyRasse(char, rasseName) { return genApplyHerkunft(char, rasseName, RASSE_HERKUNFT); }
+function genApplyKultur(char, kulturName) { return genApplyHerkunft(char, kulturName, KULTUR_HERKUNFT); }
+function genApplyProfession(char, professionName) { return genApplyHerkunft(char, professionName, PROFESSION_HERKUNFT); }
 
 const round = (n) => Math.round(n);
 
@@ -1493,6 +2129,68 @@ function computeDerived(a, mods = {}) {
     PA: round((IN + GE + KK) / 5),
     FK: round((IN + FF + KK) / 5),
   };
+}
+
+// ───────────────────────────────────────────────────────────────
+// Kampftalente ↔ Waffen: AT/PA-Verteilung (DSA 4.1)
+// The TaW of a Nahkampf talent is split onto AT and PA; the split is chosen
+// on the Kampf tab and stored as char.kampfVerteilung[talentName] = { at, pa }
+// with at, pa ≥ 0 and at + pa ≤ TaW. Every weapon linked to that talent gets
+// AT-Basis + at and PA-Basis + pa. Fernkampf weapons are not split: the full
+// TaW is added to the FK-Basis.
+// ───────────────────────────────────────────────────────────────
+
+// Kampftalent a weapon uses: the explicit w.talent if set (an empty string
+// means "deliberately none"), otherwise the category of the matching
+// WEAPON_TYPES entry (weapon categories are named after their Kampftalent).
+function weaponKampfTalentName(w) {
+  if (w.talent !== undefined && w.talent !== null) return w.talent;
+  const wt = WEAPON_TYPES.find((x) => x.name === w.name);
+  return wt ? wt.category : '';
+}
+
+function findKampfTalent(char, talentName) {
+  if (!talentName) return null;
+  return (char.talents || []).find((t) => t.category === 'Kampf' && t.name === talentName) || null;
+}
+
+// Effective AT/PA split of a Kampftalent. Stored values are clamped so that
+// at ≥ 0, pa ≥ 0 and at + pa ≤ TaW (if the TaW was lowered afterwards, pa
+// gives way first). `rest` = TaW points not yet distributed.
+function kampfTalentVerteilung(char, talentName) {
+  const talent = findKampfTalent(char, talentName);
+  const taw = talent ? Math.max(0, Math.floor(Number(talent.taw) || 0)) : 0;
+  const stored = (char.kampfVerteilung || {})[talentName] || {};
+  const at = Math.min(Math.max(Math.floor(Number(stored.at) || 0), 0), taw);
+  const pa = Math.min(Math.max(Math.floor(Number(stored.pa) || 0), 0), taw - at);
+  return { talent, taw, at, pa, rest: taw - at - pa };
+}
+
+// Store a new split. The edited value is clamped to [0, TaW]; if the pair
+// would exceed the TaW, the other value gives way. Lowering a value leaves
+// the freed points undistributed.
+function setKampfVerteilung(char, talentName, patch) {
+  const cur = kampfTalentVerteilung(char, talentName);
+  const clamp = (v) => Math.min(Math.max(Math.floor(Number(v) || 0), 0), cur.taw);
+  let at = cur.at, pa = cur.pa;
+  if (patch.at !== undefined) { at = clamp(patch.at); pa = Math.min(pa, cur.taw - at); }
+  if (patch.pa !== undefined) { pa = clamp(patch.pa); at = Math.min(at, cur.taw - pa); }
+  return {
+    ...char,
+    kampfVerteilung: { ...(char.kampfVerteilung || {}), [talentName]: { at, pa } },
+  };
+}
+
+// Combat values of a weapon, given the derived base values `d`
+// (computeDerived). NK: AT-Basis + at-share / PA-Basis + pa-share;
+// FK: FK-Basis + full TaW, pa = null.
+function weaponCombatValues(char, w, d) {
+  const talentName = weaponKampfTalentName(w);
+  const v = kampfTalentVerteilung(char, talentName);
+  if (w.type === 'FK') {
+    return { talentName, talent: v.talent, taw: v.taw, atBonus: v.taw, paBonus: 0, at: d.FK + v.taw, pa: null };
+  }
+  return { talentName, talent: v.talent, taw: v.taw, atBonus: v.at, paBonus: v.pa, at: d.AT + v.at, pa: d.PA + v.pa };
 }
 
 function newCharacter(name = 'Neuer Held', ownerName = '') {
@@ -1516,11 +2214,16 @@ function newCharacter(name = 'Neuer Held', ownerName = '') {
       id: 't_' + i, category: cat, name, probe, taw: 0,
     })),
     weapons: [],
+    kampfVerteilung: {},
     spells: [],
     sonderfertigkeiten: [],
     inventory: '',
     money: { D: 0, S: 0, H: 0, K: 0 },
     ap: { total: 0, spent: 0 },
+    gp: { total: 0, spent: 0 },
+    rasseGen: null,
+    kulturGen: null,
+    professionGen: null,
     notes: '',
     lastModified: Date.now(),
   };
@@ -1552,6 +2255,33 @@ function newAdventure(name = 'Neues Abenteuer', createdBy = '') {
 // ───────────────────────────────────────────────────────────────
 // Storage layer
 // ───────────────────────────────────────────────────────────────
+// Spellings corrected in v11. Heroes saved under the old names are renamed
+// when loaded (in memory; the fix is persisted with the hero's next save).
+const LEGACY_NAME_FIXES = {
+  talents: { 'Athletic': 'Athletik' },
+  spells: { 'Memorans Gedächniskraft': 'Memorans Gedächtniskraft' },
+  advantages: {
+    'Natürlicher Rüstungschutz': 'Natürlicher Rüstungsschutz',
+    'Breigefächerte Bildung': 'Breitgefächerte Bildung',
+    'Eidetisches Gedächnis': 'Eidetisches Gedächtnis',
+    'Gutes Gedächnis': 'Gutes Gedächtnis',
+  },
+  disadvantages: { 'Ubler Geruch': 'Übler Geruch', 'Wahnvorstellungent': 'Wahnvorstellungen' },
+};
+function migrateLegacyNames(c) {
+  if (!c || typeof c !== 'object') return c;
+  for (const [list, map] of Object.entries(LEGACY_NAME_FIXES)) {
+    if (!Array.isArray(c[list])) continue;
+    c[list].forEach((e) => { if (e && map[e.name]) e.name = map[e.name]; });
+  }
+  if (Array.isArray(c.spells)) {
+    c.spells.forEach((s) => {
+      if (s && s.name === 'Haselbusch und Ginsterkraut' && s.probe === 'CC/FF/KO') s.probe = 'CH/FF/KO';
+    });
+  }
+  return c;
+}
+
 async function loadAll() {
   try {
     const list = await window.storage.list('char_', true);
@@ -1560,7 +2290,7 @@ async function loadAll() {
     for (const k of list.keys) {
       try {
         const r = await window.storage.get(k, true);
-        if (r && r.value) chars.push(JSON.parse(r.value));
+        if (r && r.value) chars.push(migrateLegacyNames(JSON.parse(r.value)));
       } catch (e) {}
     }
     chars.sort((a, b) => (b.lastModified || 0) - (a.lastModified || 0));
@@ -1716,6 +2446,16 @@ const Field = ({ label, value, onChange, type = 'text', className = '', wide = f
   </label>
 );
 
+const SelectField = ({ label, value, onChange, options, placeholder = '—', className = '', wide = false }) => (
+  <label className={`block ${wide ? 'col-span-2' : ''} ${className}`}>
+    <span className="smallcaps text-[10px] block mb-1" style={{ color: 'var(--olive)' }}>{label}</span>
+    <select value={value ?? ''} onChange={(e) => onChange(e.target.value)} className="ink-input font-body w-full px-1 py-1">
+      <option value="">{placeholder}</option>
+      {options.map((o) => <option key={o} value={o}>{o}</option>)}
+    </select>
+  </label>
+);
+
 const SectionTitle = ({ children }) => (
   <h2 className="section-title smallcaps text-sm" style={{ color: 'var(--red)' }}>
     <span className="diamond" />
@@ -1732,179 +2472,36 @@ const Stat = ({ label, value, accent = false }) => (
 );
 
 // ───────────────────────────────────────────────────────────────
-// Rasse silhouettes
-// ───────────────────────────────────────────────────────────────
-const ElfSilhouette = ({ fill = 'currentColor', accent }) => (
-  <svg viewBox="0 0 400 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" style={{display: "block"}}>
-    <g fill={fill}>
-      {/* Dramatic flowing hair: huge sweep back and down to the left, tapered to a point */}
-      <path d="M212 95 Q174 88 132 110 Q88 132 64 185 Q44 250 56 320 Q70 390 96 440 Q112 462 130 470 Q126 440 124 405 Q126 350 142 280 Q162 195 196 125 Q206 108 212 95 Z" />
-      {/* Robe — slim torso flaring to a wide hem */}
-      <path d="M186 138 Q176 178 168 240 Q158 310 150 384 Q140 462 130 522 L270 522 Q260 462 250 384 Q240 310 232 240 Q224 178 214 138 Q210 152 200 152 Q190 152 186 138 Z" />
-      {/* Head */}
-      <ellipse cx="212" cy="112" rx="14" ry="19" />
-      {/* Pointed elf ear sweeping up */}
-      <path d="M224 106 L242 78 L232 118 Z" />
-      {/* Hair fringe falling across forehead */}
-      <path d="M198 100 Q210 88 228 90 Q232 102 224 114 Q214 102 198 108 Z" />
-      {/* Neck */}
-      <rect x="206" y="129" width="14" height="12" />
-    </g>
-    {/* Staff — tall and slim on the right */}
-    <rect x="296" y="44" width="6" height="496" fill={fill} />
-    {/* Staff cap: sharp crystal */}
-    {accent && <path d="M299 14 L316 44 L299 74 L282 44 Z" fill={accent} />}
-    {accent && <circle cx="299" cy="44" r="4" fill={fill} />}
-    {/* Circlet accent on forehead */}
-    {accent && <path d="M196 120 Q212 113 230 120 L230 125 Q212 118 196 125 Z" fill={accent} />}
-  </svg>
-);
-
-const ZwergSilhouette = ({ fill = 'currentColor', accent }) => (
-  <svg viewBox="0 0 400 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" style={{display: "block"}}>
-    <g fill={fill}>
-      {/* Legs — planted broad stance */}
-      <path d="M158 398 L158 478 L198 478 L200 398 Z" />
-      <path d="M200 398 L202 478 L242 478 L242 398 Z" />
-      {/* Heavy boots with plate caps */}
-      <path d="M146 462 L146 514 L208 514 L208 462 Z" />
-      <path d="M192 462 L192 514 L254 514 L254 462 Z" />
-      <rect x="146" y="476" width="62" height="5" />
-      <rect x="192" y="476" width="62" height="5" />
-      {/* Stout chest armor */}
-      <path d="M148 250 Q137 295 137 345 Q137 385 145 418 L255 418 Q263 385 263 345 Q263 295 252 250 Z" />
-      {/* Rounded pauldrons */}
-      <ellipse cx="146" cy="252" rx="22" ry="16" />
-      <ellipse cx="254" cy="252" rx="22" ry="16" />
-      {/* Belt with hanging tassets */}
-      <rect x="138" y="375" width="124" height="18" />
-      <path d="M150 393 L162 393 L160 414 L148 414 Z" />
-      <path d="M180 393 L195 393 L193 418 L178 418 Z" />
-      <path d="M205 393 L220 393 L222 418 L207 418 Z" />
-      <path d="M238 393 L250 393 L252 414 L240 414 Z" />
-      {/* Neck */}
-      <rect x="188" y="222" width="24" height="22" />
-      {/* Helmet — bucket */}
-      <path d="M168 168 Q166 130 200 122 Q234 130 232 168 L232 218 Q226 234 200 234 Q174 234 168 218 Z" />
-      {/* Helmet tall crest fin */}
-      <path d="M190 122 L210 122 L213 86 Q200 74 187 86 Z" />
-      {/* Two great swept horns */}
-      <path d="M168 178 Q138 158 116 122 Q120 108 134 114 Q158 148 180 198 Z" />
-      <path d="M232 178 Q262 158 284 122 Q280 108 266 114 Q242 148 220 198 Z" />
-      {/* Massive forked beard — two main braids */}
-      <path d="M168 215 Q144 250 136 302 Q134 348 146 382 Q158 408 174 412 Q182 384 186 352 Q190 384 196 414 Q200 420 200 414 Q200 420 204 414 Q210 384 214 352 Q218 384 226 412 Q242 408 254 382 Q266 348 264 302 Q256 250 232 215 Z" />
-      {/* Mustache flared upward */}
-      <path d="M170 210 Q188 224 200 220 Q212 224 230 210 Q220 230 200 230 Q180 230 170 210 Z" />
-    </g>
-    {/* Axe haft — thick diagonal across the body */}
-    <line x1="158" y1="322" x2="332" y2="98" stroke={fill} strokeWidth="11" strokeLinecap="round" />
-    {/* Lower hand gripping haft */}
-    <circle cx="172" cy="306" r="13" fill={fill} />
-    {/* Upper hand gripping haft */}
-    <circle cx="252" cy="208" r="13" fill={fill} />
-    {/* Axe head — massive crescent blade upper-right */}
-    <path d="M310 130 Q344 88 362 44 Q378 76 376 120 Q362 162 320 170 Q302 162 310 130 Z" fill={fill} />
-    <path d="M310 130 Q286 110 276 72 Q298 90 322 132 Z" fill={fill} />
-    {/* Axe pommel/spike at base of haft */}
-    <path d="M152 326 L168 322 L162 348 Z" fill={fill} />
-    {/* Belt buckle accent */}
-    {accent && <rect x="192" y="378" width="16" height="14" fill={accent} />}
-    {/* Helmet crest accent */}
-    {accent && <rect x="195" y="125" width="10" height="6" fill={accent} />}
-  </svg>
-);
-
-const MenschSilhouette = ({ fill = 'currentColor', accent }) => (
-  <svg viewBox="0 0 400 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" style={{display: "block"}}>
-    <g fill={fill}>
-      {/* Long flowing cape billowing back to the right */}
-      <path d="M198 178 Q240 200 290 280 Q335 360 354 466 Q360 510 332 518 L242 518 Q236 450 224 372 Q214 282 198 192 Z" />
-      {/* Smaller cape side on the left for balance */}
-      <path d="M204 178 Q176 198 148 248 Q108 318 96 408 Q92 470 114 480 L160 480 Q156 428 168 364 Q182 282 206 198 Z" />
-      {/* Legs — heroic stance */}
-      <path d="M180 380 Q178 422 180 480 L200 480 Q202 422 202 380 Z" />
-      <path d="M198 380 Q198 422 200 480 L220 480 Q222 422 220 380 Z" />
-      {/* Greaves */}
-      <path d="M170 462 L170 510 L208 510 L208 462 Z" />
-      <path d="M192 462 L192 510 L230 510 L230 462 Z" />
-      {/* Body / breastplate — tall hourglass */}
-      <path d="M170 218 Q162 260 165 305 Q170 348 178 385 L222 385 Q230 348 235 305 Q238 260 230 218 Z" />
-      {/* Sculpted abdomen line */}
-      <path d="M186 340 L214 340 L214 346 L186 346 Z" />
-      {/* Spiked pauldrons */}
-      <path d="M148 212 Q150 184 175 175 Q190 178 192 215 Q188 232 170 232 Q152 230 148 212 Z" />
-      <path d="M252 212 Q250 184 225 175 Q210 178 208 215 Q212 232 230 232 Q248 230 252 212 Z" />
-      {/* Pauldron outward spikes */}
-      <path d="M148 212 L120 188 L142 216 Z" />
-      <path d="M252 212 L280 188 L258 216 Z" />
-      {/* Belt */}
-      <rect x="174" y="350" width="52" height="12" />
-      {/* Neck */}
-      <rect x="192" y="148" width="16" height="22" />
-      {/* Helmet — ornate visor */}
-      <path d="M178 108 Q175 76 200 70 Q225 76 222 108 L222 144 Q218 158 200 158 Q182 158 178 144 Z" />
-      {/* Helmet brow band */}
-      <path d="M178 108 Q200 96 222 108 L222 118 L178 118 Z" />
-      {/* Eye slit */}
-      <rect x="184" y="125" width="32" height="4" />
-      {/* Helmet plume — feathered tail sweeping back-left */}
-      <path d="M210 70 Q232 46 252 14 Q262 36 254 60 Q236 76 215 80 Z" />
-      <path d="M212 80 Q242 62 278 24 Q286 48 270 72 Q246 86 218 88 Z" />
-      <path d="M216 90 Q250 80 295 50 Q296 76 278 92 Q252 100 222 96 Z" />
-      <path d="M220 100 Q252 96 295 80 Q288 102 268 110 Q244 112 224 106 Z" />
-    </g>
-    {/* Both arms gripping sword pommel low in front */}
-    <path d="M172 232 Q168 282 190 306 Q198 314 200 318" stroke={fill} strokeWidth="15" fill="none" strokeLinecap="round" />
-    <path d="M228 232 Q232 282 210 306 Q202 314 200 318" stroke={fill} strokeWidth="15" fill="none" strokeLinecap="round" />
-    {/* Sword pommel */}
-    <circle cx="200" cy="320" r="10" fill={fill} />
-    {/* Sword grip */}
-    <rect x="193" y="328" width="14" height="34" fill={fill} />
-    {/* Wide crossguard with curved tips */}
-    <path d="M168 358 Q168 354 174 354 L226 354 Q232 354 232 358 L232 366 Q232 370 226 370 L174 370 Q168 370 168 366 Z" fill={fill} />
-    {/* Crossguard outer flares */}
-    <path d="M168 360 L156 354 L158 370 Z" fill={fill} />
-    <path d="M232 360 L244 354 L242 370 Z" fill={fill} />
-    {/* Long sword blade pointed down between the feet */}
-    <path d="M193 370 L207 370 L209 520 L200 540 L191 520 Z" fill={fill} />
-    {/* Heraldic emblem on breastplate */}
-    {accent && <path d="M192 268 L208 268 L212 295 L200 314 L188 295 Z" fill={accent} />}
-    {/* Plume root accent */}
-    {accent && <circle cx="212" cy="78" r="4" fill={accent} />}
-  </svg>
-);
-
-function resolveRasse(rasse) {
-  if (!rasse) return null;
-  const r = rasse.toLowerCase();
-  if (r.includes('elf')) return 'elf';
-  if (r.includes('zwerg')) return 'zwerg';
-  if (r.includes('mensch') || r.includes('thorwal') || r.includes('mittellän') ||
-      r.includes('aranier') || r.includes('horasier') || r.includes('tulamid') ||
-      r.includes('nivese') || r.includes('norbarde') || r.includes('svellte') ||
-      r.includes('andergaster') || r.includes('nordländer')) return 'mensch';
-  return null;
-}
-
-const SILHOUETTES = { elf: ElfSilhouette, zwerg: ZwergSilhouette, mensch: MenschSilhouette };
-
-function RasseSilhouette({ rasse, fill, accent, className, style }) {
-  const key = resolveRasse(rasse);
-  if (!key) return null;
-  const Cmp = SILHOUETTES[key];
-  return (
-    <div className={className} style={{ ...style, lineHeight: 0 }}>
-      <Cmp fill={fill} accent={accent} />
-    </div>
-  );
-}
-
-// ───────────────────────────────────────────────────────────────
 // Section: Stammdaten
 // ───────────────────────────────────────────────────────────────
-function StammdatenSection({ char, update, session, groups = [] }) {
+function StammdatenSection({ char, update, session, groups = [], generieren = false }) {
   const b = char.basics;
   const setB = (k, v) => update({ ...char, basics: { ...b, [k]: v } });
+  const rasse = findRasse(b.rasse);
+  const rasseGen = char.rasseGen || null;
+  // Generieren mode: choosing a race applies its cost and modifiers (genApplyRasse).
+  const onGenRasse = (v) => {
+    try { update(genApplyRasse(char, v)); }
+    catch (e) { alert(e.message); }
+  };
+  const kulturUnmoeglich = !!(generieren && rasse && b.kultur &&
+    (rasse.kulturen?.unmoeglich || []).some((k) => k.toLowerCase() === b.kultur.trim().toLowerCase()));
+  // A legacy free-text race stays selectable so it is not silently dropped.
+  const rasseOptions = b.rasse && !RASSE_NAMEN.includes(b.rasse) ? [b.rasse, ...RASSE_NAMEN] : RASSE_NAMEN;
+  const kultur = findKultur(b.kultur);
+  const kulturGen = char.kulturGen || null;
+  const onGenKultur = (v) => {
+    try { update(genApplyKultur(char, v)); }
+    catch (e) { alert(e.message); }
+  };
+  const kulturOptions = b.kultur && !KULTUR_NAMEN.includes(b.kultur) ? [b.kultur, ...KULTUR_NAMEN] : KULTUR_NAMEN;
+  const profession = findProfession(b.profession);
+  const professionGen = char.professionGen || null;
+  const onGenProfession = (v) => {
+    try { update(genApplyProfession(char, v)); }
+    catch (e) { alert(e.message); }
+  };
+  const professionOptions = b.profession && !PROFESSION_NAMEN.includes(b.profession) ? [b.profession, ...PROFESSION_NAMEN] : PROFESSION_NAMEN;
   const isMeister = session && session.role === 'meister';
   const memberOf = groups.filter((g) => (g.characterIds || []).includes(char.id));
   return (
@@ -1938,9 +2535,12 @@ function StammdatenSection({ char, update, session, groups = [] }) {
 
       <Field label="Name" value={char.name} onChange={(v) => update({ ...char, name: v })} />
       <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-        <Field label="Rasse" value={b.rasse} onChange={(v) => setB('rasse', v)} />
-        <Field label="Kultur" value={b.kultur} onChange={(v) => setB('kultur', v)} />
-        <Field label="Profession" value={b.profession} onChange={(v) => setB('profession', v)} wide />
+        <SelectField label="Rasse" value={b.rasse} options={rasseOptions} placeholder="— Rasse wählen —"
+          onChange={generieren ? onGenRasse : (v) => setB('rasse', v)} />
+        <SelectField label="Kultur" value={b.kultur} options={kulturOptions} placeholder="— Kultur wählen —"
+          onChange={generieren ? onGenKultur : (v) => setB('kultur', v)} />
+        <SelectField label="Profession" value={b.profession} options={professionOptions} placeholder="— Profession wählen —"
+          onChange={generieren ? onGenProfession : (v) => setB('profession', v)} wide />
         <Field label="Titel / Beiname" value={b.titel} onChange={(v) => setB('titel', v)} wide />
         <Field label="Geschlecht" value={b.geschlecht} onChange={(v) => setB('geschlecht', v)} />
         <Field label="Alter" value={b.alter} onChange={(v) => setB('alter', v)} />
@@ -1952,6 +2552,175 @@ function StammdatenSection({ char, update, session, groups = [] }) {
         <Field label="Geburtstag" value={b.geburtstag} onChange={(v) => setB('geburtstag', v)} />
         <Field label="Geburtsort" value={b.geburtsort} onChange={(v) => setB('geburtsort', v)} wide />
       </div>
+
+      {generieren && (
+        <div className="card p-2 space-y-1">
+          <div className="smallcaps text-[10px]" style={{ color: 'var(--olive)' }}>Rasse · Generierung</div>
+          {rasse ? (
+            <>
+              <div className="font-body text-sm" style={{ color: 'var(--navy)' }}>
+                <strong>{rasse.name}</strong> · {Number(rasse.gp) || 0} GP · {rasseModText(rasse)}
+              </div>
+              {rasseTalentText(rasse) && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Talente: {rasseTalentText(rasse)}
+                </div>
+              )}
+              {(rasse.vorteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Vorteile: {rasse.vorteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(rasse.nachteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Nachteile: {rasse.nachteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(rasse.sonderfertigkeiten || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Sonderfertigkeiten: {rasse.sonderfertigkeiten.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              <div className="font-body text-xs" style={{ color: 'var(--olive)' }}>
+                Mögliche Kulturen: {(rasse.kulturen?.moeglich || []).join(', ') || '—'}
+              </div>
+              {rasseGen && rasseGen.rasse === rasse.name ? (
+                <div className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}>Modifikatoren angewendet</div>
+              ) : (
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-body text-xs" style={{ color: 'var(--red)' }}>
+                    {rasseGen ? `Noch angewendet: ${rasseGen.rasse}.` : 'Modifikatoren noch nicht angewendet.'}
+                  </span>
+                  <button onClick={() => onGenRasse(rasse.name)}
+                    className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5">
+                    {rasse.name} anwenden
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="font-body text-xs italic" style={{ color: 'var(--olive)' }}>
+              {rasseGen ? `Noch angewendet: ${rasseGen.rasse}. ` : ''}
+              Rasse wählen, um GP-Kosten, Modifikatoren und automatische Vor-/Nachteile anzuwenden.
+            </div>
+          )}
+        </div>
+      )}
+      {generieren && (
+        <div className="card p-2 space-y-1">
+          <div className="smallcaps text-[10px]" style={{ color: 'var(--olive)' }}>Kultur · Generierung</div>
+          {kultur ? (
+            <>
+              <div className="font-body text-sm" style={{ color: 'var(--navy)' }}>
+                <strong>{kultur.name}</strong> · {Number(kultur.gp) || 0} GP · {rasseModText(kultur)}
+              </div>
+              {rasseTalentText(kultur) && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Talente: {rasseTalentText(kultur)}
+                </div>
+              )}
+              {(kultur.vorteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Vorteile: {kultur.vorteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(kultur.nachteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Nachteile: {kultur.nachteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(kultur.sonderfertigkeiten || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Sonderfertigkeiten: {kultur.sonderfertigkeiten.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="font-body text-xs italic" style={{ color: 'var(--olive)' }}>
+              {kulturGen ? `Noch angewendet: ${kulturGen.kultur}. ` : ''}
+              Kultur wählen, um GP-Kosten und Modifikatoren anzuwenden.
+            </div>
+          )}
+          {kulturUnmoeglich && (
+            <div className="font-body text-xs" style={{ color: 'var(--red)' }}>
+              Kultur „{b.kultur}“ ist für die Rasse {rasse.name} nicht möglich — trotzdem wählbar.
+            </div>
+          )}
+          {kultur && (
+            kulturGen && kulturGen.kultur === kultur.name ? (
+              <div className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}>Modifikatoren angewendet</div>
+            ) : (
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-body text-xs" style={{ color: 'var(--red)' }}>
+                  {kulturGen ? `Noch angewendet: ${kulturGen.kultur}.` : 'Modifikatoren noch nicht angewendet.'}
+                </span>
+                <button onClick={() => onGenKultur(kultur.name)}
+                  className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5">
+                  {kultur.name} anwenden
+                </button>
+              </div>
+            )
+          )}
+        </div>
+      )}
+
+      {generieren && (
+        <div className="card p-2 space-y-1">
+          <div className="smallcaps text-[10px]" style={{ color: 'var(--olive)' }}>Profession · Generierung</div>
+          {profession ? (
+            <>
+              <div className="font-body text-sm" style={{ color: 'var(--navy)' }}>
+                <strong>{profession.name}</strong> · {Number(profession.gp) || 0} GP · {rasseModText(profession)}
+              </div>
+              {professionVoraussetzungenText(profession) && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Voraussetzungen: {professionVoraussetzungenText(profession)}
+                </div>
+              )}
+              {rasseTalentText(profession) && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Talente: {rasseTalentText(profession)}
+                </div>
+              )}
+              {(profession.vorteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Vorteile: {profession.vorteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(profession.nachteile || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Nachteile: {profession.nachteile.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+              {(profession.sonderfertigkeiten || []).length > 0 && (
+                <div className="font-body text-xs" style={{ color: 'var(--navy)' }}>
+                  Sonderfertigkeiten: {profession.sonderfertigkeiten.map(rasseEntryName).join(', ')}
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="font-body text-xs italic" style={{ color: 'var(--olive)' }}>
+              {professionGen ? `Noch angewendet: ${professionGen.profession}. ` : ''}
+              Profession wählen, um GP-Kosten und Modifikatoren anzuwenden.
+            </div>
+          )}
+          {profession && (
+            professionGen && professionGen.profession === profession.name ? (
+              <div className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}>Modifikatoren angewendet</div>
+            ) : (
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-body text-xs" style={{ color: 'var(--red)' }}>
+                  {professionGen ? `Noch angewendet: ${professionGen.profession}.` : 'Modifikatoren noch nicht angewendet.'}
+                </span>
+                <button onClick={() => onGenProfession(profession.name)}
+                  className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5">
+                  {profession.name} anwenden
+                </button>
+              </div>
+            )
+          )}
+        </div>
+      )}
       <label className="block">
         <span className="smallcaps text-[10px] block mb-1" style={{ color: 'var(--olive)' }}>Aussehen / Beschreibung</span>
         <textarea
@@ -1980,12 +2749,16 @@ function StammdatenSection({ char, update, session, groups = [] }) {
 // ───────────────────────────────────────────────────────────────
 // Section: Eigenschaften + abgeleitete Werte
 // ───────────────────────────────────────────────────────────────
-function WerteSection({ char, update, steigern = false }) {
+function WerteSection({ char, update, steigern = false, generieren = false }) {
   const d = computeDerived(char.attributes, char.derivedMods);
   const setAttr = (k, v) => update({ ...char, attributes: { ...char.attributes, [k]: v === '' ? '' : Number(v) || 0 } });
   const setMod = (k, v) => update({ ...char, derivedMods: { ...char.derivedMods, [k]: v === '' ? '' : Number(v) || 0 } });
   const setCur = (k, v) => update({ ...char, currentValues: { ...char.currentValues, [k]: v } });
   const setAp = (k, v) => update({ ...char, ap: { ...char.ap, [k]: v === '' ? '' : Number(v) || 0 } });
+  const setGp = (k, v) => update({ ...char, gp: { ...(char.gp || { total: 0, spent: 0 }), [k]: v === '' ? '' : Number(v) || 0 } });
+  // Voraussetzungen of the applied profession — display only, never enforced.
+  const professionAngewendet = generieren && char.professionGen ? findProfession(char.professionGen.profession) : null;
+  const voraussetzungen = (professionAngewendet && professionAngewendet.voraussetzungen) || {};
 
   const onRaiseAttr = (k) => {
     try { update(raiseAttribute(char, k)); }
@@ -1995,14 +2768,41 @@ function WerteSection({ char, update, steigern = false }) {
     try { update(raiseMagicResistance(char)); }
     catch (e) { alert(e.message); }
   };
+  const onGenRaiseAttr = (k) => {
+    try { update(genRaiseAttribute(char, k)); }
+    catch (e) { alert(e.message); }
+  };
+  const onGenRaiseMR = () => {
+    try { update(genRaiseMagicResistance(char)); }
+    catch (e) { alert(e.message); }
+  };
 
   return (
     <div className="space-y-4">
       <SectionTitle>Eigenschaften</SectionTitle>
+      {generieren && char.rasseGen && (
+        <div className="font-body text-xs -mt-2" style={{ color: 'var(--olive)' }}>
+          Rasse {char.rasseGen.rasse} angewendet: {rasseModText(char.rasseGen)}
+        </div>
+      )}
+      {generieren && char.kulturGen && (
+        <div className="font-body text-xs -mt-2" style={{ color: 'var(--olive)' }}>
+          Kultur {char.kulturGen.kultur} angewendet: {rasseModText(char.kulturGen)}
+        </div>
+      )}
+      {generieren && char.professionGen && (
+        <div className="font-body text-xs -mt-2" style={{ color: 'var(--olive)' }}>
+          Profession {char.professionGen.profession} angewendet: {rasseModText(char.professionGen)}
+        </div>
+      )}
       <div className="grid grid-cols-4 gap-2">
         {ATTRIBUTES.map(([k, name]) => {
           const cost = previewRaiseCost(char, 'attribute', k);
           const affordable = cost != null && canAfford(char, cost);
+          const atLimit = Number(char.attributes[k]) >= EIGENSCHAFT_STEIGERUNGSLIMIT;
+          const genCost = genPreviewRaiseCost(char, 'attribute', k);
+          const genAffordable = genCost != null && canAffordGp(char, genCost);
+          const genAtLimit = Number(char.attributes[k]) >= GEN_EIGENSCHAFT_STEIGERUNGSLIMIT;
           return (
             <div key={k} className="stat-frame p-2 text-center">
               <div className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>{k}</div>
@@ -2014,10 +2814,31 @@ function WerteSection({ char, update, steigern = false }) {
                   <button
                     onClick={() => onRaiseAttr(k)}
                     disabled={!affordable}
-                    title={cost != null ? `+1 für ${cost} AP` : 'Steigerung nicht möglich'}
+                    title={cost != null ? `+1 für ${cost} AP` : atLimit ? `Steigerungslimit ${EIGENSCHAFT_STEIGERUNGSLIMIT} erreicht` : 'Steigerung nicht möglich'}
                     className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5 mt-0.5 w-full"
                     style={!affordable ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
-                    +1 · {cost ?? '?'} AP
+                    {atLimit ? `Limit ${EIGENSCHAFT_STEIGERUNGSLIMIT}` : <>+1 · {cost ?? '?'} AP</>}
+                  </button>
+                </>
+              ) : generieren ? (
+                <>
+                  <div className="font-display text-2xl mt-0.5" style={{ color: 'var(--navy)' }}>
+                    {char.attributes[k]}
+                  </div>
+                  {voraussetzungen[k] ? (
+                    <div className="smallcaps text-[9px]"
+                      title={`Voraussetzung der Profession ${char.professionGen.profession}`}
+                      style={{ color: (Number(char.attributes[k]) || 0) >= Number(voraussetzungen[k]) ? 'var(--olive)' : 'var(--red)' }}>
+                      min {voraussetzungen[k]}
+                    </div>
+                  ) : null}
+                  <button
+                    onClick={() => onGenRaiseAttr(k)}
+                    disabled={!genAffordable}
+                    title={genCost != null ? `+1 für ${genCost} GP` : genAtLimit ? `Steigerungslimit ${GEN_EIGENSCHAFT_STEIGERUNGSLIMIT} erreicht` : 'Steigerung nicht möglich'}
+                    className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5 mt-0.5 w-full"
+                    style={!genAffordable ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                    {genAtLimit ? `Limit ${GEN_EIGENSCHAFT_STEIGERUNGSLIMIT}` : <>+1 · {genCost ?? '?'} GP</>}
                   </button>
                 </>
               ) : (
@@ -2077,13 +2898,15 @@ function WerteSection({ char, update, steigern = false }) {
         ].map(([key, label, formula, hasMod]) => {
           const mrCost = key === 'MR' ? previewRaiseCost(char, 'mr') : null;
           const mrAffordable = mrCost != null && canAfford(char, mrCost);
+          const mrGenCost = key === 'MR' ? genPreviewRaiseCost(char, 'mr') : null;
+          const mrGenAffordable = mrGenCost != null && canAffordGp(char, mrGenCost);
           return (
             <div key={key} className="card p-2">
               <div className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>{label}</div>
               <div className="font-body italic text-[9px]" style={{ color: 'var(--olive)' }}>{formula}</div>
               <div className="flex items-center gap-2 mt-1">
                 <span className="font-display text-2xl flex-1" style={{ color: 'var(--navy)' }}>{d[key]}</span>
-                {hasMod && !steigern && (
+                {hasMod && !steigern && !generieren && (
                   <input type="number" value={char.derivedMods[key]} onChange={(e) => setMod(key, e.target.value)}
                     className="ink-input font-body w-12 px-1 py-0.5 text-center text-sm" title="Modifikator" />
                 )}
@@ -2097,21 +2920,49 @@ function WerteSection({ char, update, steigern = false }) {
                     +1 · {mrCost ?? '?'} AP
                   </button>
                 )}
+                {hasMod && generieren && key === 'MR' && (
+                  <button
+                    onClick={onGenRaiseMR}
+                    disabled={!mrGenAffordable}
+                    title={mrGenCost != null ? `+1 für ${mrGenCost} GP` : 'Steigerung nicht möglich'}
+                    className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
+                    style={!mrGenAffordable ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                    +1 · {mrGenCost ?? '?'} GP
+                  </button>
+                )}
               </div>
             </div>
           );
         })}
       </div>
 
-      <SectionTitle>Abenteuerpunkte</SectionTitle>
-      <div className="grid grid-cols-3 gap-2">
-        <Field label="AP gesamt" type="number" value={char.ap.total} onChange={(v) => setAp('total', v)} />
-        <Field label="AP ausgegeben" type="number" value={char.ap.spent} onChange={(v) => setAp('spent', v)} />
-        <div className="stat-accent p-2 text-center">
-          <div className="smallcaps text-[9px]" style={{ color: 'var(--olive)' }}>Verfügbar</div>
-          <div className="font-display text-2xl mt-0.5" style={{ color: 'var(--navy)' }}>{(char.ap.total || 0) - (char.ap.spent || 0)}</div>
-        </div>
-      </div>
+      {!generieren && (
+        <>
+          <SectionTitle>Abenteuerpunkte</SectionTitle>
+          <div className="grid grid-cols-3 gap-2">
+            <Field label="AP gesamt" type="number" value={char.ap.total} onChange={(v) => setAp('total', v)} />
+            <Field label="AP ausgegeben" type="number" value={char.ap.spent} onChange={(v) => setAp('spent', v)} />
+            <div className="stat-accent p-2 text-center">
+              <div className="smallcaps text-[9px]" style={{ color: 'var(--olive)' }}>Verfügbar</div>
+              <div className="font-display text-2xl mt-0.5" style={{ color: 'var(--navy)' }}>{(char.ap.total || 0) - (char.ap.spent || 0)}</div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {generieren && (
+        <>
+          <SectionTitle>Generierungspunkte</SectionTitle>
+          <div className="grid grid-cols-3 gap-2">
+            <Field label="GP gesamt" type="number" value={(char.gp || {}).total} onChange={(v) => setGp('total', v)} />
+            <Field label="GP ausgegeben" type="number" value={(char.gp || {}).spent} onChange={(v) => setGp('spent', v)} />
+            <div className="stat-accent p-2 text-center">
+              <div className="smallcaps text-[9px]" style={{ color: 'var(--olive)' }}>Verfügbar</div>
+              <div className="font-display text-2xl mt-0.5" style={{ color: 'var(--navy)' }}>{((char.gp || {}).total || 0) - ((char.gp || {}).spent || 0)}</div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -2119,27 +2970,16 @@ function WerteSection({ char, update, steigern = false }) {
 // ───────────────────────────────────────────────────────────────
 // Section: Talente
 // ───────────────────────────────────────────────────────────────
-function TalenteSection({ char, update, steigern = false }) {
+function TalenteSection({ char, update, steigern = false, generieren = false }) {
   const [open, setOpen] = useState({ Körperlich: true, Gesellschaft: true, Natur: true, Wissen: true, Sprache: true, Handwerk: true, Eigene: true });
-  const [kampfOpen, setKampfOpen] = useState({});
   const [newTalent, setNewTalent] = useState({ category: 'Eigene', name: '', probe: '' });
-
-  const setWeaponTalent = (weaponName, field, value) => {
-    const wt = char.weaponTalents || {};
-    const entry = wt[weaponName] || {};
-    const v = value === '' ? '' : Number(value) || 0;
-    update({
-      ...char,
-      weaponTalents: { ...wt, [weaponName]: { ...entry, [field]: v } },
-    });
-  };
 
   const onRaiseTalent = (id) => {
     try { update(raiseTalent(char, id)); }
     catch (e) { alert(e.message); }
   };
-  const onRaiseWeapon = (weaponName, field) => {
-    try { update(raiseWeaponTalent(char, weaponName, field)); }
+  const onGenRaiseTalent = (id) => {
+    try { update(genRaiseTalent(char, id)); }
     catch (e) { alert(e.message); }
   };
 
@@ -2177,6 +3017,21 @@ function TalenteSection({ char, update, steigern = false }) {
   return (
     <div className="space-y-3">
       <SectionTitle>Talente</SectionTitle>
+      {generieren && char.rasseGen && rasseTalentText(char.rasseGen) && (
+        <div className="font-body text-xs -mt-1" style={{ color: 'var(--olive)' }}>
+          Rasse {char.rasseGen.rasse} angewendet: {rasseTalentText(char.rasseGen)}
+        </div>
+      )}
+      {generieren && char.kulturGen && rasseTalentText(char.kulturGen) && (
+        <div className="font-body text-xs -mt-1" style={{ color: 'var(--olive)' }}>
+          Kultur {char.kulturGen.kultur} angewendet: {rasseTalentText(char.kulturGen)}
+        </div>
+      )}
+      {generieren && char.professionGen && rasseTalentText(char.professionGen) && (
+        <div className="font-body text-xs -mt-1" style={{ color: 'var(--olive)' }}>
+          Profession {char.professionGen.profession} angewendet: {rasseTalentText(char.professionGen)}
+        </div>
+      )}
       {TALENT_CATEGORIES.map((cat) => (
         (grouped[cat] && grouped[cat].length > 0) && (
           <div key={cat} className="card">
@@ -2187,14 +3042,21 @@ function TalenteSection({ char, update, steigern = false }) {
             </button>
             {open[cat] && (
               <div className="px-2 pb-2 space-y-1">
+                {cat === 'Kampf' && (
+                  <div className="font-body italic text-[10px] px-2 pb-1" style={{ color: 'var(--olive)' }}>
+                    Der TaW von Nahkampftalenten wird im Tab „Kampf“ auf AT und PA verteilt; bei Fernkampftalenten zählt er voll auf FK.
+                  </div>
+                )}
                 {grouped[cat].map((t) => {
                   const tCost = previewRaiseCost(char, 'talent', t.id);
                   const tAfford = tCost != null && canAfford(char, tCost);
+                  const tGenCost = genPreviewRaiseCost(char, 'talent', t.id);
+                  const tGenAfford = tGenCost != null && canAffordGp(char, tGenCost);
                   return (
                   <div key={t.id} className="grid grid-cols-12 gap-2 items-center px-2 py-1 rounded"
                     style={{ backgroundColor: 'rgba(248,232,196,0.5)' }}>
                     <input value={t.name} onChange={(e) => setTalent(t.id, { name: e.target.value })}
-                      disabled={steigern}
+                      disabled={steigern || generieren}
                       className="ink-input font-body text-sm col-span-5 px-1 py-0.5" />
                     <div className="col-span-4 flex items-center gap-0.5 flex-wrap">
                       {renderProbe(t.probe)}
@@ -2211,12 +3073,24 @@ function TalenteSection({ char, update, steigern = false }) {
                           +{tCost ?? '?'}
                         </button>
                       </div>
+                    ) : generieren ? (
+                      <div className="col-span-2 flex items-center justify-between gap-1">
+                        <span className="font-display text-base" style={{ color: 'var(--navy)' }}>{t.taw}</span>
+                        <button
+                          onClick={() => onGenRaiseTalent(t.id)}
+                          disabled={!tGenAfford}
+                          title={tGenCost != null ? `+1 für ${tGenCost} GP` : 'Steigerung nicht möglich'}
+                          className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
+                          style={!tGenAfford ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                          +{tGenCost ?? '?'}
+                        </button>
+                      </div>
                     ) : (
                       <input type="number" value={t.taw} onChange={(e) => setTalent(t.id, { taw: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
                         className="ink-input font-display text-base col-span-2 px-1 py-0.5 text-center"
                         style={{ color: 'var(--navy)' }} />
                     )}
-                    {!steigern ? (
+                    {!(steigern || generieren) ? (
                       <button onClick={() => removeTalent(t.id)} className="col-span-1 transition" style={{ color: 'var(--olive)' }}
                         onMouseEnter={(e) => e.currentTarget.style.color = 'var(--navy)'}
                         onMouseLeave={(e) => e.currentTarget.style.color = 'var(--olive)'}>
@@ -2248,100 +3122,17 @@ function TalenteSection({ char, update, steigern = false }) {
           </button>
         </div>
       </div>
-
-      {/* Kampftalente — TaW per weapon type, split into AT and PA */}
-      <SectionTitle>Kampftalente</SectionTitle>
-      {[...new Set(WEAPON_TYPES.map((w) => w.category))].map((cat) => {
-        const open = !!kampfOpen[cat];
-        const weapons = WEAPON_TYPES.filter((w) => w.category === cat);
-        return (
-          <div key={cat} className="card">
-            <button onClick={() => setKampfOpen({ ...kampfOpen, [cat]: !open })}
-              className="w-full flex items-center justify-between px-3 py-2 smallcaps text-xs" style={{ color: 'var(--red)' }}>
-              <span>{cat}</span>
-              {open ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
-            </button>
-            {open && (
-              <div className="px-2 pb-2 space-y-1">
-                <div className="grid grid-cols-12 gap-2 px-2 smallcaps text-[9px]" style={{ color: 'var(--olive)' }}>
-                  <span className="col-span-6">Waffentyp</span>
-                  <span className="col-span-2 text-center">Typ</span>
-                  <span className="col-span-2 text-center">AT</span>
-                  <span className="col-span-2 text-center">PA</span>
-                </div>
-                {weapons.map((w) => {
-                  const wt = (char.weaponTalents || {})[w.name] || {};
-                  const atCost = previewRaiseCost(char, 'weaponAt', w.name);
-                  const paCost = previewRaiseCost(char, 'weaponPa', w.name);
-                  const atAfford = atCost != null && canAfford(char, atCost);
-                  const paAfford = paCost != null && canAfford(char, paCost);
-                  return (
-                    <div key={w.name} className="grid grid-cols-12 gap-2 items-center px-2 py-1 rounded"
-                      style={{ backgroundColor: 'rgba(248,232,196,0.5)' }}>
-                      <span className="font-body text-sm col-span-6 truncate" style={{ color: 'var(--navy)' }}>{w.name}</span>
-                      <span className="col-span-2 text-center smallcaps text-[10px]" style={{ color: 'var(--olive)' }}>
-                        {w.type}
-                      </span>
-                      {steigern ? (
-                        <div className="col-span-2 flex items-center justify-between gap-1">
-                          <span className="font-display text-base" style={{ color: 'var(--navy)' }}>{wt.at ?? 0}</span>
-                          <button
-                            onClick={() => onRaiseWeapon(w.name, 'at')}
-                            disabled={!atAfford}
-                            title={atCost != null ? `+1 für ${atCost} AP` : ''}
-                            className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
-                            style={!atAfford ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
-                            +{atCost ?? '?'}
-                          </button>
-                        </div>
-                      ) : (
-                        <input type="number"
-                          value={wt.at ?? ''}
-                          onChange={(e) => setWeaponTalent(w.name, 'at', e.target.value)}
-                          className="ink-input font-display text-base col-span-2 px-1 py-0.5 text-center"
-                          style={{ color: 'var(--navy)' }} />
-                      )}
-                      {w.type === 'NK' ? (
-                        steigern ? (
-                          <div className="col-span-2 flex items-center justify-between gap-1">
-                            <span className="font-display text-base" style={{ color: 'var(--navy)' }}>{wt.pa ?? 0}</span>
-                            <button
-                              onClick={() => onRaiseWeapon(w.name, 'pa')}
-                              disabled={!paAfford}
-                              title={paCost != null ? `+1 für ${paCost} AP` : ''}
-                              className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
-                              style={!paAfford ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
-                              +{paCost ?? '?'}
-                            </button>
-                          </div>
-                        ) : (
-                          <input type="number"
-                            value={wt.pa ?? ''}
-                            onChange={(e) => setWeaponTalent(w.name, 'pa', e.target.value)}
-                            className="ink-input font-display text-base col-span-2 px-1 py-0.5 text-center"
-                            style={{ color: 'var(--navy)' }} />
-                        )
-                      ) : (
-                        <span className="col-span-2 text-center font-body italic text-xs" style={{ color: 'var(--olive)' }}>—</span>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        );
-      })}
     </div>
   );
 }
 
 // ───────────────────────────────────────────────────────────────
-// Section: Kampf
+// Section: Kampf — AT/PA-Verteilung of the Kampftalente and weapon cards
+// whose AT/PA (or FK) derive from the linked Kampftalent.
 // ───────────────────────────────────────────────────────────────
 function KampfSection({ char, update }) {
   const d = computeDerived(char.attributes, char.derivedMods);
-  const [newW, setNewW] = useState({ name: '', tp: '', type: 'NK' });
+  const [newW, setNewW] = useState({ name: '', tp: '', type: 'NK', talent: '' });
   const setW = (id, patch) => update({ ...char, weapons: char.weapons.map((w) => w.id === id ? { ...w, ...patch } : w) });
   const removeW = (id) => update({ ...char, weapons: char.weapons.filter((w) => w.id !== id) });
   const setPrimary = (id) => update({
@@ -2351,8 +3142,15 @@ function KampfSection({ char, update }) {
   const addW = () => {
     if (!newW.name.trim()) return;
     update({ ...char, weapons: [...char.weapons, { id: 'w_' + Date.now(), ...newW }] });
-    setNewW({ name: '', tp: '', type: 'NK' });
+    setNewW({ name: '', tp: '', type: 'NK', talent: '' });
   };
+
+  // AT/PA-Verteilung: Nahkampf talents with TaW > 0 (a talent typed FK still
+  // counts as Nahkampf here if a Nahkampf weapon of the hero is linked to it).
+  const kampfTalente = (char.talents || []).filter((t) => t.category === 'Kampf');
+  const linkedNk = new Set(char.weapons.filter((w) => w.type !== 'FK').map((w) => weaponKampfTalentName(w)));
+  const splitTalents = kampfTalente.filter((t) => (Number(t.taw) || 0) > 0 && (t.probe !== 'FK' || linkedNk.has(t.name)));
+  const setSplit = (talentName, patch) => update(setKampfVerteilung(char, talentName, patch));
 
   return (
     <div className="space-y-4">
@@ -2363,14 +3161,53 @@ function KampfSection({ char, update }) {
         <Stat label="FK-Basis" value={d.FK} accent />
       </div>
 
+      <SectionTitle>Kampftalente · AT/PA-Verteilung</SectionTitle>
+      {splitTalents.length === 0 ? (
+        <div className="font-body italic text-[10px]" style={{ color: 'var(--olive)' }}>
+          Keine Nahkampftalente mit TaW &gt; 0. Der TaW wird unter Talente · Kampf gesteigert und hier auf AT und PA verteilt.
+        </div>
+      ) : (
+        <div className="space-y-2">
+          {splitTalents.map((t) => {
+            const v = kampfTalentVerteilung(char, t.name);
+            return (
+              <div key={t.id} className="card p-2">
+                <div className="flex items-center justify-between">
+                  <span className="font-body text-sm" style={{ color: 'var(--navy)' }}>{t.name}</span>
+                  <span className="smallcaps text-[10px]" style={{ color: 'var(--olive)' }}>
+                    TaW <strong style={{ color: 'var(--navy)' }}>{v.taw}</strong>
+                  </span>
+                </div>
+                <div className="grid grid-cols-3 gap-2 items-end mt-1">
+                  <label>
+                    <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>AT-Anteil</span>
+                    <input type="number" min={0} max={v.taw} value={v.at}
+                      onChange={(e) => setSplit(t.name, { at: e.target.value })}
+                      className="ink-input font-display text-base w-full px-1 py-0.5 text-center" style={{ color: 'var(--navy)' }} />
+                  </label>
+                  <label>
+                    <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>PA-Anteil</span>
+                    <input type="number" min={0} max={v.taw} value={v.pa}
+                      onChange={(e) => setSplit(t.name, { pa: e.target.value })}
+                      className="ink-input font-display text-base w-full px-1 py-0.5 text-center" style={{ color: 'var(--navy)' }} />
+                  </label>
+                  <div className="text-center">
+                    <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Unverteilt</span>
+                    <span className="font-display text-base" style={{ color: v.rest > 0 ? 'var(--red)' : 'var(--olive)' }}>{v.rest}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      <SectionTitle>Waffen</SectionTitle>
       <div className="space-y-2">
         {char.weapons.map((w) => {
-          const wt = (char.weaponTalents || {})[w.name] || {};
-          const atTaw = Number(wt.at) || 0;
-          const paTaw = Number(wt.pa) || 0;
-          const at = (w.type === 'FK' ? d.FK : d.AT) + atTaw;
-          const pa = w.type === 'FK' ? null : d.PA + paTaw;
-          const known = WEAPON_TYPES.some((wt2) => wt2.name === w.name);
+          const wv = weaponCombatValues(char, w, d);
+          const { at, pa, atBonus: atTaw, paBonus: paTaw } = wv;
+          const talentListed = !wv.talentName || kampfTalente.some((t) => t.name === wv.talentName);
           return (
             <div key={w.id} className="card p-2 space-y-2"
               style={w.primary ? { borderLeft: '4px solid var(--navy)' } : {}}>
@@ -2395,6 +3232,18 @@ function KampfSection({ char, update }) {
                   <Trash2 className="w-3.5 h-3.5 mx-auto" />
                 </button>
               </div>
+              <div className="grid grid-cols-12 gap-2 items-center">
+                <span className="smallcaps text-[9px] col-span-3" style={{ color: 'var(--olive)' }}>Kampftalent</span>
+                <select value={wv.talentName} onChange={(e) => setW(w.id, { talent: e.target.value })}
+                  className="ink-input font-body text-sm col-span-6 px-1 py-0.5">
+                  <option value="">— kein Kampftalent —</option>
+                  {!talentListed && <option value={wv.talentName}>{wv.talentName} (nicht in Talentliste)</option>}
+                  {kampfTalente.map((t) => <option key={t.id} value={t.name}>{t.name}</option>)}
+                </select>
+                <span className="smallcaps text-[9px] col-span-3 text-right" style={{ color: 'var(--olive)' }}>
+                  TaW <strong style={{ color: 'var(--navy)' }}>{wv.talent ? wv.taw : '—'}</strong>
+                </span>
+              </div>
               <div className="grid grid-cols-3 gap-2">
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>TP</span>
@@ -2406,7 +3255,7 @@ function KampfSection({ char, update }) {
                   <span className="font-display text-xl" style={{ color: 'var(--navy)' }}>{at}</span>
                   <span className="font-body italic text-[9px] block" style={{ color: 'var(--olive)' }}>
                     {w.type === 'FK' ? 'FK-Basis' : 'AT-Basis'} {w.type === 'FK' ? d.FK : d.AT}
-                    {atTaw !== 0 && <span> · TaW {atTaw >= 0 ? '+' : ''}{atTaw}</span>}
+                    {atTaw !== 0 && <span> · {w.type === 'FK' ? 'TaW' : 'AT-Anteil'} +{atTaw}</span>}
                   </span>
                 </div>
                 <div className="text-center">
@@ -2416,15 +3265,20 @@ function KampfSection({ char, update }) {
                       <span className="font-display text-xl" style={{ color: 'var(--navy)' }}>{pa}</span>
                       <span className="font-body italic text-[9px] block" style={{ color: 'var(--olive)' }}>
                         PA-Basis {d.PA}
-                        {paTaw !== 0 && <span> · TaW {paTaw >= 0 ? '+' : ''}{paTaw}</span>}
+                        {paTaw !== 0 && <span> · PA-Anteil +{paTaw}</span>}
                       </span>
                     </>
                   ) : <span className="font-body italic text-xs" style={{ color: 'var(--olive)' }}>—</span>}
                 </div>
               </div>
-              {!known && (
+              {!wv.talentName && (
                 <div className="font-body italic text-[10px]" style={{ color: 'var(--olive)' }}>
-                  Kein Kampftalent für „{w.name}" — TaW-Punkte unter Talente · Kampftalente werden nur für aufgelistete Waffentypen angewendet.
+                  Kein Kampftalent verknüpft — oben wählen, damit TaW-Punkte in AT/PA einfließen.
+                </div>
+              )}
+              {wv.talentName && !wv.talent && (
+                <div className="font-body italic text-[10px]" style={{ color: 'var(--red)' }}>
+                  Kampftalent „{wv.talentName}“ fehlt in der Talentliste.
                 </div>
               )}
             </div>
@@ -2439,16 +3293,18 @@ function KampfSection({ char, update }) {
             onChange={(e) => {
               const v = e.target.value;
               if (!v) return;
-              const wt = WEAPON_TYPES.find((w) => w.name === v);
-              if (wt) setNewW({ name: wt.name, type: wt.type, tp: wt.tp });
+              // Option values are WEAPON_TYPES indices: the same weapon name can be
+              // listed under several Kampftalente (e.g. Speer under Speere and Wurfspeere).
+              const wt = WEAPON_TYPES[Number(v)];
+              if (wt) setNewW({ name: wt.name, type: wt.type, tp: wt.tp, talent: wt.category });
             }}
             value=""
             className="ink-input font-body text-sm w-full px-1 py-1">
             <option value="">— Waffentyp wählen —</option>
             {[...new Set(WEAPON_TYPES.map((w) => w.category))].map((cat) => (
               <optgroup key={cat} label={cat}>
-                {WEAPON_TYPES.filter((w) => w.category === cat).map((w) => (
-                  <option key={w.name} value={w.name}>
+                {WEAPON_TYPES.map((w, idx) => [w, idx]).filter(([w]) => w.category === cat).map(([w, idx]) => (
+                  <option key={idx} value={idx}>
                     {w.name} ({w.type} · {w.tp})
                   </option>
                 ))}
@@ -2478,7 +3334,7 @@ function KampfSection({ char, update }) {
 // ───────────────────────────────────────────────────────────────
 // Section: Zauber
 // ───────────────────────────────────────────────────────────────
-function ZauberSection({ char, update, steigern = false }) {
+function ZauberSection({ char, update, steigern = false, generieren = false }) {
   const [newS, setNewS] = useState({ name: '', probe: '', zfw: 0, kosten: '', rep: '' });
   const setS = (id, patch) => update({ ...char, spells: char.spells.map((s) => s.id === id ? { ...s, ...patch } : s) });
   const removeS = (id) => update({ ...char, spells: char.spells.filter((s) => s.id !== id) });
@@ -2489,6 +3345,10 @@ function ZauberSection({ char, update, steigern = false }) {
   };
   const onRaiseSpell = (id) => {
     try { update(raiseSpell(char, id)); }
+    catch (e) { alert(e.message); }
+  };
+  const onGenRaiseSpell = (id) => {
+    try { update(genRaiseSpell(char, id)); }
     catch (e) { alert(e.message); }
   };
 
@@ -2512,13 +3372,15 @@ function ZauberSection({ char, update, steigern = false }) {
       {char.spells.map((s) => {
         const sCost = previewRaiseCost(char, 'spell', s.id);
         const sAfford = sCost != null && canAfford(char, sCost);
+        const sGenCost = genPreviewRaiseCost(char, 'spell', s.id);
+        const sGenAfford = sGenCost != null && canAffordGp(char, sGenCost);
         return (
         <div key={s.id} className="card p-2 space-y-2">
           <div className="flex items-center gap-2">
             <input value={s.name} onChange={(e) => setS(s.id, { name: e.target.value })}
-              disabled={steigern}
+              disabled={steigern || generieren}
               className="ink-input font-body flex-1 px-1 py-0.5" placeholder="Zauber" />
-            {!steigern && (
+            {!(steigern || generieren) && (
               <button onClick={() => removeS(s.id)} style={{ color: 'var(--olive)' }}>
                 <Trash2 className="w-3.5 h-3.5" />
               </button>
@@ -2528,7 +3390,7 @@ function ZauberSection({ char, update, steigern = false }) {
             <label>
               <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Probe</span>
               <input value={s.probe} onChange={(e) => setS(s.id, { probe: e.target.value.toUpperCase() })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body w-full px-1 py-0.5 text-center text-sm uppercase" placeholder="MU/KL/IN" />
             </label>
             <label>
@@ -2545,6 +3407,18 @@ function ZauberSection({ char, update, steigern = false }) {
                     +{sCost ?? '?'}
                   </button>
                 </div>
+              ) : generieren ? (
+                <div className="flex items-center justify-between gap-1">
+                  <span className="font-display text-base flex-1 text-center" style={{ color: 'var(--navy)' }}>{s.zfw}</span>
+                  <button
+                    onClick={() => onGenRaiseSpell(s.id)}
+                    disabled={!sGenAfford}
+                    title={sGenCost != null ? `+1 für ${sGenCost} GP` : ''}
+                    className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
+                    style={!sGenAfford ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                    +{sGenCost ?? '?'}
+                  </button>
+                </div>
               ) : (
                 <input type="number" value={s.zfw} onChange={(e) => setS(s.id, { zfw: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
                   className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" />
@@ -2553,13 +3427,13 @@ function ZauberSection({ char, update, steigern = false }) {
             <label>
               <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Kosten</span>
               <input value={s.kosten} onChange={(e) => setS(s.id, { kosten: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="7 AsP" />
             </label>
             <label>
               <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Repr.</span>
               <input value={s.rep} onChange={(e) => setS(s.id, { rep: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="Mag" />
             </label>
           </div>
@@ -2613,7 +3487,7 @@ function ZauberSection({ char, update, steigern = false }) {
 // ───────────────────────────────────────────────────────────────
 // Section: Liturgien (only meaningful for geweihte Helden)
 // ───────────────────────────────────────────────────────────────
-function LiturgieSection({ char, update, steigern = false }) {
+function LiturgieSection({ char, update, steigern = false, generieren = false }) {
   const [newL, setNewL] = useState({ name: '', grad: 'I', kosten: '', gottheit: '', lkw: 0 });
   const setL = (id, patch) => update({ ...char, liturgies: (char.liturgies || []).map((l) => l.id === id ? { ...l, ...patch } : l) });
   const removeL = (id) => update({ ...char, liturgies: (char.liturgies || []).filter((l) => l.id !== id) });
@@ -2624,6 +3498,10 @@ function LiturgieSection({ char, update, steigern = false }) {
   };
   const onRaiseLiturgy = (id) => {
     try { update(raiseLiturgy(char, id)); }
+    catch (e) { alert(e.message); }
+  };
+  const onGenRaiseLiturgy = (id) => {
+    try { update(genRaiseLiturgy(char, id)); }
     catch (e) { alert(e.message); }
   };
 
@@ -2652,13 +3530,15 @@ function LiturgieSection({ char, update, steigern = false }) {
         liturgies.map((l) => {
           const lCost = previewRaiseCost(char, 'liturgy', l.id);
           const lAfford = lCost != null && canAfford(char, lCost);
+          const lGenCost = genPreviewRaiseCost(char, 'liturgy', l.id);
+          const lGenAfford = lGenCost != null && canAffordGp(char, lGenCost);
           return (
           <div key={l.id} className="card p-2 space-y-2">
             <div className="flex items-center gap-2">
               <input value={l.name} onChange={(e) => setL(l.id, { name: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body flex-1 px-1 py-0.5" placeholder="Liturgie" />
-              {!steigern && (
+              {!(steigern || generieren) && (
                 <button onClick={() => removeL(l.id)} style={{ color: 'var(--olive)' }}>
                   <Trash2 className="w-3.5 h-3.5" />
                 </button>
@@ -2668,7 +3548,7 @@ function LiturgieSection({ char, update, steigern = false }) {
               <label>
                 <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Grad</span>
                 <select value={l.grad} onChange={(e) => setL(l.id, { grad: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body w-full px-1 py-0.5 text-center text-sm">
                   {['I', 'II', 'III', 'IV', 'V', 'VI'].map((g) => <option key={g} value={g}>{g}</option>)}
                 </select>
@@ -2690,6 +3570,18 @@ function LiturgieSection({ char, update, steigern = false }) {
                       +{lCost ?? '?'}
                     </button>
                   </div>
+                ) : generieren ? (
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="font-display text-base flex-1 text-center" style={{ color: 'var(--navy)' }}>{l.lkw ?? 0}</span>
+                    <button
+                      onClick={() => onGenRaiseLiturgy(l.id)}
+                      disabled={!lGenAfford}
+                      title={lGenCost != null ? `+1 für ${lGenCost} GP` : ''}
+                      className="btn-accent rounded smallcaps text-[9px] px-1 py-0.5"
+                      style={!lGenAfford ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                      +{lGenCost ?? '?'}
+                    </button>
+                  </div>
                 ) : (
                   <input type="number" value={l.lkw ?? ''}
                     onChange={(e) => setL(l.id, { lkw: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
@@ -2699,13 +3591,13 @@ function LiturgieSection({ char, update, steigern = false }) {
               <label>
                 <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Kosten</span>
                 <input value={l.kosten} onChange={(e) => setL(l.id, { kosten: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="KaP" />
               </label>
               <label>
                 <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Gottheit</span>
                 <input value={l.gottheit} onChange={(e) => setL(l.id, { gottheit: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="—" />
               </label>
             </div>
@@ -2751,9 +3643,10 @@ function LiturgieSection({ char, update, steigern = false }) {
 }
 
 // ───────────────────────────────────────────────────────────────
-// Section: Vorteile (advantages) — GP-based, dropdown + cards
+// Section: Vorteile (advantages) — GP-based, dropdown + cards.
+// Acquired only in Generieren mode; Steigern shows existing entries read-only.
 // ───────────────────────────────────────────────────────────────
-function VorteileSection({ char, update, steigern = false }) {
+function VorteileSection({ char, update, steigern = false, generieren = false }) {
   const [newV, setNewV] = useState({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
   const advantages = char.advantages || [];
   const setV = (id, patch) => update({ ...char, advantages: advantages.map((v) => v.id === id ? { ...v, ...patch } : v) });
@@ -2763,11 +3656,11 @@ function VorteileSection({ char, update, steigern = false }) {
     update({ ...char, advantages: [...advantages, { id: 'v_' + Date.now(), ...newV }] });
     setNewV({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
   };
-  // Steigern mode: buy the advantage for AP (1:1 with GP)
-  const buyV = () => {
+  // Generieren mode: buy the advantage from the GP budget
+  const genBuyV = () => {
     if (!newV.name.trim()) return;
     try {
-      update(buyAdvantage(char, newV));
+      update(genBuyAdvantage(char, newV));
       setNewV({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
     } catch (e) { alert(e.message); }
   };
@@ -2775,7 +3668,7 @@ function VorteileSection({ char, update, steigern = false }) {
   // Total GP spent on advantages (for the summary line)
   const totalGp = advantages.reduce((sum, v) => sum + (Number(v.gp) || 0), 0);
   const addCost = Number(newV.gp) || 0;
-  const addAffordable = canAfford(char, addCost);
+  const addAffordableGp = canAffordGp(char, addCost);
 
   return (
     <div className="space-y-4">
@@ -2783,7 +3676,7 @@ function VorteileSection({ char, update, steigern = false }) {
 
       {advantages.length === 0 ? (
         <div className="text-center font-body italic py-4" style={{ color: 'var(--olive)' }}>
-          Noch keine Vorteile. Wähle unten den ersten aus.
+          Noch keine Vorteile.{!steigern && ' Wähle unten den ersten aus.'}
         </div>
       ) : (
         <>
@@ -2792,17 +3685,40 @@ function VorteileSection({ char, update, steigern = false }) {
           </div>
           {advantages.map((v) => (
             <div key={v.id} className="card p-2 space-y-2"
-              style={v.paidAp ? { borderLeft: '4px solid var(--navy)' } : {}}>
+              style={(v.paidAp || v.paidGp || v.vonRasse || v.vonKultur || v.vonProfession) ? { borderLeft: '4px solid var(--navy)' } : {}}>
               <div className="flex items-center gap-2">
                 <input value={v.name} onChange={(e) => setV(v.id, { name: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body flex-1 px-1 py-0.5" placeholder="Vorteil" />
                 {v.paidAp && (
                   <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }} title="Mit AP gekauft">
                     AP
                   </span>
                 )}
-                {!steigern && (
+                {v.paidGp && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }} title="Mit GP gekauft">
+                    GP
+                  </span>
+                )}
+                {v.vonRasse && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Rasse ' + v.vonRasse + ' — in den Rassenkosten enthalten'}>
+                    Rasse
+                  </span>
+                )}
+                {v.vonKultur && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Kultur ' + v.vonKultur + ' — in den Kulturkosten enthalten'}>
+                    Kultur
+                  </span>
+                )}
+                {v.vonProfession && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Profession ' + v.vonProfession + ' — in den Professionskosten enthalten'}>
+                    Profession
+                  </span>
+                )}
+                {!(steigern || generieren) && (
                   <button onClick={() => removeV(v.id)} style={{ color: 'var(--olive)' }}>
                     <Trash2 className="w-3.5 h-3.5" />
                   </button>
@@ -2812,97 +3728,103 @@ function VorteileSection({ char, update, steigern = false }) {
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>GP</span>
                   <input type="number" value={v.gp ?? ''}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     onChange={(e) => setV(v.id, { gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
                     className="ink-input font-display text-base w-full px-1 py-0.5 text-center" style={{ color: 'var(--navy)' }} />
                 </label>
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Stufe/Wert</span>
                   <input value={v.wert ?? ''} onChange={(e) => setV(v.id, { wert: e.target.value })}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="—" />
                 </label>
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Kategorie</span>
                   <select value={v.kategorie || 'Allgemein'} onChange={(e) => setV(v.id, { kategorie: e.target.value })}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     className="ink-input font-body w-full px-1 py-0.5 text-center text-sm">
                     {['Allgemein', 'Kampf', 'Magisch', 'Karmal', 'Sozial'].map((k) => <option key={k} value={k}>{k}</option>)}
                   </select>
                 </label>
               </div>
               <input value={v.notes ?? ''} onChange={(e) => setV(v.id, { notes: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body text-sm w-full px-1 py-0.5" placeholder="Anmerkung (optional)" />
             </div>
           ))}
         </>
       )}
 
-      <div className="border-2 border-dashed rounded p-3" style={{ borderColor: 'rgba(41,51,92,0.25)' }}>
-        <div className="smallcaps text-[10px] mb-2 flex items-center justify-between" style={{ color: 'var(--olive)' }}>
-          <span>Vorteil hinzufügen</span>
-          {steigern && (
-            <span style={{ color: 'var(--navy)' }}>1 GP = 1 AP</span>
-          )}
+      {steigern ? (
+        <div className="text-center font-body italic text-sm py-2" style={{ color: 'var(--olive)' }}>
+          Vorteile werden nur bei der Generierung erworben — dazu den Modus „Generieren“ aktivieren.
         </div>
-        <div className="space-y-2">
-          <select
-            onChange={(e) => {
-              const val = e.target.value;
-              if (!val) return;
-              const vt = VORTEIL_TYPES.find((x) => x.name === val);
-              if (vt) setNewV({ name: vt.name, gp: vt.gp, kategorie: vt.kategorie, wert: '', notes: '' });
-            }}
-            value=""
-            className="ink-input font-body text-sm w-full px-1 py-1">
-            <option value="">— Vorteil wählen —</option>
-            {[...new Set(VORTEIL_TYPES.map((v) => v.kategorie))].map((kat) => (
-              <optgroup key={kat} label={kat}>
-                {VORTEIL_TYPES.filter((v) => v.kategorie === kat).map((v) => (
-                  <option key={v.name} value={v.name}>
-                    {v.name} ({v.gp} GP{v.leveled ? ' / Stufe' : ''})
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-          <div className="grid grid-cols-12 gap-2 items-center">
-            <input placeholder="Name" value={newV.name} onChange={(e) => setNewV({ ...newV, name: e.target.value })}
-              className="ink-input font-body text-sm col-span-7 px-1 py-1" />
-            <input type="number" placeholder="GP" value={newV.gp ?? ''}
-              onChange={(e) => setNewV({ ...newV, gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
-              className="ink-input font-body text-sm col-span-4 px-1 py-1 text-center" title="GP-Kosten" />
-            {steigern ? (
-              <button onClick={buyV} disabled={!addAffordable || addCost <= 0}
-                title={addCost > 0 ? `Kaufen für ${addCost} AP` : 'GP-Kosten angeben'}
-                className="btn-accent col-span-1 rounded"
-                style={(!addAffordable || addCost <= 0) ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
-                <Plus className="w-4 h-4 mx-auto" />
-              </button>
-            ) : (
-              <button onClick={addV} className="btn-accent col-span-1 rounded">
-                <Plus className="w-4 h-4 mx-auto" />
-              </button>
+      ) : (
+        <div className="border-2 border-dashed rounded p-3" style={{ borderColor: 'rgba(41,51,92,0.25)' }}>
+          <div className="smallcaps text-[10px] mb-2 flex items-center justify-between" style={{ color: 'var(--olive)' }}>
+            <span>Vorteil hinzufügen</span>
+            {generieren && (
+              <span style={{ color: 'var(--navy)' }}>kostet GP</span>
             )}
           </div>
-          {steigern && newV.name.trim() && (
-            <div className="smallcaps text-[10px] text-center"
-              style={{ color: addAffordable ? 'var(--navy)' : 'var(--red)' }}>
-              Kosten · {addCost} AP{!addAffordable && ' — nicht genug AP'}
+          <div className="space-y-2">
+            <select
+              onChange={(e) => {
+                const val = e.target.value;
+                if (!val) return;
+                const vt = VORTEIL_TYPES.find((x) => x.name === val);
+                if (vt) setNewV({ name: vt.name, gp: vt.gp, kategorie: vt.kategorie, wert: '', notes: '' });
+              }}
+              value=""
+              className="ink-input font-body text-sm w-full px-1 py-1">
+              <option value="">— Vorteil wählen —</option>
+              {[...new Set(VORTEIL_TYPES.map((v) => v.kategorie))].map((kat) => (
+                <optgroup key={kat} label={kat}>
+                  {VORTEIL_TYPES.filter((v) => v.kategorie === kat).map((v) => (
+                    <option key={v.name} value={v.name}>
+                      {v.name} ({v.gp} GP{v.leveled ? ' / Stufe' : ''})
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
+            <div className="grid grid-cols-12 gap-2 items-center">
+              <input placeholder="Name" value={newV.name} onChange={(e) => setNewV({ ...newV, name: e.target.value })}
+                className="ink-input font-body text-sm col-span-7 px-1 py-1" />
+              <input type="number" placeholder="GP" value={newV.gp ?? ''}
+                onChange={(e) => setNewV({ ...newV, gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
+                className="ink-input font-body text-sm col-span-4 px-1 py-1 text-center" title="GP-Kosten" />
+              {generieren ? (
+                <button onClick={genBuyV} disabled={!addAffordableGp || addCost <= 0}
+                  title={addCost > 0 ? `Kaufen für ${addCost} GP` : 'GP-Kosten angeben'}
+                  className="btn-accent col-span-1 rounded"
+                  style={(!addAffordableGp || addCost <= 0) ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                  <Plus className="w-4 h-4 mx-auto" />
+                </button>
+              ) : (
+                <button onClick={addV} className="btn-accent col-span-1 rounded">
+                  <Plus className="w-4 h-4 mx-auto" />
+                </button>
+              )}
             </div>
-          )}
+            {generieren && newV.name.trim() && (
+              <div className="smallcaps text-[10px] text-center"
+                style={{ color: addAffordableGp ? 'var(--navy)' : 'var(--red)' }}>
+                Kosten · {addCost} GP{!addAffordableGp && ' — nicht genug GP'}
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
 
 // ───────────────────────────────────────────────────────────────
 // Section: Nachteile (disadvantages) — GP-based, dropdown + cards.
-// In Steigern mode, taking one refunds AP at 1:1.
+// Taken only in Generieren mode; Steigern shows existing entries read-only.
 // ───────────────────────────────────────────────────────────────
-function NachteileSection({ char, update, steigern = false }) {
+function NachteileSection({ char, update, steigern = false, generieren = false }) {
   const [newN, setNewN] = useState({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
   const disadvantages = char.disadvantages || [];
   const setN = (id, patch) => update({ ...char, disadvantages: disadvantages.map((n) => n.id === id ? { ...n, ...patch } : n) });
@@ -2912,11 +3834,11 @@ function NachteileSection({ char, update, steigern = false }) {
     update({ ...char, disadvantages: [...disadvantages, { id: 'n_' + Date.now(), ...newN }] });
     setNewN({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
   };
-  // Steigern mode: taking the disadvantage refunds AP (1:1 with GP)
-  const takeN = () => {
+  // Generieren mode: taking the disadvantage credits GP to the budget
+  const genTakeN = () => {
     if (!newN.name.trim()) return;
     try {
-      update(takeDisadvantage(char, newN));
+      update(genTakeDisadvantage(char, newN));
       setNewN({ name: '', gp: '', kategorie: 'Allgemein', wert: '', notes: '' });
     } catch (e) { alert(e.message); }
   };
@@ -2932,7 +3854,7 @@ function NachteileSection({ char, update, steigern = false }) {
 
       {disadvantages.length === 0 ? (
         <div className="text-center font-body italic py-4" style={{ color: 'var(--olive)' }}>
-          Noch keine Nachteile. Wähle unten den ersten aus.
+          Noch keine Nachteile.{!steigern && ' Wähle unten den ersten aus.'}
         </div>
       ) : (
         <>
@@ -2941,17 +3863,40 @@ function NachteileSection({ char, update, steigern = false }) {
           </div>
           {disadvantages.map((n) => (
             <div key={n.id} className="card p-2 space-y-2"
-              style={n.paidAp ? { borderLeft: '4px solid var(--red)' } : {}}>
+              style={(n.paidAp || n.paidGp || n.vonRasse || n.vonKultur || n.vonProfession) ? { borderLeft: '4px solid var(--red)' } : {}}>
               <div className="flex items-center gap-2">
                 <input value={n.name} onChange={(e) => setN(n.id, { name: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body flex-1 px-1 py-0.5" placeholder="Nachteil" />
                 {n.paidAp && (
                   <span className="smallcaps text-[9px]" style={{ color: 'var(--red)' }} title="Im Spiel genommen — AP gutgeschrieben">
                     AP
                   </span>
                 )}
-                {!steigern && (
+                {n.paidGp && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--red)' }} title="Bei Generierung genommen — GP gutgeschrieben">
+                    GP
+                  </span>
+                )}
+                {n.vonRasse && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--red)' }}
+                    title={'Automatisch durch Rasse ' + n.vonRasse + ' — in den Rassenkosten enthalten'}>
+                    Rasse
+                  </span>
+                )}
+                {n.vonKultur && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--red)' }}
+                    title={'Automatisch durch Kultur ' + n.vonKultur + ' — in den Kulturkosten enthalten'}>
+                    Kultur
+                  </span>
+                )}
+                {n.vonProfession && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--red)' }}
+                    title={'Automatisch durch Profession ' + n.vonProfession + ' — in den Professionskosten enthalten'}>
+                    Profession
+                  </span>
+                )}
+                {!(steigern || generieren) && (
                   <button onClick={() => removeN(n.id)} style={{ color: 'var(--olive)' }}>
                     <Trash2 className="w-3.5 h-3.5" />
                   </button>
@@ -2961,87 +3906,93 @@ function NachteileSection({ char, update, steigern = false }) {
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>GP</span>
                   <input type="number" value={n.gp ?? ''}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     onChange={(e) => setN(n.id, { gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
                     className="ink-input font-display text-base w-full px-1 py-0.5 text-center" style={{ color: 'var(--navy)' }} />
                 </label>
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Stufe/Wert</span>
                   <input value={n.wert ?? ''} onChange={(e) => setN(n.id, { wert: e.target.value })}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     className="ink-input font-body w-full px-1 py-0.5 text-center text-sm" placeholder="—" />
                 </label>
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Kategorie</span>
                   <select value={n.kategorie || 'Allgemein'} onChange={(e) => setN(n.id, { kategorie: e.target.value })}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     className="ink-input font-body w-full px-1 py-0.5 text-center text-sm">
                     {NACHTEIL_KATEGORIEN.map((k) => <option key={k} value={k}>{k}</option>)}
                   </select>
                 </label>
               </div>
               <input value={n.notes ?? ''} onChange={(e) => setN(n.id, { notes: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body text-sm w-full px-1 py-0.5" placeholder="Anmerkung (optional)" />
             </div>
           ))}
         </>
       )}
 
-      <div className="border-2 border-dashed rounded p-3" style={{ borderColor: 'rgba(41,51,92,0.25)' }}>
-        <div className="smallcaps text-[10px] mb-2 flex items-center justify-between" style={{ color: 'var(--olive)' }}>
-          <span>Nachteil hinzufügen</span>
-          {steigern && (
-            <span style={{ color: 'var(--red)' }}>1 GP = +1 AP</span>
-          )}
+      {steigern ? (
+        <div className="text-center font-body italic text-sm py-2" style={{ color: 'var(--olive)' }}>
+          Nachteile werden nur bei der Generierung genommen — dazu den Modus „Generieren“ aktivieren.
         </div>
-        <div className="space-y-2">
-          <select
-            onChange={(e) => {
-              const val = e.target.value;
-              if (!val) return;
-              const nt = NACHTEIL_TYPES.find((x) => x.name === val);
-              if (nt) setNewN({ name: nt.name, gp: nt.gp, kategorie: nt.kategorie, wert: '', notes: '' });
-            }}
-            value=""
-            className="ink-input font-body text-sm w-full px-1 py-1">
-            <option value="">— Nachteil wählen —</option>
-            {[...new Set(NACHTEIL_TYPES.map((n) => n.kategorie))].map((kat) => (
-              <optgroup key={kat} label={kat}>
-                {NACHTEIL_TYPES.filter((n) => n.kategorie === kat).map((n) => (
-                  <option key={n.name} value={n.name}>
-                    {n.name} ({n.gp} GP{n.leveled ? ' / Stufe' : ''})
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-          <div className="grid grid-cols-12 gap-2 items-center">
-            <input placeholder="Name" value={newN.name} onChange={(e) => setNewN({ ...newN, name: e.target.value })}
-              className="ink-input font-body text-sm col-span-7 px-1 py-1" />
-            <input type="number" placeholder="GP" value={newN.gp ?? ''}
-              onChange={(e) => setNewN({ ...newN, gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
-              className="ink-input font-body text-sm col-span-4 px-1 py-1 text-center" title="GP-Wert" />
-            {steigern ? (
-              <button onClick={takeN} disabled={refund <= 0}
-                title={refund > 0 ? `Nehmen — ${refund} AP gutschreiben` : 'GP-Wert angeben'}
-                className="btn-accent col-span-1 rounded"
-                style={refund <= 0 ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
-                <Plus className="w-4 h-4 mx-auto" />
-              </button>
-            ) : (
-              <button onClick={addN} className="btn-accent col-span-1 rounded">
-                <Plus className="w-4 h-4 mx-auto" />
-              </button>
+      ) : (
+        <div className="border-2 border-dashed rounded p-3" style={{ borderColor: 'rgba(41,51,92,0.25)' }}>
+          <div className="smallcaps text-[10px] mb-2 flex items-center justify-between" style={{ color: 'var(--olive)' }}>
+            <span>Nachteil hinzufügen</span>
+            {generieren && (
+              <span style={{ color: 'var(--red)' }}>gibt GP</span>
             )}
           </div>
-          {steigern && newN.name.trim() && (
-            <div className="smallcaps text-[10px] text-center" style={{ color: 'var(--red)' }}>
-              Gutschrift · +{refund} AP
+          <div className="space-y-2">
+            <select
+              onChange={(e) => {
+                const val = e.target.value;
+                if (!val) return;
+                const nt = NACHTEIL_TYPES.find((x) => x.name === val);
+                if (nt) setNewN({ name: nt.name, gp: nt.gp, kategorie: nt.kategorie, wert: '', notes: '' });
+              }}
+              value=""
+              className="ink-input font-body text-sm w-full px-1 py-1">
+              <option value="">— Nachteil wählen —</option>
+              {[...new Set(NACHTEIL_TYPES.map((n) => n.kategorie))].map((kat) => (
+                <optgroup key={kat} label={kat}>
+                  {NACHTEIL_TYPES.filter((n) => n.kategorie === kat).map((n) => (
+                    <option key={n.name} value={n.name}>
+                      {n.name} ({n.gp} GP{n.leveled ? ' / Stufe' : ''})
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
+            <div className="grid grid-cols-12 gap-2 items-center">
+              <input placeholder="Name" value={newN.name} onChange={(e) => setNewN({ ...newN, name: e.target.value })}
+                className="ink-input font-body text-sm col-span-7 px-1 py-1" />
+              <input type="number" placeholder="GP" value={newN.gp ?? ''}
+                onChange={(e) => setNewN({ ...newN, gp: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
+                className="ink-input font-body text-sm col-span-4 px-1 py-1 text-center" title="GP-Wert" />
+              {generieren ? (
+                <button onClick={genTakeN} disabled={refund <= 0}
+                  title={refund > 0 ? `Nehmen — ${refund} GP gutschreiben` : 'GP-Wert angeben'}
+                  className="btn-accent col-span-1 rounded"
+                  style={refund <= 0 ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                  <Plus className="w-4 h-4 mx-auto" />
+                </button>
+              ) : (
+                <button onClick={addN} className="btn-accent col-span-1 rounded">
+                  <Plus className="w-4 h-4 mx-auto" />
+                </button>
+              )}
             </div>
-          )}
+            {generieren && newN.name.trim() && (
+              <div className="smallcaps text-[10px] text-center" style={{ color: 'var(--red)' }}>
+                Gutschrift · +{refund} GP
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -3050,7 +4001,7 @@ function NachteileSection({ char, update, steigern = false }) {
 // Section: Sonderfertigkeiten — AP-cost based, dropdown + cards.
 // In Steigern mode, learning one costs its AP value directly.
 // ───────────────────────────────────────────────────────────────
-function SonderfertigkeitenSection({ char, update, steigern = false }) {
+function SonderfertigkeitenSection({ char, update, steigern = false, generieren = false }) {
   const [newSF, setNewSF] = useState({ name: '', ap: '', kategorie: 'Kampf', notes: '' });
   const abilities = char.specialAbilities || [];
   const setSF = (id, patch) => update({ ...char, specialAbilities: abilities.map((s) => s.id === id ? { ...s, ...patch } : s) });
@@ -3068,10 +4019,19 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
       setNewSF({ name: '', ap: '', kategorie: 'Kampf', notes: '' });
     } catch (e) { alert(e.message); }
   };
+  // Generieren mode: learn the SF from the GP budget
+  const genLearnSF = () => {
+    if (!newSF.name.trim()) return;
+    try {
+      update(genLearnSpecialAbility(char, newSF));
+      setNewSF({ name: '', ap: '', kategorie: 'Kampf', notes: '' });
+    } catch (e) { alert(e.message); }
+  };
 
   const totalAp = abilities.reduce((sum, s) => sum + (Number(s.ap) || 0), 0);
   const learnCost = Number(newSF.ap) || 0;
   const learnAffordable = canAfford(char, learnCost);
+  const learnAffordableGp = canAffordGp(char, learnCost);
 
   const SF_KATEGORIEN = ['Kampf', 'Kampfstil', 'Magisch', 'Klerikal', 'Allgemein'];
 
@@ -3090,17 +4050,45 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
           </div>
           {abilities.map((s) => (
             <div key={s.id} className="card p-2 space-y-2"
-              style={s.paidAp ? { borderLeft: '4px solid var(--navy)' } : {}}>
+              style={(s.paidAp || s.paidGp || s.vonRasse || s.vonKultur || s.vonProfession) ? { borderLeft: '4px solid var(--navy)' } : {}}>
               <div className="flex items-center gap-2">
                 <input value={s.name} onChange={(e) => setSF(s.id, { name: e.target.value })}
-                  disabled={steigern}
+                  disabled={steigern || generieren}
                   className="ink-input font-body flex-1 px-1 py-0.5" placeholder="Sonderfertigkeit" />
+                {s.wert && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }} title="Stufe">
+                    Stufe {s.wert}
+                  </span>
+                )}
                 {s.paidAp && (
                   <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }} title="Mit AP gelernt">
                     AP
                   </span>
                 )}
-                {!steigern && (
+                {s.paidGp && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }} title="Mit GP gelernt">
+                    GP
+                  </span>
+                )}
+                {s.vonRasse && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Rasse ' + s.vonRasse + ' — in den Rassenkosten enthalten'}>
+                    Rasse
+                  </span>
+                )}
+                {s.vonKultur && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Kultur ' + s.vonKultur + ' — in den Kulturkosten enthalten'}>
+                    Kultur
+                  </span>
+                )}
+                {s.vonProfession && (
+                  <span className="smallcaps text-[9px]" style={{ color: 'var(--navy)' }}
+                    title={'Automatisch durch Profession ' + s.vonProfession + ' — in den Professionskosten enthalten'}>
+                    Profession
+                  </span>
+                )}
+                {!(steigern || generieren) && (
                   <button onClick={() => removeSF(s.id)} style={{ color: 'var(--olive)' }}>
                     <Trash2 className="w-3.5 h-3.5" />
                   </button>
@@ -3110,21 +4098,21 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>AP-Kosten</span>
                   <input type="number" value={s.ap ?? ''}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     onChange={(e) => setSF(s.id, { ap: e.target.value === '' ? '' : Number(e.target.value) || 0 })}
                     className="ink-input font-display text-base w-full px-1 py-0.5 text-center" style={{ color: 'var(--navy)' }} />
                 </label>
                 <label>
                   <span className="smallcaps text-[9px] block" style={{ color: 'var(--olive)' }}>Kategorie</span>
                   <select value={s.kategorie || 'Kampf'} onChange={(e) => setSF(s.id, { kategorie: e.target.value })}
-                    disabled={steigern}
+                    disabled={steigern || generieren}
                     className="ink-input font-body w-full px-1 py-0.5 text-center text-sm">
                     {SF_KATEGORIEN.map((k) => <option key={k} value={k}>{k}</option>)}
                   </select>
                 </label>
               </div>
               <input value={s.notes ?? ''} onChange={(e) => setSF(s.id, { notes: e.target.value })}
-                disabled={steigern}
+                disabled={steigern || generieren}
                 className="ink-input font-body text-sm w-full px-1 py-0.5" placeholder="Anmerkung (optional)" />
             </div>
           ))}
@@ -3135,6 +4123,7 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
         <div className="smallcaps text-[10px] mb-2 flex items-center justify-between" style={{ color: 'var(--olive)' }}>
           <span>Sonderfertigkeit hinzufügen</span>
           {steigern && <span style={{ color: 'var(--navy)' }}>kostet AP</span>}
+          {generieren && <span style={{ color: 'var(--navy)' }}>kostet GP</span>}
         </div>
         <div className="space-y-2">
           <select
@@ -3170,6 +4159,13 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
                 style={(!learnAffordable || learnCost <= 0) ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
                 <Plus className="w-4 h-4 mx-auto" />
               </button>
+            ) : generieren ? (
+              <button onClick={genLearnSF} disabled={!learnAffordableGp || learnCost <= 0}
+                title={learnCost > 0 ? `Lernen für ${learnCost} GP` : 'AP-Kosten angeben'}
+                className="btn-accent col-span-1 rounded"
+                style={(!learnAffordableGp || learnCost <= 0) ? { opacity: 0.4, cursor: 'not-allowed' } : {}}>
+                <Plus className="w-4 h-4 mx-auto" />
+              </button>
             ) : (
               <button onClick={addSF} className="btn-accent col-span-1 rounded">
                 <Plus className="w-4 h-4 mx-auto" />
@@ -3180,6 +4176,12 @@ function SonderfertigkeitenSection({ char, update, steigern = false }) {
             <div className="smallcaps text-[10px] text-center"
               style={{ color: learnAffordable ? 'var(--navy)' : 'var(--red)' }}>
               Kosten · {learnCost} AP{!learnAffordable && ' — nicht genug AP'}
+            </div>
+          )}
+          {generieren && newSF.name.trim() && (
+            <div className="smallcaps text-[10px] text-center"
+              style={{ color: learnAffordableGp ? 'var(--navy)' : 'var(--red)' }}>
+              Kosten · {learnCost} GP{!learnAffordableGp && ' — nicht genug GP'}
             </div>
           )}
         </div>
@@ -3239,8 +4241,11 @@ const TABS = [
 
 function CharacterView({ char, update, onBack, savedAt, session, groups = [] }) {
   const [tab, setTab] = useState('held');
-  const [steigern, setSteigern] = useState(false);
-  const avail = availableAp(char);
+  const [mode, setMode] = useState(null); // null | 'steigern' | 'generieren'
+  const steigern = mode === 'steigern';
+  const generieren = mode === 'generieren';
+  const availAp = availableAp(char);
+  const availGp = availableGp(char);
   return (
     <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-between px-3 py-2 sticky top-0 z-10 surface-sand"
@@ -3260,18 +4265,34 @@ function CharacterView({ char, update, onBack, savedAt, session, groups = [] }) 
 
       <div className="flex items-center justify-between gap-2 px-3 py-2"
         style={{ borderBottom: '1px solid rgba(41,51,92,0.15)' }}>
-        <label className="flex items-center gap-2 cursor-pointer">
-          <input type="checkbox"
-            checked={steigern}
-            onChange={(e) => setSteigern(e.target.checked)} />
-          <span className="smallcaps text-[10px]"
-            style={{ color: steigern ? 'var(--red)' : 'var(--olive)' }}>
-            {steigern ? 'Steigern aktiv' : 'Steigern'}
-          </span>
-        </label>
+        <div className="flex items-center gap-4">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox"
+              checked={steigern}
+              onChange={(e) => setMode(e.target.checked ? 'steigern' : null)} />
+            <span className="smallcaps text-[10px]"
+              style={{ color: steigern ? 'var(--red)' : 'var(--olive)' }}>
+              {steigern ? 'Steigern aktiv' : 'Steigern'}
+            </span>
+          </label>
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox"
+              checked={generieren}
+              onChange={(e) => setMode(e.target.checked ? 'generieren' : null)} />
+            <span className="smallcaps text-[10px]"
+              style={{ color: generieren ? 'var(--red)' : 'var(--olive)' }}>
+              {generieren ? 'Generieren aktiv' : 'Generieren'}
+            </span>
+          </label>
+        </div>
         {steigern && (
           <span className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>
-            Verfügbare AP · <strong>{avail}</strong>
+            Verfügbare AP · <strong>{availAp}</strong>
+          </span>
+        )}
+        {generieren && (
+          <span className="smallcaps text-[10px]" style={{ color: 'var(--navy)' }}>
+            Verfügbare GP · <strong>{availGp}</strong>
           </span>
         )}
       </div>
@@ -3291,34 +4312,16 @@ function CharacterView({ char, update, onBack, savedAt, session, groups = [] }) 
         })}
       </div>
 
-      {resolveRasse(char.basics.rasse) && (
-        <div
-          aria-hidden
-          className="pointer-events-none"
-          style={{
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -45%)',
-            width: '440px',
-            maxWidth: '85vw',
-            maxHeight: '85vh',
-            opacity: 0.12,
-            zIndex: 0,
-          }}>
-          <RasseSilhouette rasse={char.basics.rasse} fill="var(--navy)" accent="var(--sky)" style={{ width: '100%', height: 'auto' }} />
-        </div>
-      )}
-      <div className="p-4 relative" style={{ zIndex: 1 }}>
-        {tab === 'held' && <StammdatenSection char={char} update={update} session={session} groups={groups} />}
-        {tab === 'werte' && <WerteSection char={char} update={update} steigern={steigern} />}
-        {tab === 'talente' && <TalenteSection char={char} update={update} steigern={steigern} />}
+      <div className="p-4">
+        {tab === 'held' && <StammdatenSection char={char} update={update} session={session} groups={groups} generieren={generieren} />}
+        {tab === 'werte' && <WerteSection char={char} update={update} steigern={steigern} generieren={generieren} />}
+        {tab === 'talente' && <TalenteSection char={char} update={update} steigern={steigern} generieren={generieren} />}
         {tab === 'kampf' && <KampfSection char={char} update={update} />}
-        {tab === 'zauber' && <ZauberSection char={char} update={update} steigern={steigern} />}
-        {tab === 'liturgie' && <LiturgieSection char={char} update={update} steigern={steigern} />}
-        {tab === 'vorteile' && <VorteileSection char={char} update={update} steigern={steigern} />}
-        {tab === 'nachteile' && <NachteileSection char={char} update={update} steigern={steigern} />}
-        {tab === 'sf' && <SonderfertigkeitenSection char={char} update={update} steigern={steigern} />}
+        {tab === 'zauber' && <ZauberSection char={char} update={update} steigern={steigern} generieren={generieren} />}
+        {tab === 'liturgie' && <LiturgieSection char={char} update={update} steigern={steigern} generieren={generieren} />}
+        {tab === 'vorteile' && <VorteileSection char={char} update={update} steigern={steigern} generieren={generieren} />}
+        {tab === 'nachteile' && <NachteileSection char={char} update={update} steigern={steigern} generieren={generieren} />}
+        {tab === 'sf' && <SonderfertigkeitenSection char={char} update={update} steigern={steigern} generieren={generieren} />}
         {tab === 'invent' && <InventarSection char={char} update={update} />}
       </div>
     </div>
@@ -3889,11 +4892,9 @@ function KampfplatzGrid({ adventure, update, heroes, npcs }) {
         const weapon = (c.weapons || []).find((w) => w.primary);
         let at = null, pa = null;
         if (weapon) {
-          const wt = (c.weaponTalents || {})[weapon.name] || {};
-          const atTaw = Number(wt.at) || 0;
-          const paTaw = Number(wt.pa) || 0;
-          at = (weapon.type === 'FK' ? dh.FK : dh.AT) + atTaw;
-          pa = weapon.type === 'FK' ? null : dh.PA + paTaw;
+          const wv = weaponCombatValues(c, weapon, dh);
+          at = wv.at;
+          pa = wv.pa;
         }
         return {
           id: c.id,
@@ -4705,11 +5706,7 @@ function AdventureView({ adventure, allGroups, allChars, update, updateChar, upd
                               </td>
                             );
                           }
-                          const wt = (c.weaponTalents || {})[weapon.name] || {};
-                          const atTaw = Number(wt.at) || 0;
-                          const paTaw = Number(wt.pa) || 0;
-                          const atVal = (weapon.type === 'FK' ? dh.FK : dh.AT) + atTaw;
-                          const paVal = weapon.type === 'FK' ? null : dh.PA + paTaw;
+                          const { at: atVal, pa: paVal } = weaponCombatValues(c, weapon, dh);
                           return (
                             <td key={c.id} className="px-1 py-1 text-center align-middle"
                               style={{ width: colWidth, minWidth: colWidth }}
@@ -4743,14 +5740,18 @@ function AdventureView({ adventure, allGroups, allChars, update, updateChar, upd
                                 style={{ width: colWidth, minWidth: colWidth, ...(i === 0 ? npcDivider : {}) }}>
                                 <select
                                   value=""
-                                  onChange={(e) => updateNpc(n.id, { primaryWeapon: e.target.value })}
+                                  onChange={(e) => {
+                                    const v = e.target.value;
+                                    const wt = WEAPON_TYPES[Number(v)];
+                                    if (v !== '' && wt) updateNpc(n.id, { primaryWeapon: wt.name, primaryType: wt.type });
+                                  }}
                                   className="ink-input font-body text-xs w-full px-1 py-0.5"
                                   style={{ color: 'var(--olive)' }}>
                                   <option value="">— Waffe —</option>
                                   {[...new Set(WEAPON_TYPES.map((w) => w.category))].map((cat) => (
                                     <optgroup key={cat} label={cat}>
-                                      {WEAPON_TYPES.filter((w) => w.category === cat).map((w) => (
-                                        <option key={w.name} value={w.name}>{w.name}</option>
+                                      {WEAPON_TYPES.map((w, idx) => [w, idx]).filter(([w]) => w.category === cat).map(([w, idx]) => (
+                                        <option key={idx} value={idx}>{w.name}</option>
                                       ))}
                                     </optgroup>
                                   ))}
@@ -4758,7 +5759,7 @@ function AdventureView({ adventure, allGroups, allChars, update, updateChar, upd
                               </td>
                             );
                           }
-                          const selType = (WEAPON_TYPES.find((w) => w.name === sel) || {}).type || 'NK';
+                          const selType = n.primaryType || (WEAPON_TYPES.find((w) => w.name === sel) || {}).type || 'NK';
                           return (
                             <td key={n.id} className="px-1 py-1 align-middle"
                               style={{ width: colWidth, minWidth: colWidth, ...(i === 0 ? npcDivider : {}) }}>
@@ -4769,7 +5770,7 @@ function AdventureView({ adventure, allGroups, allChars, update, updateChar, upd
                                     {sel}
                                   </span>
                                   <button
-                                    onClick={() => updateNpc(n.id, { primaryWeapon: '', primaryAt: '', primaryPa: '' })}
+                                    onClick={() => updateNpc(n.id, { primaryWeapon: '', primaryType: '', primaryAt: '', primaryPa: '' })}
                                     title="Waffe entfernen"
                                     style={{ color: 'var(--olive)' }}
                                     onMouseEnter={(e) => e.currentTarget.style.color = 'var(--red)'}
