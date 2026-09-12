@@ -882,9 +882,9 @@ const VORTEIL_TYPES = [
   { kategorie: 'Kampf', name: 'Beidhändig', gp: '20' },
   { kategorie: 'Kampf', name: 'Kampfrausch', gp: '15' },
   // Magisch
-  { kategorie: 'Magisch', name: 'Affinität zu Geistern', gp: '5},
-  { kategorie: 'Magisch', name: 'Affinität zu Elementaren', gp: '5},
-  { kategorie: 'Magisch', name: 'Affinität zu Dämonen', gp: '5},
+  { kategorie: 'Magisch', name: 'Affinität zu Geistern', gp: '5' },
+  { kategorie: 'Magisch', name: 'Affinität zu Elementaren', gp: '5' },
+  { kategorie: 'Magisch', name: 'Affinität zu Dämonen', gp: '5' },
   { kategorie: 'Magisch', name: 'Akademische Ausbildung (Magier}', gp: '15' },
   { kategorie: 'Magisch', name: 'Altersresistenz', gp: '3' },
   { kategorie: 'Magisch', name: 'Astrale Regenerierung', gp: '4', levelled: true },
