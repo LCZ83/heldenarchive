@@ -1107,7 +1107,15 @@ const SF_TYPES = [
   { kategorie: 'Kampf', name: 'Windmühle', ap: '4' },
   { kategorie: 'Kampf', name: 'Wuchtschlag', ap: '4' },
   // Magisch
-  { kategorie: 'Magisch', name: 'Merkmalskenntnis', ap: '100' },
+  { kategorie: 'Magisch', name: 'Apport', ap: '200' },
+  { kategorie: 'Magisch', name: 'Astrale Meditation', ap: '100' },
+  { kategorie: 'Magisch', name: 'Aura verhüllen', ap: '200' },
+  { kategorie: 'Magisch', name: 'Aurapanzer', ap: '500' },
+  { kategorie: 'Magisch', name: 'Bannschwert', ap: '200' },
+  { kategorie: 'Magisch', name: 'Blutmagie', ap: '200' },
+  { kategorie: 'Magisch', name: 'Druidenrache', ap: '100' },
+  { kategorie: 'Magisch', name: 'Druidische Dolchrituale', ap: '?' },
+  { kategorie: 'Magisch', name: 'Druidische Herrschaftsrituale', ap: '?' },
   // Geweiht / Klerikal
   { kategorie: 'Klerikal', name: 'Liturgiekenntnis (weitere)', ap: '250' },
   // Allgemein / Talent
