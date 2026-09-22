@@ -1149,6 +1149,16 @@ const SF_TYPES = [
   { kategorie: 'Magisch', name: 'Hexenfluch: Viehverstümmelung', ap: '75' },
   { kategorie: 'Magisch', name: 'Hexenfluch: Warzen spriessen', ap: '50' },
   { kategorie: 'Magisch', name: 'Hexenfluch: Zunge lähmen', ap: '50' },
+  { kategorie: 'Magisch', name: 'Hypervehemenz', ap: '300' },
+  { kategorie: 'Magisch', name: 'Konzentrationsstärke', ap: '100' },
+  { kategorie: 'Magisch', name: 'Kraftkontrolle', ap: '300' },
+  { kategorie: 'Magisch', name: 'Kraftlinienmagie I', ap: '50' },
+  { kategorie: 'Magisch', name: 'Kraftlinienmagie II', ap: '400' },
+  { kategorie: 'Magisch', name: 'Kristallomantisches Ritual: Kristallbindung', ap: '100' },
+  { kategorie: 'Magisch', name: 'Kristallomantisches Ritual: Kristallformung', ap: '250' },
+  { kategorie: 'Magisch', name: 'Kristallomantisches Ritual: Thesiskristall', ap: '250' },
+  { kategorie: 'Magisch', name: 'Kristallomantisches Ritual: Madakristall', ap: '300' },
+  { kategorie: 'Magisch', name: 'Kristallomantisches Ritual: Matrixkristall', ap: '400' },
   // Geweiht / Klerikal
   { kategorie: 'Klerikal', name: 'Liturgiekenntnis (weitere)', ap: '250' },
   // Allgemein / Talent
