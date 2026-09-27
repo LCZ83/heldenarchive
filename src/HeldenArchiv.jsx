@@ -1325,7 +1325,7 @@ const SF_TYPES = [
 // The numbers approximate the published values — refine as needed.
 // To add a race, append an object here; nothing else needs to change.
 const KULTUREN = {
-  mittelländer: ['Mittelreich', 'Andergast', 'Nostria', 'Bornland', 'Horasreich', 'Almada', 'Weiden', 'Nordmarken',
+  mittellander: ['Mittelreich', 'Andergast', 'Nostria', 'Bornland', 'Horasreich', 'Almada', 'Weiden', 'Nordmarken',
     'Svellttal', 'Thorwal', 'Tulamidenlande', 'Aranien', 'Novadis', 'Amazonen', 'Zyklopeninseln', 'Maraskan',
     'Südaventurien', 'Bukanier', 'Fjarninger', 'Gjalskerland', 'Nivesen', 'Norbarden', 'Waldmenschen', 'Utulu',
     'Trollzacker', 'Ferkinas'],
@@ -1340,7 +1340,7 @@ const RASSEN = [
     vorteile: [],
     nachteile: [],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.mittelländer, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
+    kulturen: { moeglich: KULTUREN.mittellander, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
   {
     name: 'Elf', gp: 18, le: 2, au: 8, ae: 2, mr: 2,
@@ -1352,7 +1352,7 @@ const RASSEN = [
     vorteile: ['Dämmerungssicht', 'Zweistimmiger Gesang', 'Vollzauberer'],
     nachteile: ['Elfische Weltsicht'],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.elf, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.zwerg] },
+    kulturen: { moeglich: KULTUREN.elf, unmoeglich: [...KULTUREN.mittellander, ...KULTUREN.zwerg] },
     magisch: true,
   },
   {
@@ -1362,7 +1362,7 @@ const RASSEN = [
     vorteile: ['Dämmerungssicht', 'Richtungssinn', 'Zäher Hund', 'Zwergnase'],
     nachteile: [{ name: 'Goldgier', wert: 5 }, 'Zwergenwuchs'],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.zwerg, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf] },
+    kulturen: { moeglich: KULTUREN.zwerg, unmoeglich: [...KULTUREN.mittellander, ...KULTUREN.elf] },
   },
 ];
 const RASSE_NAMEN = RASSEN.map((r) => r.name);
