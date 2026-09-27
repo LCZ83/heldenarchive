@@ -1325,7 +1325,7 @@ const SF_TYPES = [
 // The numbers approximate the published values — refine as needed.
 // To add a race, append an object here; nothing else needs to change.
 const KULTUREN = {
-  mensch: ['Mittelreich', 'Andergast', 'Nostria', 'Bornland', 'Horasreich', 'Almada', 'Weiden', 'Nordmarken',
+  mittelländer: ['Mittelreich', 'Andergast', 'Nostria', 'Bornland', 'Horasreich', 'Almada', 'Weiden', 'Nordmarken',
     'Svellttal', 'Thorwal', 'Tulamidenlande', 'Aranien', 'Novadis', 'Amazonen', 'Zyklopeninseln', 'Maraskan',
     'Südaventurien', 'Bukanier', 'Fjarninger', 'Gjalskerland', 'Nivesen', 'Norbarden', 'Waldmenschen', 'Utulu',
     'Trollzacker', 'Ferkinas'],
@@ -1334,13 +1334,13 @@ const KULTUREN = {
 };
 const RASSEN = [
   {
-    name: 'Mensch', gp: 0, le: 5, au: 6, ae: 0, mr: 2,
+    name: 'Mittelländer', gp: 0, le: 10, au: 10, ae: 0, mr: -4,
     eigenschaften: {},
     talente: {},
     vorteile: [],
     nachteile: [],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
+    kulturen: { moeglich: KULTUREN.mittelländer, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
   {
     name: 'Elf', gp: 18, le: 2, au: 8, ae: 2, mr: 2,
