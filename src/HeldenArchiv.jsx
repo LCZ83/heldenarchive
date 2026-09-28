@@ -1343,6 +1343,24 @@ const RASSEN = [
     kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
   {
+    name: 'Tulamiden', gp: 0, le: 10, au: 10, ae: 0, mr: -4,
+    eigenschaften: {},
+    talente: {},
+    vorteile: [],
+    nachteile: [],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
+    name: 'Thorwaler', gp: 0, le: 11, au: 10, ae: 0, mr: -5,
+    eigenschaften: { MU: 1, KO: 1, KK: 1 },
+    talente: {'Athletik': 1, 'Sinnesschärfe': 1, 'Zechen': 1, 'Wettervorhersage': 1},
+    vorteile: [],
+    nachteile: ['Jähzorn': 5],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
     name: 'Elf', gp: 18, le: 2, au: 8, ae: 2, mr: 2,
     eigenschaften: { IN: 1, GE: 1, KK: -2 },
     talente: {
