@@ -1356,7 +1356,7 @@ const RASSEN = [
     eigenschaften: { MU: 1, KO: 1, KK: 1 },
     talente: {'Athletik': 1, 'Sinnesschärfe': 1, 'Zechen': 1, 'Wettervorhersage': 1},
     vorteile: [],
-    nachteile: ['Jähzorn': 5],
+    nachteile: ['Jähzorn'],
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
