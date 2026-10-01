@@ -1332,6 +1332,7 @@ const KULTUREN = {
     'Trollzacker', 'Ferkinas'],
   elf: ['Auelfen', 'Firnelfen', 'Waldelfen', 'Steppenelfen'],
   zwerg: ['Ambosszwerge', 'Brillantzwerge', 'Erzzwerge', 'Hügelzwerge', 'Wilde Zwerge'],
+  ork: ['Orkland', 'Yurach', 'Svelltland-Okkupanten'],
 };
 const RASSEN = [
   {
@@ -1357,7 +1358,7 @@ const RASSEN = [
     eigenschaften: { MU: 1, KO: 1, KK: 1 },
     talente: {'Athletik': 1, 'Sinnesschärfe': 1, 'Zechen': 1, 'Wettervorhersage': 1},
     vorteile: [],
-    nachteile: ['Jähzorn'],
+    nachteile: [{name: 'Jähzorn', wert: 5}],
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
@@ -1449,7 +1450,7 @@ const RASSEN = [
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.zwerg, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf] },
   },
-   {
+  {
     name: 'Hügelzwerge', gp: 15, le: 11, au: 15, ae: 0, mr: -4,
     eigenschaften: { FF: 1, GE: -1, KO: 2, KK: 1 },
     talente: { 'Ringen': 1, 'Akrobatik': -3, 'Reiten': -1, 'Schwimmen': -3, 'Selbstbeherrschung': 2, 'Zechen': 1, 'Orientierung': 1,
@@ -1458,6 +1459,17 @@ const RASSEN = [
     nachteile: [{ name: 'Goldgier', wert: 5 }, 'Unfähigkeit für [Talent]'],
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.zwerg, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf] },
+  },
+  {
+    name: 'Orks', gp: 9, le: 12, au: 18, ae: 0, mr: -7,
+    eigenschaften: { FF: -1, KO: 2, KK: 2, CH: -2, KL: -2, MU: +2 },
+    talente: { 'Raufen': 1, 'Ringen': 1, 'Athletik': 1, 'Körperbeherrschung': 1, 'Schleichen': 1, 'Selbstbeherrschung': 1,
+             'Singen': -2, 'Sinnesschärfe': 2, 'Sich Verkleiden': -1, 'Orientierung': 2, 'Rechnen': -1},
+    vorteile: ['Dämmerungssicht', 'Kälteresistenz', {name: 'Natürlicher Rüstungsschutz', wert: 1}, 'Richtungssinn', 
+              'Zäher Hund'],
+    nachteile: [{name: 'Jähzorn', wert: 5}, 'Randgruppe', 'Raubtiergeruch', 'Unfähigkeit für [Talent]'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.ork, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.mensch] },
   },
 ];
 const RASSE_NAMEN = RASSEN.map((r) => r.name);
