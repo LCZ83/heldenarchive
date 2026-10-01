@@ -1384,7 +1384,7 @@ const RASSEN = [
     eigenschaften: { MU: 2, KL: -1, KO: 1, KK: 1 },
     talente: {'Athletik': 1, 'Klettern': 1, 'Selbstbeherrschung': 1, 'Sinnesschärfe': 1},
     vorteile: [],
-    nachteile: ['Platzangst'],
+    nachteile: [{name: 'Platzangst', wert: 5}],
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.mensch, unmoeglich: [...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
