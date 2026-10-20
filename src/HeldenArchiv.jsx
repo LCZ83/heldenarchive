@@ -1333,6 +1333,8 @@ const KULTUREN = {
   elf: ['Auelfen', 'Firnelfen', 'Waldelfen', 'Steppenelfen'],
   zwerg: ['Ambosszwerge', 'Brillantzwerge', 'Erzzwerge', 'Hügelzwerge', 'Wilde Zwerge'],
   ork: ['Orkland', 'Yurach', 'Svelltland-Okkupanten'],
+  goblin: ['Goblinstamm', 'Goblinbande', 'Festumer Ghetto', 'Garetien'],
+  achaz: ['Stammes-Achaz', 'Archaische Achaz'],
 };
 const RASSEN = [
   {
@@ -1500,6 +1502,18 @@ const RASSEN = [
     nachteile: ['Randgruppe', 'Unstet'],
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.goblins, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
+    name: 'Echsensumpfachaz', gp: 14, le: 8, au: 7, ae: 0, mr: -2,
+    eigenschaften: { MU: -1, IN: 2, FF: 1, GE: 1, KO: 1, KK: -1},
+    talente: { 'Raufen': 1, 'Körperbeherrschung': 1, 'Schwimmen': 6, 'Singen': -3, 'Sinnesschärfe': 5, 'Stimmen Imitieren': -3, 
+             'Zechen': -1, 'Sich Verkleiden': -2, 'Fährtensuchen': 2, 'Rechnen': -1, 'Fischen & Angeln': 1, 'Orientierung': 1, 
+             'Wettervorhersage': 1, Musizieren: -3},
+    vorteile: ['Balance', 'Beidhändig', 'Dämmerungssicht', {name: 'Natürlicher Rüstungsschutz', wert: 2}, 'Richtungssinn'],
+    nachteile: [{name: 'Dunkelangst', wert: 5}, 'Eingeschränkter Sinn', 'Kältestarre', 'Randgruppe', 'Raubtiergeruch', 
+                'Unfähigkeit für [Talent]'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.achaz, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
 ];
 const RASSE_NAMEN = RASSEN.map((r) => r.name);
