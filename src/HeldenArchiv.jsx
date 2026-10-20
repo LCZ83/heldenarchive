@@ -1469,7 +1469,7 @@ const RASSEN = [
               'Zäher Hund'],
     nachteile: [{name: 'Jähzorn', wert: 5}, 'Randgruppe', 'Raubtiergeruch', 'Unfähigkeit für [Talent]'],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.ork, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.mensch] },
+    kulturen: { moeglich: KULTUREN.ork, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
   {
     name: 'Halborks', gp: 1, le: 11, au: 15, ae: 0, mr: -6,
@@ -1479,7 +1479,27 @@ const RASSEN = [
     vorteile: ['Richtungssinn', 'Zäher Hund'],
     nachteile: [{name: 'Jähzorn', wert: 7}, 'Randgruppe'],
     sonderfertigkeiten: [],
-    kulturen: { moeglich: KULTUREN.ork, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.mensch] },
+    kulturen: { moeglich: KULTUREN.ork, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+   {
+    name: 'Goblins (Männlich)', gp: 0, le: 4, au: 12, ae: 0, mr: -5,
+    eigenschaften: { MU: -2, KL: -2, FF: 2, GE: 2, KK: -1 },
+    talente: { 'Klettern': 1, 'Körperbeherrschung': 1, 'Schleichen': 2, 'Selbstbeherrschung': -1, 'Sich Verstecken': 1, 'Singen': -1,
+             'Sinnesschärfe': 4, 'Zechen': -2, 'Sich Verkleiden': -1, 'Fährtensuchen': 1, 'Orientierung': 1, 'Rechnen': -1},
+    vorteile: ['Dämmerungssicht', 'Gefahreninstinkt', 'Herausragender Sinn', 'Kälteresistenz', {name: 'Natürlicher Rüstungsschutz', wert: 1}],
+    nachteile: ['Randgruppe', 'Unstet'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.goblins, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
+    name: 'Goblins (Frau)', gp: 2, le: 4, au: 12, ae: 0, mr: -5,
+    eigenschaften: { MU: -2, KL: -2, FF: 2, GE: 2, KK: -1 },
+    talente: { 'Klettern': 1, 'Körperbeherrschung': 1, 'Schleichen': 2, 'Selbstbeherrschung': -1, 'Sich Verstecken': 1, 'Singen': -1,
+             'Sinnesschärfe': 4, 'Zechen': -2, 'Sich Verkleiden': -1, 'Fährtensuchen': 1, 'Orientierung': 1, 'Rechnen': -1},
+    vorteile: ['Nachtsicht', 'Gefahreninstinkt', 'Herausragender Sinn', 'Kälteresistenz', {name: 'Natürlicher Rüstungsschutz', wert: 1}],
+    nachteile: ['Randgruppe', 'Unstet'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.goblins, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
 ];
 const RASSE_NAMEN = RASSEN.map((r) => r.name);
