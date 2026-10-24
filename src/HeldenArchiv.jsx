@@ -783,53 +783,21 @@ const SPELL_TYPES = [
 // Common DSA 4.1 Liturgien grouped by Gottheit. Grad is the liturgy's level
 // (I–VI). Users can override any field per liturgy after picking from the list.
 const LITURGY_TYPES = [
-  // Praios
-  { gottheit: 'Praios', name: 'Bann der Untoten', grad: 'III' },
-  { gottheit: 'Praios', name: 'Blendstrahl', grad: 'I' },
-  { gottheit: 'Praios', name: 'Großes Richtfeuer', grad: 'IV' },
-  { gottheit: 'Praios', name: 'Wahrheit erkennen', grad: 'II' },
-  // Rondra
-  { gottheit: 'Rondra', name: 'Rondras Fels', grad: 'II' },
-  { gottheit: 'Rondra', name: 'Schlachtgesang', grad: 'I' },
-  { gottheit: 'Rondra', name: 'Waffensegen', grad: 'II' },
-  { gottheit: 'Rondra', name: 'Zorn der Löwin', grad: 'IV' },
-  // Travia
-  { gottheit: 'Travia', name: 'Friedenszauber', grad: 'II' },
-  { gottheit: 'Travia', name: 'Gastrecht', grad: 'I' },
-  { gottheit: 'Travia', name: 'Heim und Herd', grad: 'III' },
-  // Boron
-  { gottheit: 'Boron', name: 'Letzte Ruhe', grad: 'I' },
-  { gottheit: 'Boron', name: 'Schlaf der Gerechten', grad: 'II' },
-  { gottheit: 'Boron', name: 'Totengeleit', grad: 'III' },
-  // Hesinde
-  { gottheit: 'Hesinde', name: 'Auge der Erkenntnis', grad: 'II' },
-  { gottheit: 'Hesinde', name: 'Schlangenweisheit', grad: 'I' },
-  { gottheit: 'Hesinde', name: 'Wissen der Schlange', grad: 'III' },
-  // Phex
-  { gottheit: 'Phex', name: 'Diebesgeschick', grad: 'I' },
-  { gottheit: 'Phex', name: 'Schattenmantel', grad: 'II' },
-  { gottheit: 'Phex', name: 'Verhüllung', grad: 'III' },
-  // Peraine
-  { gottheit: 'Peraine', name: 'Heilsegen', grad: 'I' },
-  { gottheit: 'Peraine', name: 'Gesundheit', grad: 'II' },
-  { gottheit: 'Peraine', name: 'Lebenshauch', grad: 'IV' },
-  // Efferd
-  { gottheit: 'Efferd', name: 'Wasseratem', grad: 'II' },
-  { gottheit: 'Efferd', name: 'Günstiger Wind', grad: 'I' },
-  { gottheit: 'Efferd', name: 'Sturmgebrüll', grad: 'III' },
-  // Firun
-  { gottheit: 'Firun', name: 'Fährte des Wildes', grad: 'I' },
-  { gottheit: 'Firun', name: 'Kältesegen', grad: 'II' },
-  // Tsa
-  { gottheit: 'Tsa', name: 'Lebenssegen', grad: 'II' },
-  { gottheit: 'Tsa', name: 'Verjüngung', grad: 'V' },
-  { gottheit: 'Tsa', name: 'Neubeginn', grad: 'I' },
+  // Aves
+  { gottheit: 'Aves', name: 'Aller Welt Freund', grad: 'IV' },
+  //Efferd
+  { gottheit: 'Efferd', name: 'Anrufung der Winde', grad: 'II' },
+  { gottheit: 'Efferd', name: 'Anrufung Nuiannas', grad: 'III' },
   // Ingerimm
-  { gottheit: 'Ingerimm', name: 'Feuersegen', grad: 'I' },
-  { gottheit: 'Ingerimm', name: 'Meisterhandwerk', grad: 'II' },
-  // Rahja
-  { gottheit: 'Rahja', name: 'Rausch der Sinne', grad: 'I' },
-  { gottheit: 'Rahja', name: 'Liebreiz', grad: 'II' },
+  { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
+  { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
+  { gottheit: 'Ingerimm', name: 'Angroschs Opfergabe', grad: 'II' },
+  // Peraine
+  { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
+  // Rondra
+  { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
+  // Zsahh
+  { gottheit: 'Zsahh', name: 'Alte Schuppen', grad: 'III' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
