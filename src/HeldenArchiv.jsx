@@ -1498,6 +1498,30 @@ const RASSEN = [
     sonderfertigkeiten: [],
     kulturen: { moeglich: KULTUREN.achaz, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
   },
+  {
+    name: 'Orklandachaz', gp: 13, le: 8, au: 7, ae: 0, mr: -2,
+    eigenschaften: { MU: -1, IN: 2, FF: 1, GE: 1, KK: -1},
+    talente: { 'Raufen': 1, 'Körperbeherrschung': 1, 'Schwimmen': 6, 'Singen': -3, 'Sinnesschärfe': 5, 'Stimmen Imitieren': -3, 
+             'Zechen': -1, 'Sich Verkleiden': -2, 'Fährtensuchen': 2, 'Rechnen': -1, 'Fischen & Angeln': 1, 'Orientierung': 1, 
+             'Wettervorhersage': 1, Musizieren: -3},
+    vorteile: ['Balance', 'Beidhändig', 'Dämmerungssicht', {name: 'Natürlicher Rüstungsschutz', wert: 1}, 'Richtungssinn'],
+    nachteile: [{name: 'Dunkelangst', wert: 5}, 'Eingeschränkter Sinn', 'Randgruppe', 'Raubtiergeruch', 
+                'Unfähigkeit für [Talent]'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.achaz, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
+  {
+    name: 'Waldinselachaz', gp: 9, le: 7, au: 7, ae: 0, mr: -2,
+    eigenschaften: { MU: -1, IN: 2, FF: -1, GE: 1, KK: -1},
+    talente: { 'Raufen': 1, 'Körperbeherrschung': 1, 'Schwimmen': 6, 'Singen': -3, 'Sinnesschärfe': 5, 'Stimmen Imitieren': -3, 
+             'Zechen': -1, 'Sich Verkleiden': -2, 'Fährtensuchen': 2, 'Rechnen': -1, 'Fischen & Angeln': 1, 'Orientierung': 1, 
+             'Wettervorhersage': 1, Musizieren: -3},
+    vorteile: ['Balance', 'Beidhändig', 'Dämmerungssicht', {name: 'Natürlicher Rüstungsschutz', wert: 1}, 'Richtungssinn'],
+    nachteile: [{name: 'Dunkelangst', wert: 5}, 'Eingeschränkter Sinn', 'Randgruppe', 'Raubtiergeruch', 
+                'Unfähigkeit für [Talent]'],
+    sonderfertigkeiten: [],
+    kulturen: { moeglich: KULTUREN.achaz, unmoeglich: [...KULTUREN.mensch, ...KULTUREN.elf, ...KULTUREN.zwerg] },
+  },
 ];
 const RASSE_NAMEN = RASSEN.map((r) => r.name);
 function findRasse(name) {
