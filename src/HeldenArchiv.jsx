@@ -788,14 +788,29 @@ const LITURGY_TYPES = [
   //Efferd
   { gottheit: 'Efferd', name: 'Anrufung der Winde', grad: 'II' },
   { gottheit: 'Efferd', name: 'Anrufung Nuiannas', grad: 'III' },
+  { gottheit: 'Efferd', name: 'Azilas Quellgesang', grad: 'III' },
+  // Hesinde
+  { gottheit: 'Hesinde', name: 'Argelions bannende Hand', grad: 'V' },
+  { gottheit: 'Hesinde', name: 'Argelions Mantel', grad: 'III' },
+  { gottheit: 'Hesinde', name: 'Argelions Spiegel', grad: 'IV' },
+  { gottheit: 'Hesinde', name: 'Aura der Form', grad: 'III' },
   // Ingerimm
   { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
   { gottheit: 'Ingerimm', name: 'Angroschs Opfergabe', grad: 'II' },
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
+  // Phex
+  { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
+  { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
+  // Praios
+  { gottheit: 'Praios', name: 'Arcanum Interdictum', grad: 'VI' },
+  // Rahja
+  { gottheit: 'Rahja', name: 'Ascandears Hingabe', grad: 'III' },
   // Rondra
   { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
+  // Tsa
+  { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
   // Zsahh
   { gottheit: 'Zsahh', name: 'Alte Schuppen', grad: 'III' },
 ];
