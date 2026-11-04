@@ -786,6 +786,8 @@ const LITURGY_TYPES = [
   // Aves
   { gottheit: 'Aves', name: 'Aller Welt Freund', grad: 'IV' },
   { gottheit: 'Aves', name: 'Ein Freund in Zeiten der Not', grad: 'IV' },
+  { gottheit: 'Aves', name: 'Freundliche Aufnahme', grad: 'III' },
+  { gottheit: 'Aves', name: 'Frieden der Melodie', grad: 'I' },
   // Boron
   { gottheit: 'Boron', name: 'Bannfluch des Heiligen Khalid', grad: 'III' },
   { gottheit: 'Boron', name: 'Bishdariels Auge', grad: 'II' },
@@ -799,6 +801,8 @@ const LITURGY_TYPES = [
   { gottheit: 'Efferd', name: 'Begehen der Heiligen Wasser', grad: 'III' },
   { gottheit: 'Efferd', name: 'Bootssegen', grad: 'III' },
   { gottheit: 'Efferd', name: 'Efferdsegen', grad: 'III' },
+  // Firun
+  { gottheit: 'Firun', name: 'Firuns Einsicht', grad: 'IV' },
   // Hesinde
   { gottheit: 'Hesinde', name: 'Argelions bannende Hand', grad: 'V' },
   { gottheit: 'Hesinde', name: 'Argelions Mantel', grad: 'III' },
@@ -816,6 +820,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
   { gottheit: 'Ingerimm', name: 'Erneuerung des Geborstenen', grad: 'I' },
+  { gottheit: 'Ingerimm', name: 'Feuertaufe', grad: 'IV' },
   // Kamaluq
   { gottheit: 'Kamaluq', name: 'Ewiger Wächter', grad: 'V' },
   // Kor
@@ -826,6 +831,8 @@ const LITURGY_TYPES = [
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
   { gottheit: 'Peraine', name: 'Dreifacher Saatsegen', grad: 'III' },
+  { gottheit: 'Peraine', name: 'Fünfte Lobpreisung des Frühlings', grad: 'V' },
+  { gottheit: 'Peraine', name: 'Fürbitte des Heiligen Therbun', grad: 'III' },
   // Phex
   { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
   { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
@@ -844,6 +851,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Tairach', name: 'Ewiges Wissen', grad: 'V' },
   // Tsa
   { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
+  { gottheit: 'Tsa', name: 'Flagge des Regenbogens', grad: 'III' },
   // Zsahh
   { gottheit: 'Zsahh', name: 'Alte Schuppen', grad: 'III' },
   { gottheit: 'Zsahh', name: 'Eidechsenhaut', grad: 'III' },
@@ -851,6 +859,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Zwölfgötterkult', name: 'Eidsegen', grad: 'I' },
   { gottheit: 'Zwölfgötterkult', name: 'Exkommunikation', grad: 'III' },
   { gottheit: 'Zwölfgötterkult', name: 'Exorzismus', grad: 'III' },
+  { gottheit: 'Zwölfgötterkult', name: 'Feuersegen', grad: 'I' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
