@@ -785,11 +785,13 @@ const SPELL_TYPES = [
 const LITURGY_TYPES = [
   // Aves
   { gottheit: 'Aves', name: 'Aller Welt Freund', grad: 'IV' },
+  { gottheit: 'Aves', name: 'Ein Freund in Zeiten der Not', grad: 'IV' },
   // Boron
   { gottheit: 'Boron', name: 'Bannfluch des Heiligen Khalid', grad: 'III' },
   { gottheit: 'Boron', name: 'Bishdariels Auge', grad: 'II' },
   { gottheit: 'Boron', name: 'Bishdariels Warnung', grad: 'III' },
   { gottheit: 'Boron', name: 'Borons süsse Rache', grad: 'IV' },
+  { gottheit: 'Boron', name: 'Etilias Gnade', grad: 'III' },
   // Efferd
   { gottheit: 'Efferd', name: 'Anrufung der Winde', grad: 'II' },
   { gottheit: 'Efferd', name: 'Anrufung Nuiannas', grad: 'III' },
@@ -805,6 +807,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Hesinde', name: 'Blick der Weberin', grad: 'III' },
   // HSzint
   { gottheit: 'HSzint', name: 'Bindung der Schlange', grad: 'II' },
+  { gottheit: 'HSzint', name: 'Elementwandlung', grad: 'II' },
   // Ingerimm
   { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
@@ -812,8 +815,14 @@ const LITURGY_TYPES = [
   { gottheit: 'Ingerimm', name: 'Blick für das Handwerk', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
+  { gottheit: 'Ingerimm', name: 'Erneuerung des Geborstenen', grad: 'I' },
+  // Kamaluq
+  { gottheit: 'Kamaluq', name: 'Ewiger Wächter', grad: 'V' },
   // Kor
   { gottheit: 'Kor', name: 'Eherne Kraft - lodernder Zorn', grad: 'VI' },
+  // Nandus
+  { gottheit: 'Nandus', name: 'Ein Bild für die Ewigkeit', grad: 'II' },
+  { gottheit: 'Nandus', name: 'Entzug von Nandus Gaben', grad: 'II' },
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
   { gottheit: 'Peraine', name: 'Dreifacher Saatsegen', grad: 'III' },
@@ -831,11 +840,17 @@ const LITURGY_TYPES = [
   // Rondra
   { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
   { gottheit: 'Rondra', name: 'Ehrenhafter Zweikampf', grad: 'II' },
+  // Tairach
+  { gottheit: 'Tairach', name: 'Ewiges Wissen', grad: 'V' },
   // Tsa
   { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
   // Zsahh
   { gottheit: 'Zsahh', name: 'Alte Schuppen', grad: 'III' },
   { gottheit: 'Zsahh', name: 'Eidechsenhaut', grad: 'III' },
+  // Zwölfgötterkult
+  { gottheit: 'Zwölfgötterkult', name: 'Eidsegen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Exkommunikation', grad: 'III' },
+  { gottheit: 'Zwölfgötterkult', name: 'Exorzismus', grad: 'III' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
