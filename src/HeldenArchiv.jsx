@@ -785,26 +785,40 @@ const SPELL_TYPES = [
 const LITURGY_TYPES = [
   // Aves
   { gottheit: 'Aves', name: 'Aller Welt Freund', grad: 'IV' },
-  //Efferd
+  // Boron
+  { gottheit: 'Boron', name: 'Bannfluch des Heiligen Khalid', grad: 'III' },
+  { gottheit: 'Boron', name: 'Bishdariels Auge', grad: 'II' },
+  { gottheit: 'Boron', name: 'Bishdariels Warnung', grad: 'III' },
+  { gottheit: 'Boron', name: 'Borons süsse Rache', grad: 'IV' },
+  // Efferd
   { gottheit: 'Efferd', name: 'Anrufung der Winde', grad: 'II' },
   { gottheit: 'Efferd', name: 'Anrufung Nuiannas', grad: 'III' },
   { gottheit: 'Efferd', name: 'Azilas Quellgesang', grad: 'III' },
+  { gottheit: 'Efferd', name: 'Begehen der Heiligen Wasser', grad: 'III' },
+  { gottheit: 'Efferd', name: 'Bootssegen', grad: 'III' },
   // Hesinde
   { gottheit: 'Hesinde', name: 'Argelions bannende Hand', grad: 'V' },
   { gottheit: 'Hesinde', name: 'Argelions Mantel', grad: 'III' },
   { gottheit: 'Hesinde', name: 'Argelions Spiegel', grad: 'IV' },
   { gottheit: 'Hesinde', name: 'Aura der Form', grad: 'III' },
+  { gottheit: 'Hesinde', name: 'Blick der Weberin', grad: 'III' },
+  // HSzint
+  { gottheit: 'HSzint', name: 'Bindung der Schlange', grad: 'II' },
   // Ingerimm
   { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
   { gottheit: 'Ingerimm', name: 'Angroschs Opfergabe', grad: 'II' },
+  { gottheit: 'Ingerimm', name: 'Blick für das Handwerk', grad: 'II' },
+  { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
   // Phex
   { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
   { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
+  { gottheit: 'Phex', name: 'Buchprüfung', grad: 'III' },
   // Praios
   { gottheit: 'Praios', name: 'Arcanum Interdictum', grad: 'VI' },
+  { gottheit: 'Praios', name: 'Blendstrahl aus Alveran', grad: 'I' },
   // Rahja
   { gottheit: 'Rahja', name: 'Ascandears Hingabe', grad: 'III' },
   // Rondra
