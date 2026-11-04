@@ -794,6 +794,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Boron', name: 'Bishdariels Warnung', grad: 'III' },
   { gottheit: 'Boron', name: 'Borons süsse Rache', grad: 'IV' },
   { gottheit: 'Boron', name: 'Etilias Gnade', grad: 'III' },
+  { gottheit: 'Boron', name: 'Hauch Borons', grad: 'III' },
   // Efferd
   { gottheit: 'Efferd', name: 'Anrufung der Winde', grad: 'II' },
   { gottheit: 'Efferd', name: 'Anrufung Nuiannas', grad: 'III' },
@@ -804,6 +805,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Efferd', name: 'Gesang der Delphine', grad: 'II' },
   { gottheit: 'Efferd', name: 'Gesegneter Fang', grad: 'II' },
   { gottheit: 'Efferd', name: 'Gruss des Versunkenen', grad: 'IV' },
+  { gottheit: 'Efferd', name: 'Hashnabiths Flehen', grad: 'II' },
   // Firun
   { gottheit: 'Firun', name: 'Firuns Einsicht', grad: 'IV' },
   // Hesinde
@@ -818,6 +820,7 @@ const LITURGY_TYPES = [
   { gottheit: 'HSzint', name: 'Gift der Erkenntnis', grad: 'II' },
   // Ifirn
   { gottheit: 'Ifirn', name: 'Geteiltes Leid', grad: 'II' },
+  { gottheit: 'Ifirn', name: 'Hilfe in der Not', grad: 'II' },
   // Ingerimm
   { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
@@ -830,6 +833,8 @@ const LITURGY_TYPES = [
   { gottheit: 'Ingerimm', name: 'Gebieter der Lava', grad: 'V' },
   { gottheit: 'Ingerimm', name: 'Geläutert sei Erz und Goldgestein', grad: 'III' },
   { gottheit: 'Ingerimm', name: 'Goldener Blick', grad: 'III' },
+  { gottheit: 'Ingerimm', name: 'Heilige Schmiedeglut', grad: 'I' },
+  { gottheit: 'Ingerimm', name: 'Herr über Feuer und Glut', grad: 'IV' },
   // Kamaluq
   { gottheit: 'Kamaluq', name: 'Ewiger Wächter', grad: 'V' },
   // Kor
@@ -837,12 +842,13 @@ const LITURGY_TYPES = [
   // Nandus
   { gottheit: 'Nandus', name: 'Ein Bild für die Ewigkeit', grad: 'II' },
   { gottheit: 'Nandus', name: 'Entzug von Nandus Gaben', grad: 'II' },
+  { gottheit: 'Nandus', name: 'Hoftag der Sprachen', grad: 'II' },
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
   { gottheit: 'Peraine', name: 'Dreifacher Saatsegen', grad: 'III' },
   { gottheit: 'Peraine', name: 'Fünfte Lobpreisung des Frühlings', grad: 'V' },
   { gottheit: 'Peraine', name: 'Fürbitte des Heiligen Therbun', grad: 'III' },
-  { gottheit: 'Peraine', name: 'Gleichklang des Geistes', grad: 'I' },
+  { gottheit: 'Peraine', name: 'Gleichklang des Geistes', grad: 'IV' },
   // Phex
   { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
   { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
@@ -857,6 +863,7 @@ const LITURGY_TYPES = [
   // Rahja
   { gottheit: 'Rahja', name: 'Ascandears Hingabe', grad: 'III' },
   { gottheit: 'Rahja', name: 'Dorlens Verbrüderung', grad: 'VI' },
+  { gottheit: 'Rahja', name: 'Heiliges Liebesspiel', grad: 'II' },
   // Rondra
   { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
   { gottheit: 'Rondra', name: 'Ehrenhafter Zweikampf', grad: 'II' },
@@ -867,6 +874,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Travia', name: 'Gemeinschaft der treuen Gefährten', grad: 'II' },
   { gottheit: 'Travia', name: 'Grosse Weihe des Heimsteins', grad: 'VI' },
   { gottheit: 'Travia', name: 'Grosser Speisesegen', grad: 'III' },
+  { gottheit: 'Travia', name: 'Hausfrieden', grad: 'III' },
   // Tsa
   { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
   { gottheit: 'Tsa', name: 'Flagge des Regenbogens', grad: 'III' },
@@ -884,6 +892,10 @@ const LITURGY_TYPES = [
   { gottheit: 'Zwölfgötterkult', name: 'Göttliches Zeichen', grad: 'I' },
   { gottheit: 'Zwölfgötterkult', name: 'Grabsegen', grad: 'I' },
   { gottheit: 'Zwölfgötterkult', name: 'Grosser Eidsegen', grad: 'III' },
+  { gottheit: 'Zwölfgötterkult', name: 'Handwerkssegen', grad: 'II' },
+  { gottheit: 'Zwölfgötterkult', name: 'Harmoniesegen', grad: 'II' },
+  { gottheit: 'Zwölfgötterkult', name: 'Heiliger Befehl', grad: 'II' },
+  { gottheit: 'Zwölfgötterkult', name: 'Heilungssegen', grad: 'I' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
