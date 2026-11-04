@@ -801,6 +801,9 @@ const LITURGY_TYPES = [
   { gottheit: 'Efferd', name: 'Begehen der Heiligen Wasser', grad: 'III' },
   { gottheit: 'Efferd', name: 'Bootssegen', grad: 'III' },
   { gottheit: 'Efferd', name: 'Efferdsegen', grad: 'III' },
+  { gottheit: 'Efferd', name: 'Gesang der Delphine', grad: 'II' },
+  { gottheit: 'Efferd', name: 'Gesegneter Fang', grad: 'II' },
+  { gottheit: 'Efferd', name: 'Gruss des Versunkenen', grad: 'IV' },
   // Firun
   { gottheit: 'Firun', name: 'Firuns Einsicht', grad: 'IV' },
   // Hesinde
@@ -812,6 +815,9 @@ const LITURGY_TYPES = [
   // HSzint
   { gottheit: 'HSzint', name: 'Bindung der Schlange', grad: 'II' },
   { gottheit: 'HSzint', name: 'Elementwandlung', grad: 'II' },
+  { gottheit: 'HSzint', name: 'Gift der Erkenntnis', grad: 'II' },
+  // Ifirn
+  { gottheit: 'Ifirn', name: 'Geteiltes Leid', grad: 'II' },
   // Ingerimm
   { gottheit: 'Ingerimm', name: 'Allmacht der Lohe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Anathema', grad: 'V' },
@@ -821,6 +827,9 @@ const LITURGY_TYPES = [
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
   { gottheit: 'Ingerimm', name: 'Erneuerung des Geborstenen', grad: 'I' },
   { gottheit: 'Ingerimm', name: 'Feuertaufe', grad: 'IV' },
+  { gottheit: 'Ingerimm', name: 'Gebieter der Lava', grad: 'V' },
+  { gottheit: 'Ingerimm', name: 'Geläutert sei Erz und Goldgestein', grad: 'III' },
+  { gottheit: 'Ingerimm', name: 'Goldener Blick', grad: 'III' },
   // Kamaluq
   { gottheit: 'Kamaluq', name: 'Ewiger Wächter', grad: 'V' },
   // Kor
@@ -833,22 +842,31 @@ const LITURGY_TYPES = [
   { gottheit: 'Peraine', name: 'Dreifacher Saatsegen', grad: 'III' },
   { gottheit: 'Peraine', name: 'Fünfte Lobpreisung des Frühlings', grad: 'V' },
   { gottheit: 'Peraine', name: 'Fürbitte des Heiligen Therbun', grad: 'III' },
+  { gottheit: 'Peraine', name: 'Gleichklang des Geistes', grad: 'I' },
   // Phex
   { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
   { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
   { gottheit: 'Phex', name: 'Buchprüfung', grad: 'III' },
+  { gottheit: 'Phex', name: 'Graues Siegel', grad: 'III' },
   // Praios
   { gottheit: 'Praios', name: 'Arcanum Interdictum', grad: 'VI' },
   { gottheit: 'Praios', name: 'Blendstrahl aus Alveran', grad: 'I' },
   { gottheit: 'Praios', name: 'Daradors Bann der Schatten', grad: 'IV' },
+  { gottheit: 'Praios', name: 'Garafans Gleissende Schwingen', grad: 'V' },
+  { gottheit: 'Praios', name: 'Goldene Rüstung', grad: 'II' },
   // Rahja
   { gottheit: 'Rahja', name: 'Ascandears Hingabe', grad: 'III' },
   { gottheit: 'Rahja', name: 'Dorlens Verbrüderung', grad: 'VI' },
   // Rondra
   { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
   { gottheit: 'Rondra', name: 'Ehrenhafter Zweikampf', grad: 'II' },
+  { gottheit: 'Rondra', name: 'Grosser Weihesegen der Waffe', grad: 'VI' },
   // Tairach
   { gottheit: 'Tairach', name: 'Ewiges Wissen', grad: 'V' },
+  // Tairach
+  { gottheit: 'Travia', name: 'Gemeinschaft der treuen Gefährten', grad: 'II' },
+  { gottheit: 'Travia', name: 'Grosse Weihe des Heimsteins', grad: 'VI' },
+  { gottheit: 'Travia', name: 'Grosser Speisesegen', grad: 'III' },
   // Tsa
   { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
   { gottheit: 'Tsa', name: 'Flagge des Regenbogens', grad: 'III' },
@@ -860,6 +878,12 @@ const LITURGY_TYPES = [
   { gottheit: 'Zwölfgötterkult', name: 'Exkommunikation', grad: 'III' },
   { gottheit: 'Zwölfgötterkult', name: 'Exorzismus', grad: 'III' },
   { gottheit: 'Zwölfgötterkult', name: 'Feuersegen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Geburtssegen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Glückssegen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Göttliche Verständigung', grad: 'II' },
+  { gottheit: 'Zwölfgötterkult', name: 'Göttliches Zeichen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Grabsegen', grad: 'I' },
+  { gottheit: 'Zwölfgötterkult', name: 'Grosser Eidsegen', grad: 'III' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
