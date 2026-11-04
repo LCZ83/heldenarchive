@@ -796,6 +796,7 @@ const LITURGY_TYPES = [
   { gottheit: 'Efferd', name: 'Azilas Quellgesang', grad: 'III' },
   { gottheit: 'Efferd', name: 'Begehen der Heiligen Wasser', grad: 'III' },
   { gottheit: 'Efferd', name: 'Bootssegen', grad: 'III' },
+  { gottheit: 'Efferd', name: 'Efferdsegen', grad: 'III' },
   // Hesinde
   { gottheit: 'Hesinde', name: 'Argelions bannende Hand', grad: 'V' },
   { gottheit: 'Hesinde', name: 'Argelions Mantel', grad: 'III' },
@@ -810,8 +811,12 @@ const LITURGY_TYPES = [
   { gottheit: 'Ingerimm', name: 'Angroschs Opfergabe', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Blick für das Handwerk', grad: 'II' },
   { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
+  { gottheit: 'Ingerimm', name: 'Blick in die Flammen', grad: 'III' },
+  // Kor
+  { gottheit: 'Kor', name: 'Eherne Kraft - lodernder Zorn', grad: 'VI' },
   // Peraine
   { gottheit: 'Peraine', name: 'Anrufung der Erdkraft', grad: 'II' },
+  { gottheit: 'Peraine', name: 'Dreifacher Saatsegen', grad: 'III' },
   // Phex
   { gottheit: 'Phex', name: 'Auge des Händlers', grad: 'II' },
   { gottheit: 'Phex', name: 'Auge des Mondes', grad: 'II' },
@@ -819,14 +824,18 @@ const LITURGY_TYPES = [
   // Praios
   { gottheit: 'Praios', name: 'Arcanum Interdictum', grad: 'VI' },
   { gottheit: 'Praios', name: 'Blendstrahl aus Alveran', grad: 'I' },
+  { gottheit: 'Praios', name: 'Daradors Bann der Schatten', grad: 'IV' },
   // Rahja
   { gottheit: 'Rahja', name: 'Ascandears Hingabe', grad: 'III' },
+  { gottheit: 'Rahja', name: 'Dorlens Verbrüderung', grad: 'VI' },
   // Rondra
   { gottheit: 'Rondra', name: 'Achmadayan ankhrellah alnurach Shaitanim', grad: 'VI' },
+  { gottheit: 'Rondra', name: 'Ehrenhafter Zweikampf', grad: 'II' },
   // Tsa
   { gottheit: 'Tsa', name: 'Aura des Regenbogens', grad: 'III' },
   // Zsahh
   { gottheit: 'Zsahh', name: 'Alte Schuppen', grad: 'III' },
+  { gottheit: 'Zsahh', name: 'Eidechsenhaut', grad: 'III' },
 ];
 
 // Liturgy Steigerungskategorie scales with the liturgy's Grad: higher Grad
